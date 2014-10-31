@@ -1,0 +1,27 @@
+1. Install without demo data.
+
+2. Install with all modules and languages. 
+
+3. in cache compare and move following folders from manual to zip
+manifest.xml
+Project.zip
+ProjectMilestone.zip
+ProjectTask.zip
+
+4. in cron/modules compare and move following folders from manual to zip
+PBXManager
+VtigerBackup
+Import
+
+
+5. Move /modules folders from manual to zip
+
+6. Copy and replace Smarty/templates/modules from manual to zip
+
+7. Copy and replace tabdata.php and parent_tabdata.php from manual to zip
+
+8. vtlib/ModuleDir copy from manual to zip
+
+9. Copy the extra folders and files from /include and add to zip from manual
+
+For reference purpose: realpath() function is added to $__setings['softpath'] in install.php

@@ -1,0 +1,4 @@
+1. Download the PHP 5.3 version from the client center :
+https://secure.thevisionworld.com/clientarea.php
+2. To enable language we have changed "is_enabled" in avis_language table from 0 to 1 for all languages.
+3. Always check upgrade.php to change version

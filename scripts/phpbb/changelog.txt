@@ -1,0 +1,279 @@
+Changelog
+
+1. Changes since 3.0.11
+
+Bug
+
+    [PHPBB3-6723] - Empty message in deleted messages in PM history
+    [PHPBB3-7262] - Clarify docs about is_dynamic not being updated by set_config()
+    [PHPBB3-8319] - LOCAL_URL not enforced in bbcodes
+    [PHPBB3-9551] - Mysql fulltext index creation fails due to partial collation change
+    [PHPBB3-9975] - Hard coded language in sessions.php
+    [PHPBB3-10184] - Bots can be sent private messages
+    [PHPBB3-10491] - Fatal error in functional tests when server returns 404
+    [PHPBB3-10568] - Modify the trigger language when you edit a PM
+    [PHPBB3-10602] - A bug in mail queue processing
+    [PHPBB3-10661] - UCP > PM > Compose > enumerated recipients > BCC group misses a &nbsp; (prosilver)
+    [PHPBB3-10678] - Provide Firebird, Oracle, and increased MSSQL support in unit tests
+    [PHPBB3-10772] - trigger_error is using the default style
+    [PHPBB3-10789] - PM print template (prosilver) with unnecessary variables
+    [PHPBB3-10820] - Display images directly in IE9 and 10 instead of download
+    [PHPBB3-10828] - PostgreSQL dbal tests try to connect to the database named as user specified in configuration
+    [PHPBB3-10838] - Functional tests are not mentioned in RUNNING_TESTS.txt
+    [PHPBB3-10840] - If you add a member to a group, the form_token can be set to 0 if the creation_time is 0 too. Maybe even if creation_time is unchanged.
+    [PHPBB3-10848] - Wrong redirect to installer from acp
+    [PHPBB3-10850] - create_schema_files.php is not creating the oracle or postgres' schema file properly
+    [PHPBB3-10879] - prosilver: attachment-link will be displayed wrong, when filename is too long
+    [PHPBB3-10880] - m_approve should not imply f_noapprove
+    [PHPBB3-10896] - board_email & board_contact are not validated as email addresses in ACP
+    [PHPBB3-10897] - Bot Definitions are outdated
+    [PHPBB3-10918] - docs/INSTALL.html claims there are tar.gz packages
+    [PHPBB3-10943] - Search Box should display keywords entered by the user
+    [PHPBB3-10967] - PHPBB_USE_BOARD_URL_PATH not implemented in posting_gen_topic_icons
+    [PHPBB3-10986] - Invalid email message ids because config variable server_name is used even when force server URL settings is disabled
+    [PHPBB3-10995] - Return value of $db->sql_fetchrow() on empty tables is not consistent on mssqlnative
+    [PHPBB3-10996] - Travis tests fail on Postgres because database does not exist
+    [PHPBB3-11034] - The functional test case framework does not install a full board each time
+    [PHPBB3-11066] - MSSQLnative driver contains debug code error_reporting(E_ALL)
+    [PHPBB3-11069] - missing closing span in subsilver2 simple_footer.html
+    [PHPBB3-11081] - Duplicated /TD in styles/subsilver2/template/catpcha_qa.html
+    [PHPBB3-11093] - acp_users_overview.html has a wrongly placed </dd>
+    [PHPBB3-11094] - prosilver: searching for users: no textbox for Jabber
+    [PHPBB3-11105] - Missing mandatory space in meta http-equiv=refresh
+    [PHPBB3-11112] - phpBB Footer Link should be SSL
+    [PHPBB3-11122] - Update docs/AUTHORS for 3.0.12-RC1
+    [PHPBB3-11144] - {FORUM_NAME} is not filled in login mask when logging into a password protected forum
+    [PHPBB3-11145] - ATTACHED_IMAGE_NOT_IMAGE thrown because of file limit in php.ini
+    [PHPBB3-11158] - modules table lacks acl_u_sig for signature module
+    [PHPBB3-11159] - Coding guidelines: static public
+    [PHPBB3-11164] - Composer not finding symfony/config in PHP 5.3.3
+    [PHPBB3-11178] - database_update.php should not set error_reporting to E_ALL
+    [PHPBB3-11186] - Database unit tests fail on windows using sqlite2
+    [PHPBB3-11190] - Functional tests do not clear the cache between each test
+    [PHPBB3-11196] - /includes/session.php sends 401 HTTP status with "Not authorized" instead of "Unauthorized"
+    [PHPBB3-11219] - Database sequences are not updated for tests using fixtures with auto_incremented columns
+    [PHPBB3-11227] - @return void -> @return null
+    [PHPBB3-11233] - Anonymous can be selected as a PM recipient
+    [PHPBB3-11248] - CRLF line endings
+    [PHPBB3-11262] - .lock files are not in .gitignore
+    [PHPBB3-11265] - Functional tests do not assert that board installation succeeded
+    [PHPBB3-11269] - Travis functional test case errors
+    [PHPBB3-11278] - Firebird tables are not removed correctly on 3.0.9-rc1 update
+    [PHPBB3-11291] - "Could not open input file: ../composer.phar" error during phing's create-package
+    [PHPBB3-11292] - Newlines removed in display of PM reports, no clickable links in PM reports
+    [PHPBB3-11301] - "String offset cast occured" error on PHP 5.4
+    [PHPBB3-11304] - check_form_key breaks in tests when form is submitted in the same second it is retrieved
+    [PHPBB3-11343] - Loose string comparison during new password activation
+    [PHPBB3-11355] - Incorrect error message when no user selected for action on group membership management page
+    [PHPBB3-11358] - Success message even withot selecting a user and performing a group operation
+    [PHPBB3-11361] - "Array to string conversion" error in $user->format_date()
+    [PHPBB3-11493] - Functional tests should fail if any debug output is made
+    [PHPBB3-11517] - Numbering is wrong in coding guidelines
+    [PHPBB3-11536] - Installer incorrectly removes /install from script_path
+    [PHPBB3-11537] - UCP group manage page's error box differs heavily from the rest of the UCP
+    [PHPBB3-11538] - SQL error on UCP groups manage page caused by setting color to 7 characters long string
+    [PHPBB3-11544] - Add admin_login() to 3.0 functional test case
+    [PHPBB3-11545] - is_absolute() should not depend on DIRECTORY_SEPARATOR
+    [PHPBB3-11546] - is_absolute() throws E_NOTICE for empty string
+    [PHPBB3-11547] - Test fixtures do not support utf8 characters
+    [PHPBB3-11548] - Untranslated TOO_SHORT in UCP "Manage Groups"
+    [PHPBB3-11566] - Reporting a post should require a captcha to be solved by guests
+    [PHPBB3-11568] - Functional tests fail with retrieving install pages using file_get_contents
+    [PHPBB3-11575] - phpbb_dbal_order_lower_test::test_cross_join should be called test_order_lower
+    [PHPBB3-11578] - Missing underscore after function prefix in validate_data()
+    [PHPBB3-11579] - Add unit tests for validate_data()
+    [PHPBB3-11580] - Avoid API Limit from composer downloads on github
+    [PHPBB3-11588] - install/install_update.php should use version.phpbb.com instead of www
+    [PHPBB3-11590] - Close database connections from tests whenever possible
+    [PHPBB3-11601] - Allow manual resync of database columns in unit tests not only on fixture load
+    [PHPBB3-11603] - git-tools use invalid api urls
+    [PHPBB3-11604] - Functional tests fail when phpBB can not create the config file
+    [PHPBB3-11617] - Missing U_ACTION in acp_captcha.php
+    [PHPBB3-11618] - Template tests fail on some systems due to a PHP error in glob()
+    [PHPBB3-11619] - get_remote_file() should use HTTP 1.0
+    [PHPBB3-11630] - Improvements to the PHP lint pre-commit hook
+    [PHPBB3-11644] - Skip phpbb_dbal_order_lower_test on MySQL 5.6
+    [PHPBB3-11662] - "occured" should be "occurred"
+    [PHPBB3-11670] - Replace trademark ™ with ® on "Welcome to phpBB" install page
+    [PHPBB3-11674] - Do not include vendor folder if there are no dependencies.
+    [PHPBB3-11524] - MySQL Upgrader throws warnings on PHP 5.4
+    [PHPBB3-11720] - Reporting posts leads to white page error
+    [PHPBB3-11769] - Wrong poster in subscription email when poster is using the Quote button
+    [PHPBB3-11775] - Error while moving posts to a new topic
+    [PHPBB3-11802] - Undefined variable $browser in /download/file.php
+
+Improvement
+
+    [PHPBB3-8743] - New topic / reply notifications do not contain author's name.
+    [PHPBB3-10050] - subsilver2: Do not show "Mark topics as read" when there are no topics
+    [PHPBB3-10205] - More informative reporting of errors when database connection fails (MySQL and others)
+    [PHPBB3-10716] - PHP-parse all php files as part of the test suite
+    [PHPBB3-10841] - Disable style and language selectors if there's only one installed.
+    [PHPBB3-10854] - sql server drop default constraint when dropping column
+    [PHPBB3-10865] - Updated and Added to docs/INSTALL.html
+    [PHPBB3-10873] - Change language entry for deleted PMs
+    [PHPBB3-10981] - Upgrade Goutte and use Composer for Installation
+    [PHPBB3-11131] - Phrasing & semantics of Board settings
+    [PHPBB3-11162] - Get rid of $db->sql_return_on_error(true) trickery when splitting/merging topics
+    [PHPBB3-11192] - Add Tebibyte to get_formatted_filesize()
+    [PHPBB3-11202] - Add response status checks to functional tests
+    [PHPBB3-11220] - Improve tooltip explaining the [list=] - BBcode
+    [PHPBB3-11238] - Specify goutte version
+    [PHPBB3-11285] - Use more granularity in dependency checks in compress test
+    [PHPBB3-11293] - Prefer mysqli over mysql due to php 5.5 alpha 2 deprecating mysql
+    [PHPBB3-11294] - Update extension list in running tests doc
+    [PHPBB3-11368] - Latest pm reports row count
+    [PHPBB3-11583] - InnoDB supports FULLTEXT index since MySQL 5.6.4.
+    [PHPBB3-11740] - Update link in FAQ to Ideas Centre
+    [PHPBB3-11873] - Prevent expensive hash computation in phpbb_check_hash() by rejecting very long passwords
+
+Sub-task
+
+    [PHPBB3-10974] - Move tests/mock_user.php to tests/mock/user.php
+    [PHPBB3-11009] - Backport phing build.xml from develop to develop-olympus so it uses composer.
+    [PHPBB3-11540] - Add unit tests for (phpbb_)is_absolute()
+    [PHPBB3-11541] - Add unit tests for style_select() in functions.php
+    [PHPBB3-11542] - Add unit tests for language_select() in functions.php
+    [PHPBB3-11543] - Add unit tests for obtain online functions in functions.php
+
+Task
+
+    [PHPBB3-10877] - Have bamboo generate and publish a phpBB package for every build.
+    [PHPBB3-11045] - Add unit tests for the compress class
+    [PHPBB3-11059] - Fix README logo
+    [PHPBB3-11060] - Fix travis.yml pyrus config
+    [PHPBB3-11240] - Turn on PHPUnit's verbose mode on Travis
+    [PHPBB3-11324] - Add PHP 5.5 environment on Travis-CI
+    [PHPBB3-11337] - Run functional tests on Travis CI
+    [PHPBB3-11513] - Install PHPUnit via Composer's require-dev to simplify test running (no need for pear)
+    [PHPBB3-11526] - Increase composer minimum-stability from beta to stable
+    [PHPBB3-11527] - Upgrade composer.phar to 1.0.0-alpha7
+    [PHPBB3-11529] - Rename RUNNING_TESTS file to .md file to render it on GitHub
+    [PHPBB3-11576] - Make phpBB Test Suite MySQL behave at least as strict as phpBB MySQL driver
+    [PHPBB3-11671] - Add phing/phing to composer.json
+    [PHPBB3-11752] - Update phpBB.com URLs to https in email templates
+    [PHPBB3-11753] - Upgrade mysql_upgrader.php schema data.
+
+2. Changes since 3.0.10
+
+Bug
+
+    [PHPBB3-7432] - Unclear language for Inactive Users on ACP main page
+    [PHPBB3-8652] - Duplicate Emails Sent When Subscribed to Forum and Topic
+    [PHPBB3-9079] - Display backtrace on all E_USER_ERROR errors, not only SQL errors (when DEBUG_EXTRA is enabled)
+    [PHPBB3-9084] - Unable to display 'option equal to non entered value' if dropdown CPF is not required
+    [PHPBB3-9089] - PM message title box not accessible via Tab key
+    [PHPBB3-9220] - Blue border width when table in a div
+    [PHPBB3-9681] - Password length not in security settings
+    [PHPBB3-9813] - fulltext_native.php on innodb loading deadly slow for big indexes
+    [PHPBB3-9831] - Cannot change default of Boolean checkbox custom profile field
+    [PHPBB3-10094] - Clear cache before phpBB installation
+    [PHPBB3-10129] - Missing apostrophes in ACP user management -> permissions
+    [PHPBB3-10349] - Unit tests do not remove comments from schemas
+    [PHPBB3-10399] - Special characters aren't parsed in style component variables
+    [PHPBB3-10401] - auth_ldap has an incorrect return value in login_ldap()
+    [PHPBB3-10407] - Incorrect check for empty image file paths during conversion
+    [PHPBB3-10428] - optionget/optionset functions in session.php and acp_users.php incorrectly check whether $data is at its default value
+    [PHPBB3-10456] - Subsilver2 does not define $CAPTCHA_TAB_INDEX
+    [PHPBB3-10508] - Marking forums as read displays misleading language
+    [PHPBB3-10511] - Grammar defect in permissions language
+    [PHPBB3-10512] - Test failure when no default timezone is set in php
+    [PHPBB3-10532] - Out of range $start causes a page with no search results but with pagination
+    [PHPBB3-10538] - Special character are not correctly parsed for SMTP protocol
+    [PHPBB3-10542] - Incorrect class="postlink" in styles/subsilver2/template/faq_body.html
+    [PHPBB3-10546] - Argument missing for adm_back_link() in acp_captcha.php
+    [PHPBB3-10561] - All users can choose deactivated styles.
+    [PHPBB3-10569] - template/ucp_main_front.html does not correctly handle active topic with the name "0"
+    [PHPBB3-10580] - Default tz in registration dropdown not the same as the board default tz
+    [PHPBB3-10589] - user_birthday does not use table alias in $leap_year_birthdays variable definition
+    [PHPBB3-10605] - Orpahned privmsgs are left in the prvmsgs table, with no ties in privmsgs_to table
+    [PHPBB3-10606] - $s_hidden_fields -> incorrect array name (3 files affected)
+    [PHPBB3-10611] - Add a check for selected tables existence for ACP database backup tool
+    [PHPBB3-10615] - Static calls in utf normalizer yield E_STRICT spam on php 5.4
+    [PHPBB3-10630] - Prune Users produced unnecessarily long query; Got a packet bigger than 'max_allowed_packet' bytes
+    [PHPBB3-10633] - Users are able to get the real filename of attachment
+    [PHPBB3-10639] - negative value of ranks message
+    [PHPBB3-10658] - Rank-item is not shown on team-list
+    [PHPBB3-10675] - Use more descriptive message when disk is out of space
+    [PHPBB3-10684] - Function user_notification() prevents notifications for users with stale bans
+    [PHPBB3-10689] - Bug in the popup " Find a member" when select by letter.
+    [PHPBB3-10691] - Search index creation CLI script incorrectly calculates indexing speed
+    [PHPBB3-10699] - Long h2 title breaks div.minitabs in MCP
+    [PHPBB3-10708] - After a conversion, passwords with UTF8 characters do not work when user_pass_convert is set.
+    [PHPBB3-10717] - memberlist_view.html: including admin defined profile fields doesnt work
+    [PHPBB3-10723] - Do not use SQLite on PHP 5.4 in Tests on Travis
+    [PHPBB3-10731] - JS function addquote() works incorrectly in Opera
+    [PHPBB3-10751] - MS SQL Error when searching Admin Log
+    [PHPBB3-10760] - In pre-commit git hook, syntax error is thrown, but is not specifically described
+    [PHPBB3-10767] - Git hooks do not work properly with git GUIs
+    [PHPBB3-10774] - db_tools::create_unique_index does not use specified index names on MySQL
+    [PHPBB3-10790] - Strict comparison on user_id for sending pms
+    [PHPBB3-10797] - Template var for user rank not filled
+    [PHPBB3-10835] - Misleading message in UCP when no permission to change password
+    [PHPBB3-10846] - Missing alias for MAX(post_id) in SQL query in acp_main.php
+    [PHPBB3-10849] - Missing BBCode Help Text in subsilver2
+    [PHPBB3-10858] - $db->sql_fetchfield returns false with mssqlnative
+    [PHPBB3-10860] - Side-by-side diff styling javascript bug
+    [PHPBB3-10881] - Some files use 0xA9 as the copyright symbol which is neither ASCII nor the UTF8 copyright symbol.
+    [PHPBB3-10887] - Auto increment tests depend on varbinary handling
+    [PHPBB3-10889] - Default value for c_char_size in database unit tests is an empty string instead of a char(4)
+    [PHPBB3-10890] - test_sql_fetchrow_returns_false_when_empty() fails on MSSQL and Oracle
+    [PHPBB3-10908] - No remote avatar size limit results in files limited only by PHP memory limit
+    [PHPBB3-10913] - Admin is logged out when accessing any url under adm/ without session id
+    [PHPBB3-10441] - Update to docs/README.html
+    [PHPBB3-10773] - ACP phpBB logo needs registered trademark symbol
+    [PHPBB3-10935] - Limit number of PM rules per user
+    [PHPBB3-10937] - Comment removal functions: Backward compatibility broken
+    [PHPBB3-10950] - Deleting user with undelivered PMs causes SQL error
+    [PHPBB3-10952] - includes/constants.php version number incorrect
+    [PHPBB3-10965] - Dropdown CPF now shows in profile when no value is selected
+    [PHPBB3-10978] - Typo in prosilvers ucp_groups_membership.html
+
+Improvement
+
+    [PHPBB3-8599] - Add "Select All" to "Add multiple smilies" screen
+    [PHPBB3-8636] - Add resync option to topic_view moderation page
+    [PHPBB3-9876] - Names and descriptions for roles "Newly registered User" in "User roles" and "Forum roles" must be different
+    [PHPBB3-9914] - Add backup warning to Automatic DB Updater
+    [PHPBB3-9916] - License in header not linking to version 2 of GNU GPL
+    [PHPBB3-10093] - Make commit-msg hook always not fatal
+    [PHPBB3-10162] - Allow TLDs over 6 characters in email addresses
+    [PHPBB3-10280] - Change the ACP user activation display
+    [PHPBB3-10308] - Disable Retain/Delete Posts selection if the user has no posts.
+    [PHPBB3-10453] - PM viewmessage page is misplacing the online icon
+    [PHPBB3-10492] - Port functional tests to develop-olympus
+    [PHPBB3-10507] - Sort installed styles list in admin control panel - styles
+    [PHPBB3-10550] - Sort not installed styles list in admin control panel - styles
+    [PHPBB3-10563] - ACP usability improvement: show deactivated styles below active styles in styles list
+    [PHPBB3-10565] - Performance: Unneeded GROUP BY in update_forum_tracking_info
+    [PHPBB3-10607] - phpBB Credit Line Hardcoded
+    [PHPBB3-10653] - Add ability to count table rows to database abstraction layer
+    [PHPBB3-10730] - Add label tags around "select" text in post splitting UI in MCP
+    [PHPBB3-10764] - FAQ mentions SourceForge
+    [PHPBB3-10812] - Installer should not display register globals UI for php 5.4+
+    [PHPBB3-10815] - Enable Feeds by default
+    [PHPBB3-10819] - Improve side-by-side diff styling
+    [PHPBB3-10834] - Backport general development language changes in readme files
+    [PHPBB3-10836] - Enable Avatars by default
+    [PHPBB3-10891] - Allow specifying test config file name via environment variable
+    [PHPBB3-10892] - Cosmetic improvements to RUNNING_TESTS.txt
+    [PHPBB3-10898] - Do not write ?> into config.php to avoid whitespace output
+    [PHPBB3-10925] - Clarify that SQLite3 is not supported for phpBB 3.0.x
+
+New Feature
+
+    [PHPBB3-10616] - Add template inheritance by default
+
+Sub-task
+
+    [PHPBB3-10907] - Mark (var)binary tests as incomplete on non-MySQL DBMSes
+
+Task
+
+    [PHPBB3-9896] - Update links in docs/readme.html
+    [PHPBB3-10434] - Add a script that allows creating a search index from CLI
+    [PHPBB3-10455] - Remove NOTE from header files
+    [PHPBB3-10694] - Update notification in ACP (Olympus) for increase of minimum PHP version to 5.3.2
+    [PHPBB3-10718] - Add Travis CI
+    [PHPBB3-10788] - Update docs/AUTHORS for 3.0.11-RC1
+    [PHPBB3-10909] - Update Travis Test Configuration: Travis no longer supports PHP 5.3.2

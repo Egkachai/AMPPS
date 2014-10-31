@@ -1,0 +1,79 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/WordPress
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/blogs/WordPress
+	</ratings>
+	<space>
+		17648195
+	</space>
+	<support>
+		http://www.wordpress.org/
+	</support>
+	<version>
+		4.0
+	</version>
+	<mod>80</mod>
+	<release_date>04-09-2014</release_date>
+	<has_theme>1</has_theme>
+	<update_plugins>1</update_plugins>
+	<update_themes>1</update_themes>
+	<admin>wp-admin/</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.2.4" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">WordPress</font> is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability. WordPress is both free and priceless at the same time.<br /><br />
+		More simply, WordPress is what you use when you want to work with your blogging software, not fight it.
+		<br /><br />WordPress started in 2003 with a single bit of code to enhance the typography of everyday writing and with fewer users than you can count on your fingers and toes. Since then it has grown to be the largest self-hosted blogging tool in the world, used on hundreds of thousands of sites and seen by tens of millions of people every day.
+		<br /><br />
+		The GPL from the <a href="http://www.fsf.org/" target="_blank">Free Software Foundation</a> is the license that the WordPress software is under.
+		</english-overview>		
+		<english-features>
+		<ul>
+				<li><strong>Full standards compliance</strong> : We have gone to great lengths to make sure every bit of WordPress generated code is in full compliance with the standards of the <a href="http://w3.org" target="_blank">W3C</a>. This is important not only for interoperability with today's browser but also for forward compatibility with the tools of the next generation. Your web site is a beautiful thing, and you should demand nothing less.</li>
+				<li><strong>No rebuilding</strong> : Changes you make to your templates or entries are reflected immediately on your site, with no need for regenerating static pages.</li>
+				<li><strong>WordPress Pages</strong> : Pages allow you to manage non-blog content easily, so for example you could have a static "About" page that you manage through WordPress. For an idea of how powerful this is, the entire WordPress.org site could be run off WordPress alone. (We don't for technical mirroring reasons.)</li>
+
+				<li><strong>WordPress Links</strong> : Links allows you to create, maintain, and update any number of blogrolls through your administration interface. This is much faster than calling an external blogroll manager.</li>
+				<li><strong>WordPress Themes</strong> : WordPress comes with a <a href="http://codex.wordpress.org/Using_Themes" target="_blank">full theme system</a> which makes designing everything from the simplest blog to the most complicated webzine a piece of cake, and you can even have multiple themes with totally different looks that you switch with a single click. Have a new design every day.</li>
+				<li><strong>Cross-blog communication tools</strong> : WordPress fully supports both the <a href="http://www.movabletype.org/docs/mttrackback.html" target="_blank">Trackback</a> and <a href="http://www.hixie.ch/specs/pingback/pingback-1.0" target="_blank">Pingback</a> standards, and we are committed to supporting future standards as they develop.</li>
+
+				<li><strong>Comments</strong> : Visitors to your site can leave comments on individual entries, and through Trackback or Pingback can comment on their own site. You can enable or disable comments on a per-post basis.</li>
+				<li><strong>Spam protection</strong> : Out of the box WordPress comes with very robust tools such as an integrated blacklist and open proxy checker to manage and eliminate comment spam on your blog, and there is also a rich array of plugins that can take this functionality a step further.</li>
+				<li><strong>Full user registration</strong> : WordPress has a built-in user registration system that (if you choose) can allow people to register and maintain profiles and leave authenticated comments on your blog. You can optionally close comments for non-registered users. There are also plugins that hide posts from lower level users.</li>
+				<li><strong>Password Protected Posts</strong> : You can give passwords to individual posts to hide them from the public. You can also have private posts which are viewable only by their author.</li>
+				<li><strong>Easy installation and upgrades</strong> : Installing WordPress and upgrading from previous versions and other software is a piece of cake. Try it and you'll wonder why all web software isn't this easy.</li>
+				<li><strong>Easy Importing</strong> : We currently have importers for Movable Type, Textpattern, Greymatter, Blogger, and b2. Work on importers for Nucleus and pMachine are under way. </li>
+
+				<li><strong>XML-RPC interface</strong> : WordPress currently supports an extended version of the <a href="http://plant.blogger.com/api/" target="_blank">Blogger API</a>, MetaWeblog API, and finally the MovableType API. You can even use clients designed for other platforms like <a href="http://zempt.com/" target="_blank">Zempt</a>.</li>
+				<li><strong>Workflow</strong> : You can have types of users that can only post drafts, not publish to the front page.</li>
+				<li><strong>Typographical niceties </strong>: WordPress uses the <a href="http://photomatt.net/tools/texturize" target="_blank">Texturize</a> engine to intelligently convert plain ASCII into typographically correct XHTML entities. This includes quotes, apostrophes, ellipses, em and en dashes, multiplication symbols, and ampersands. For information about the proper use of such entities see Peter Sheerin's article <a href="http://alistapart.com/stories/emen/" target="_blank">The Trouble With Em 'n En</a>.</li>
+
+				<li><strong>Intelligent text formatting</strong> : If you've dealt with systems that convert new lines to line breaks before you know why they have a bad name: if you have any sort of HTML they butcher it by putting tags after every new line indiscriminately, breaking your formatting and validation. Our function for this intelligently avoids places where you already have breaks and block-level HTML tags, so you can leave it on without worrying about it breaking your code.</li>
+				<li><strong>Multiple authors</strong> : WordPress' highly advanced user system allows up to 10 levels of users, with different levels having different (and configurable) privileges with regard to publishing, editing, options, and other users.</li>
+				<li><strong>Bookmarklets</strong> : Cross-browser bookmarklets make it easy to publish to your blog or add links to your blogroll with a minimum of effort.</li>
+				<li><strong>Ping away</strong> : WordPress supports pinging <a href="http://www.pingomatic.com/" target="_blank">Ping-O-Matic</a>, which means maximum exposure for your blog to search engines.</li>
+			</ul>
+		</english-features>
+		<english-err_php524>The PHP version is less than the required 5.2.4+ version!</english-err_php524>
+		<english-select_plugins>Select Plugins</english-select_plugins>
+		<english-limit-login-attempts>Limit Login Attempts</english-limit-login-attempts>
+		<english-exp_limit-login-attempts>Limit the number of login attempts for your WordPress installation.<br />
+		If selected Limit Login Attempts plugin will be installed and activated with your installation.<br />
+		Click <a href="http://wordpress.org/extend/plugins/limit-login-attempts/" target="_blank">here</a> to visit plugin site.</english-exp_limit-login-attempts>
+		<english-wpclef>Clef Secure Passwordless Login</english-wpclef>
+		<english-exp_wpclef>Clef is a replacement for usernames and passwords that lets you login using your phone.<br />
+		If selected Clef plugin will be installed and activated with your installation.<br />
+		Click <a href="http://wordpress.org/plugins/wpclef/" target="_blank">here</a> to visit plugin site.</english-exp_wpclef>
+	</languages>
+</soft>

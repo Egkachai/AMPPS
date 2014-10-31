@@ -1,0 +1,46 @@
+Osclass 3.4.2 2014-09-10
+------------------------
+- Fixed two vulnerabilities thanks to Robert & Onur from http://www.netsparker.com
+- Fixed some issues with the cache
+- Minor bug fixes and improvements
+
+Osclass 3.4.1 2014-08-04
+------------------------
+- Fixed some compatibility issues with PHP 5.2
+- Minor bug fixes and improvements
+
+Osclass 3.4.0 2014-08-04
+------------------------
+- Extensible cache support (memcache, APC,...)
+- User based subdomains
+- Emails filters with more variables added
+- Some sql optimizations (categories, users, premium)
+- UI fixes and improvements in admin
+- Imagemagick issues fixed
+- Child theme support
+- Minor bug fixes and improvements
+
+Osclass 3.3.2 2014-04-08
+------------------------
+- Changed license of Osclass to Apache License, Version 2.0, you could get a copy here http://www.apache.org/licenses/LICENSE-2.0
+
+Osclass 3.3.2 2013-12-17
+------------------------
+- Fixed issue #1239
+- Improved a little upgrade process and warning
+
+Osclass 3.3.1 2013-12-16
+------------------------
+- Fixed blurred watermark text
+- Fixed black background on images
+- Fixed error that makes impossible to install languages via market
+
+Osclass 3.3 2013-12-10
+------------------------
+- Subdomains improved
+- Ajax upload of photos, with preview
+- Improved image handling, no more mess with background color
+- Passwords more secure (use of Bcrypt + individual salt isntead of SHA1)
+- Updated HTML Purifier to 4.5.0
+- Release notes added when upgrading from previous version
+- Minor bug fixes and improvements

@@ -1,0 +1,30 @@
+Sharetronix 3.6.0
+	* Post to user profile
+	* Post to a group from the dashboard
+	* Like plugin integration
+	* Edit post plugin integration
+	* Bug fixes and improvements
+
+Sharetronix 3.5
+	* Bugfixes
+	* Groups categories
+	* Groups sort
+	* Image preview and select when posting links
+	* Saved search
+	* Post Vines
+
+Sharetronix 3.4
+	*Security Bug fixes
+
+Sharetronix 3.3
+	*Bug fixes
+	*Admin Stealth mode
+
+Sharetronix 3.2.2
+	*Bug fixes and improvements
+
+Sharetronix 3.2
+	*Security updates
+	*Multy-language FAQ
+	*New default captcha
+	*Bugfixes

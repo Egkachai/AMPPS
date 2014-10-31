@@ -1,0 +1,13 @@
+1. Make package on cpanel
+2. instanceid in config.php is created after login. So, download config.php after login.
+3. Add the following query in `oc_preferences` table in sql
+
+('[[admin_username]]', 'core', 'lang', '[[language]]');
+4. Make data directory in /home/soft. change path in manual installation.
+
+5. Due to bug in windows in 5.0.13 version we have disabled it on windows. Kindly check and remove windows condition in next version from install.php and upgrade.php (Enabled back from 6.0)
+
+6. After removing inserts from oc_filecache change auto increment value.
+7. Add [[admin_username]] folder from data_dir to data.zip with folder name as "admin"
+8. Everytime change version in upgrade.php to upgrade latest version from 6.0.4
+9. Change <min_require> in info.xml for major version.

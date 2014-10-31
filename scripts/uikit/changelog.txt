@@ -1,0 +1,144 @@
+2.11.0 (October 07, 2014)
+------------------------------------
+    Added uk.scrollspynav.inview event trigger
+    Fixed sortable on mobile
+    Fixed sortable in warp mode
+    Fixed jumping issue on modal show
+    Fixed triggering more results in search component
+    Fixed short time selection in timepicker component
+    Fixed UIkit functionality when uses with Polymer
+    Fixed hide autocomplete dropdown on scroll
+    Adjusted form danger and success colors
+    Unified triggered event names
+    Adjust document scroll position if dragged nestable or sortable items are out of view
+
+Docs and Repo
+
+    Refactored source and themes directory structure
+    Removed dist folder
+    Replaced Grunt with Gulp
+    Added Browsersync for tests
+    Added Sass files creation to build process
+    Added Less/Sass files docs
+    Added documentation for data-uk-check-display
+    Fixed markup in thumbnail doc
+
+2.10.0 (September 15, 2014)
+------------------------------------
+    Added input types for iOS style reset to form component
+    Updated icon component to Font Awesome to 4.2.0
+    Moved normalization into base, form, button and form component
+    Removed normalize component
+    Fixed upload select works only once if filename is the same
+	
+	Documentation and repository
+
+    Removed normalize from docs and tests
+    Updated base test
+
+2.9.0 (August 18, 2014)
+------------------------------------
+    IMPORTANT: Renamed keyframe animation uk-spin to uk-rotate
+    IMPORTANT: Removed uk-sticky class, use [data-uk-sticky] instead
+    Added flex add-on
+    Added cover add-on
+    Added new keyframes and classes to animation component
+    Added height viewport to utility component
+    Added position classes to utility component
+    Added treshold parameter to sortable add-on
+    Added reload toggle elements on dom update
+    Added hover color for badges
+    Added animation and negative offset support for sticky add-on
+    Added datepicker animation
+    Added additional class parameter for the tooltip add-on
+    Added iframe option + load custom css in iframe to htmleditor add-on
+    Added more settings options for upload add-on
+    Added trigger uk.dropped event when files were dropped to upload add-on
+    Added trigger uk.offcanvas.hide when offcanvas hides
+    Added allow multiple connect container to switcher component
+    Added switch accross multiple connected switcher containers
+    Added switch active content from within connected switcher containers via data-uk-switcher-item attribute
+    Updated active datepicker closes on window resize
+    Refactored sticky add-on and fixed z-index and box sizing
+    Refactored responsive tab behavior
+    Hide tooltip if source element is hidden or removed via JavaScript
+    Fixed using data-uk-margin in dropdowns
+    Fixed target option in tab js component
+    Fixed autocomplete return type on ajax request
+    Fixed autocomplete from overflowing its container
+    Fixed tooltip position calculation when body or html element is fixed
+    Fixed sortable add-on prevents default behaviour of child elements on click
+    Fixed off-canvas in IE 9
+    Fixed animation reverse timing function
+    Removed Google maps automatic URL detection
+    Removed search close button and loading spinner
+    Removed Promise polyfill
+
+2.8.0 (June 19, 2014)
+------------------------------------
+    IMPORTANT: Timepicker add-on is now based on autocomplete
+    Added delay parameter for dropdowns in hover mode
+    Added scrollable dropdown class
+    Added month and year picker for datepicker add-on
+    Added support for a handle class parameter in sortable add-on
+    Added complete callback after smoothscroll animation
+    Fix black background on iOS for form-advanced
+    Fixed modal padding gap
+    Fixed document scrolling when modal is opened (Webkit)
+    Fixed js error causing by the sortable add-on
+    Fixed switcher component: document scrolls to top when clicking on a[href='#']
+    Fixed search add-on missing uk-active class
+    Fixed left position bug in safari for sticky add-on
+
+    Documentation and repository
+
+    Updated dropdown, timepicker and sortable doc
+
+2.7.1 (June 06, 2014)
+------------------------------------
+    Reverted hidden and visibility classes for breakpoint mini
+
+2.7.0 (June 06, 2014)
+------------------------------------
+    IMPORTANT: Renamed markdownarea to htmleditor
+    IMPORTANT: Renamed sortable to nestable
+    IMPORTANT: Added uk-dropdown-grid to decouple grids in dropdowns
+    Added $.UIkit.component interface for creating UIkit JS components
+    Added sortable add-on
+    Added form-select add-on
+    Added form-advanced add-on
+    Added pagination JavaScript add-on
+    Added Promise polyfill
+    Added minDate, maxDate options to datepicker add-on
+    Added font-weight variable to text large
+    Added new hooks and variables to form labels
+    Added triggering 'uk.dropdown.show', 'uk.dropdown.stack' events
+    Added hidden and visibility classes for breakpoint mini
+    Added touch support for overlay component
+    Make form element clickable through icon
+    Optimized multipliers for 16px font-size in default themes
+    Optimized offcanvas animation
+    Changed data-uk-grid-match row parameter to true by default
+    Fixed offcanvas scroll to top issue
+    Fixed sticky z-index in themes
+    Fixed wrong scaling calculation for overlay images in Chrome
+    Fixed printing for animations and scrollspy
+    Fixed text-decoration for navbar brand and toggle
+    Fixed overlay if its content has margin bottom
+    Fixed more results in search add-on
+    Fixed size of active item in pagination for almost-flat theme
+    Fixed location.hash usage for tabs
+    Fixed button checkbox initial event triggering
+    Fixed offcanvas removing existing style properties on close
+    Removed unneeded brackets from LESS operations
+    Removed breaking strings on small devices by default from base
+    Prevent search-field uk-active issue
+    Updated dropdown flip and stack behavior
+    Updated icon component to Font Awesome to 4.1
+
+    Documentation and repository
+
+    Added showcase
+    Added docs and tests for new add-ons
+    Added missing animations to docs
+    Changed markdownarea docs and tests to htmleditor

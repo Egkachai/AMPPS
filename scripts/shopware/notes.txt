@@ -1,0 +1,2 @@
+1. Choose license "Shopware Community Edition(license:AGPL)"
+2. Select "Default shop currency:" as USD.

@@ -1,0 +1,107 @@
+1) admin/adminindex_lang.php - $l['server_addr'] = 'Server IP';
+
+2) admin/settings_lang.php - $l['eu_news_off'] = 'Disable End User News';
+
+3) admin/settings_lang.php - 
+$l['eu_news_off_exp = 'If checked this will disable the enduser news of various scripts. This news is for users. It gives latest development news on various scripts, their updates etc.';
+
+4) demos_lang.php - $l['<title>'] = $globals['sn'].' - Script Demos';
+
+5) demos_lang.php - $l['script_demos'] = 'Script Demos';
+
+6) demos_lang.php - $l['click_logo'] = 'Click on a scripts logo to view the demo of that script.';
+
+7) index_lang.php - $l['go_demos'] = 'Script Demos';
+
+8) software_lang.php - $l['cron_job'] = 'CRON Job';
+
+
+9) software_lang.php - $l['cron_job_exp'] = 'This script requires a CRON to work. Please specify the CRON timings. If you are unaware of it, leave it as it is!';
+
+
+10) software_lang.php - $l['cron_min'] = 'Min';
+
+
+11) software_lang.php - $l['cron_hour'] = 'Hour';
+
+
+12) software_lang.php - $l['cron_day'] = 'Day';
+
+
+13) software_lang.php - $l['cron_month'] = 'Month';
+
+
+14) software_lang.php - $l['cron_weekday'] = 'Weekday';
+
+
+15) software_lang.php - $l['no_cron_min'] = 'No Cron minute was specified';
+
+
+16) software_lang.php - $l['no_cron_hour'] = 'No Cron hour was specified';
+
+
+17) software_lang.php - $l['no_cron_day'] = 'No Cron day was specified';
+
+
+18) software_lang.php - $l['no_cron_month'] = 'No Cron month was specified';
+
+
+19) software_lang.php - $l['no_cron_weekday'] = 'No Cron weekday was specified';
+
+
+20) software_lang.php - $l['wrong_cron_min'] = 'Cron minute is wrong. Valid values are 0-59 or a <b>*</b>';
+
+21) software_lang.php - $l['wrong_cron_hour'] = 'Cron hour is wrong. Valid values are 0-23 or a <b>*</b>';
+
+
+22) software_lang.php - $l['wrong_cron_day'] = 'Cron day is wrong. Valid values are 1-31 or a <b>*</b>';
+
+
+23) software_lang.php - $l['wrong_cron_month'] = 'Cron month is wrong. Valid values are 1-12 or a <b>*</b>';
+
+
+24) software_lang.php - $l['wrong_cron_weekday'] = 'Cron weekday is wrong. Valid values are 0-7 or a <b>*</b>';
+
+25) software_lang.php - $l['mail_cron'] = 'Cron Job';
+
+
+26) software_lang.php - $l['no_datadir'] = 'No Data directory was specified';
+
+27) software_lang.php - $l['datadir_exists'] = 'The data directory you submitted exists. Please specify another one.';
+
+28) software_lang.php - $l['no_decompress_data'] = 'There were some errors in decompressing the DATA files.';
+
+29) software_lang.php - $l['mail_datadir'] = 'Data Directory';
+
+30) software_lang.php - $l['datadir'] = 'Data Directory';
+
+
+31) software_lang.php - $l['datadir_exp'] = 'This script requires to store its data in a folder not accessible via the web. It will be created in your home folder. i.e. if you specify <b>datadir</b> the following will be created - /home/username/<b>datadir</b>';
+
+32) remove_lang.php - $l['remove_cron'] = 'Remove CRON Job';
+
+
+33) remove_lang.php - $l['remove_cron_exp'] = 'If checked the Cron job will be removed.';
+
+
+34) remove_lang.php - $l['ins_cron_command'] = 'Cron Command';
+
+35) remove_lang.php - $l['mail_cron_command'] = 'CRON Job';
+
+36) remove_lang.php - $l['mail_datadir'] = 'Data Directory';
+
+37) remove_lang.php - $l['remove_datadir'] = 'Remove Data Directory';
+
+38) remove_lang.php - $l['remove_datadir_exp'] = 'If checked the Data directory will be removed.';
+
+39) remove_lang.php - $l['ins_datadir'] = 'Data Directory';
+
+40) ratings_lang.php - $l['<title>'] = $globals['sn'].' - Script Ratings';
+
+
+41) ratings_lang.php - $l['script_ratings'] = 'Script Ratings';
+
+
+42) ratings_lang.php - $l['click_logo'] = 'Click on a scripts logo to view / rate a script.';
+
+43) index_lang.php - $l['go_ratings'] = 'Script Ratings';

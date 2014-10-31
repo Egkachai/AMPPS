@@ -1,0 +1,83 @@
+1) index_lang.php - $l['cat_php_forums'] = 'Forums';
+
+
+2) index_lang.php - $l['cat_php_blogs'] = 'Blogs';
+
+
+3) index_lang.php - $l['cat_php_cms'] = 'Portals/CMS';
+
+
+4) index_lang.php - $l['cat_php_galleries'] = 'Image Galleries';
+
+
+5) index_lang.php - $l['cat_php_wikis'] = 'Wikis';
+
+
+6) index_lang.php - $l['cat_php_admanager'] = 'Ad Management';
+
+
+7) index_lang.php - $l['cat_php_calendars'] = 'Calendars';
+
+
+8) index_lang.php - $l['cat_php_games'] = 'Gaming';
+
+
+9) index_lang.php - $l['cat_php_mail'] = 'Mails';
+
+
+10) index_lang.php - $l['cat_php_polls'] = 'Polls and Surveys';
+
+
+11) index_lang.php - $l['cat_php_projectman'] = 'Project Management';
+
+
+12) index_lang.php - $l['cat_php_ecommerce'] = 'E-Commerce';
+
+
+13) index_lang.php - $l['cat_php_guestbooks'] = 'Guest Books';
+
+
+14) index_lang.php - $l['cat_php_customersupport'] = 'Customer Support';
+
+
+15) index_lang.php - $l['cat_php_others'] = 'Others';
+
+
+16) index_lang.php - $l['cat_php_music'] = 'Music';
+
+
+17) index_lang.php - $l['cat_php_video'] = 'Video';
+
+
+18) index_lang.php - $l['cat_js_libraries'] = 'Libraries';
+
+19) js_lang.php - The Whole File.
+
+20) index_lang.php - $l['type_php'] = 'PHP';
+
+21) index_lang.php - $l['type_js'] = 'JavaScript';
+
+22) admin/index_lang.php - $l['tab_installations'] = 'Installations';
+
+23) admin/installations_lang.php - The Whole File.
+
+24) admin/index_lang.php - $l['sub_outdated'] = 'Outdated Installations';
+
+
+25) admin/index_lang.php - $l['sub_byuser'] = 'By Users';
+
+26) admin/index_lang.php - 
+$l['sub_byscript'] = 'By Scripts';
+
+27) admin/settings_lang.php - $l['logo_url'] = 'Logo URL';
+
+
+28) admin/settings_lang.php - $l['logo_url_exp'] = 'If empty the Softaculous logo will be shown.';
+
+
+29) admin/settings_lang.php - $l['php_bin'] = 'PHP Binary';
+
+
+30) admin/settings_lang.php - $l['php_bin_exp'] = 'This is the binary that will be used for the CRON Job and also other purposes. If empty then <b>/usr/bin/php</b> will be used.';
+
+31) userindex_lang.php - The Whole File.

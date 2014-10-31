@@ -1,0 +1,35 @@
+** Zenphoto 1.4.5.9 Jan 23, 2014
+
+Zenphoto 1.4.5.9 is a security and bugfix release. Multiple minor errors are corrected.
+
+As usual we recommend all users upgrade for the latest updates and fixes. For more detailed info about the fixes please review the GitHub issues list.
+
+** Zenphoto 1.4.5.8 Dec 24, 2013
+
+Zenphoto 1.4.5.8 is a bugfix release. Multiple minor errors are corrected.
+
+As usual we recommend all users upgrade for the latest updates and fixes. For more detailed info about the fixes please review the GitHub issues list.
+
+** Zenphoto 1.4.5.7 Nov 03, 2013
+
+This release fixes a critical issue in the Zenphoto 1.4.5.6 involving storing characters with diacritical marks. You should immediately upgrade if you were using 1.4.5.6.
+
+** Zenphoto 1.4.5.5 Oct 03, 2013
+
+Zenphoto 1.4.5.5 is a bugfix release. This release fixes a problem on site closure introduced in the 1.4.4.4 support release. You will not be able to close your site unless the root index.php file from this release is first uploaded to your site.
+
+** Zenphoto 1.4.5.4 Oct 01, 2013
+
+Zenphoto 1.4.5.4 is a security update. For more detailed info about the fixes please review the GitHub issues list.
+
+** Zenphoto 1.4.5.3 Oct 01, 2013
+
+Zenphoto 1.4.5.3 is a bugfix release. Several security issues have been fixed along with the usual bug fixes.
+
+As usual we recommend all users upgrade for the latest updates and fixes. For more detailed info about the fixes please review the GitHub issues list.
+
+** Zenphoto 1.4.5.2 Sep 09, 2013
+
+Zenphoto 1.4.5.2 is a bugfix release. Multiple minor errors are corrected.
+
+As usual we recommend all users upgrade for the latest updates and fixes. For more detailed info about the fixes please review the GitHub issues list.

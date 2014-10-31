@@ -1,0 +1,15 @@
+.editorconfig
+.gitattributes
+.gitignore
+.htaccess
+.travis.yml
+CONTRIBUTING.md
+README.md
+app
+build.properties
+build.xml
+composer.json
+index.php
+lib
+plugins
+vendors

@@ -1,0 +1,1 @@
+<?php $credential = "[[admin_pass]]"; ?>

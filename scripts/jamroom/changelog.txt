@@ -1,0 +1,41 @@
+Version 5.2.11: 
+- New: Override support for module CSS and JS files (works the same as templates) 
+- New: Ability to Pause and Resume worker queues from Queue Viewer tool 
+- Change: Browser location changes now work with User Accounts "Force SSL" global config setting 
+- Change: Activing a new or previously deactivated module now resets the User Language caches 
+- Bug Fix: Possible SQL error for daily maintenance when running in Developer Mode 
+- Bug Fix: "Radio" custom form field may return "Invalid Checktype" error when submitted 
+- Bug Fix: jrCore_download_file() appending '1' to end of downloaded content 
+- Bug Fix: Number of queue entries returned for active queues could be incorrect on a busy system 
+
+Version 5.2.10: 
+- New: Support added for UNIQUE option on {jrCore_list} group_by parameter 
+- New: New "tpl_404" event trigger fired when a template is not found 
+- Change: Updated bundled jPlayer to version 2.7.0 
+- Change: Updated bundled Mobile Detect to version 2.8.3 
+- Change: Updated bundled TinyMCE to version 4.1.5 
+- Bug Fix: Custom form fields not having custom lang strings copied to other languages 
+- Bug Fix: Timeline entries stripped of HTML may cause icons to not show 
+- Bug Fix: Chained Select fields might be split up on form display 
+- Bug Fix: User needed Quota Permissions for an item for it to be displayed 
+- Bug Fix: "Reset" button for CSS class/id in Style Editor was overlapping element help button 
+- Bug Fix: checktype 'file_name' was not working correctly 
+- Bug Fix: templates included via a template {capture} that contain a {jrCore_list} call may not work properly
+
+Version 5.2.9: 
+- New: checktype 'file_name' to allow for strings that also contain a . (dot) 
+- Change: Tinymce upgraded to version 4.1.3 
+- Change: Quota item count restriction no longer enforced when viewed by profile owner (allows for delete) 
+- Bug Fix: Item updates by non-creating module when Item Approval set to "modify" causing item to go pending 
+- Bug Fix: magic_quotes_gpc PHP setting is now properly handled for $_COOKIE values 
+- Bug Fix: Custom form fields not showing if multiple quota ids are selected in form designer 
+
+Version 5.2.8: 
+- New: added profile_id option to {jrCore_get_count} to get counts for a specific profile 
+- New: Updated installer so a marketplace account can be created at install time 
+- Change: Invalid event trigger data array now logged only if running in Developer Mode 
+- Bug Fix: bug fixes and improvements in Form Designer ordering of custom fields 
+- Bug Fix: User Group restrictions for Form Designer fields may not work properly
+
+Version 5.2.7: 
+- Bug Fix: regression bug in 5.2.6 where the active skin config may not be loaded properly 

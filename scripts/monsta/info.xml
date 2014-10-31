@@ -1,0 +1,47 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Monsta_FTP
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Monsta_FTP
+	</ratings>
+	<space>
+		247219 
+	</space>
+	<support>
+		http://www.monstaftp.com/support.php
+	</support>
+	<version>
+		1.4.6
+	</version>
+	<mod>3</mod>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Monsta FTP</font> Open source PHP/Ajax cloudware that puts FTP file management right in your browser, anywhere, any time. 
+		<br /><br />
+		Drag &amp; drop files into your browser and watch them upload, like magic! 
+		<br /><br />
+		Monsta FTP is released under the <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">GNU General Public License</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Includes full PHP/Ajax source code</li>
+<li>Written for programmers of all levels</li>
+<li>Compact install of just 2 files (+ assets)</li>
+<li>Supports FTP on Linux and Windows</li>
+<li>Drag and drop files to upload and move</li>
+<li>On-screen file editing</li>
+<li>Multi-language support</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

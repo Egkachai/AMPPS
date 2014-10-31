@@ -1,0 +1,127 @@
+Version 7.002.5.0 - released 05-Sep-2014
+--------------------------------------------------
+[D1545] Added low stock and sales reports.
+[D3318] Added BML alongside Express Checkout if offered.
+[D3375] Added file upload and multiple file upload variant options (Pro Only).
+[D3381] Added new dynamic category infobox.
+[D3382] Added social icons to product information pages.
+[D3397] Updated sample product images.
+[D3401] Added new sales tax report.
+[D3407] Added customer phone number, email address and IP to order.
+[B3282] Repaired skip shipping cannot add address.
+[B2965] Repaired extra paragraph tags from editor.
+[B3342] Repaired admin customers sort gets empty results.
+[B3295] Repaired Google Analytics missing order tracking.
+[B3312] Repaired Express Checkout works with US Dollars but not with foreign currencies.
+[B3225] Repaired PayPal no option for BML in the admin and BML never showed up in the checkout flow.
+[B3185] Repaired HTML 5 validation image in footer breaks SSL urls.
+[B3277] Repaired shopping cart shows default zone tax to all customers.
+[B3288] Repaired simple text option not adding to the checkout or order properly.
+[B3226] Repaired open graph meta description special characters issue.
+[B2658] Repaired file manager language xml file not holding the changes.
+[B2708] Repaired mobile layout issue modal input fields not properly aligned.
+[B2841] Repaired Paypal Advanced does not remain in category once installed.
+[B3274] Repaired WorldPay missing order email language defines.
+[B2869] Repaired tax with taxable shipping incorrect.
+[B2904] Repaired add zone with % in the title doesn't save.
+[B3222] Repaired product option group duplicating.
+[B3081] Repaired ckeditor missing plugins for the slideshow.
+[B3054] Repaired FedEx Ready to Ship = Yes results in error requesting rates.
+[B2707] Repaired mobile layout issue order id is hidden behind button div.
+[B3251] Repaired upgrader logic for products with long attributes in orders.
+[B3183] Repaired installation error database with zone table.
+[B2881] Repaired tax class delete error message incorrect.
+[B2870] Repaired unable to add a new billing address during checkout.
+[B3284] Repaired coupon code disappearing during checkout.
+[B3285] Repaired new products per page listing count.
+[B3286] Repaired specials and featured products layout issue.
+[B3294] Repaired permalinks table hard coded in category tree class causing SEO issue.
+[B3300] Repaired featured products admin issues.
+[B3311] Repaired Paypal Standard ignoring coupons.
+[B3317] Repaired cannot add new zones.
+[B3316] Repaired icon for product details showing blank modal in mobile.
+[B3301] Repaired customer IP address missing from order.
+[B3356] Repaired product simple option(s) not showing on order/confirmation/admin page.
+[B3373] Repaired template footer text not using lang defines.
+[B3392] Repaired Admin API callback on login form and every page load.
+[B3399] Repaired core does not save product (products table issue).
+[B3400] Repaired shipping page reloads back instead of payment page.
+[B3411] Repaired template name was default, not core.
+[B3412] Repaired search and add products does not work in order admin.
+[B3516] Repaired shopping cart QTY buttons fail when Paypal Express checkout enabled.
+[B3526] Repaired upgrade/installation SQL error.
+
+Version 7.002.4.2 - released 01-Jul-2014
+--------------------------------------------------
+[B3387] Updated API calls to contain 10 second timeout and log any errors.
+
+Version 7.002.4.1 - released 29-Jun-2014
+--------------------------------------------------
+[D3379] Updated the serialization API check and API health check to show error if APi unavailable.
+
+Version 7.002.4.0 - released 21-May-2014
+--------------------------------------------------
+[D3190] Updated upgrader logic to allow re-running the upgrader to pick up new values.
+[B3210] Repaired invalid product view-in-catalog link.
+[B3232] Repaired fatal error cannot redeclare class lC_Addons.
+[B2861] Repaired Authorize.net ccv enabled in admin but not showing catalog side.
+[B2767] Repaired product linking no permalink fallback.
+[B2883] Repaired order date in admin reflects todays date and not date order placed.
+[B2301] Repaired gif images lose their transperant backgrounds.
+[B2286] Repaired customer address book post code should not be mandatory in the admin.
+[B3110] Repaired PayPal Standard not passing tax.
+[B2860] Added missing allow_url_fopen in server check file.
+[B3132] Repaired customers also purchased template module default value set to 1.
+[B3198] Repaired product import/export generate full file download error.
+[B2937] Repaired customer group with % in the title does not save.
+[B3255] Repaired admin order listing latency issue.
+
+Version 7.002.3.0 - released 07-May-2014
+--------------------------------------------------
+[D2886] Updated Inventory Source inventory addon.
+[D3124] Updated importer to generate permalinks based on product name.
+[D3131] Added the ability show php info on server when installer check fails.
+[B2741] Repaired product date available set to future date not working.
+[B3080] Repaired install custom table prefix produces error on step 4.
+[B3082] Repaired upgrade incorrectly parsing special characters.
+[B2718] Repaired extra order emails not sending.
+[B2169] Repaired product option type text field does not add to cart.
+[B2879] Repaired coupon code can be bypassed.
+[B2740] Repaired configuration stock-check stock level is not working.
+[B2460] Repaired new products infobox.
+[B2920] Repaired out of stock indicator not indicative of anything.
+[B2641] Repaired coupon manager discount issue.
+[B2933] Repaired applying tax to a product shows correct in the admin but not on product list or the catalog.
+[B2912] Repaired product save cannot select no manufacturer.
+[B2603] Repaired new products page not reflecting maximum listing value.
+[B2917] Repaired admin dashboard revenue snapshot.
+[B2643] Repaired pro indicator still showing on category html content file.
+[B2602] Repaired specials, new products, and featured products to display message if none available.
+[B3036] Repaired admin file manager interface correction.
+[B2721] Repaired products clicking save does not keeping on the product.
+[B2754] Repaired information infobox needs removed.
+[B2851] Repaired zones shipping not showing proper amount in left side of checkout.
+[B2854] Repaired update to pro from old version needs ioncube version check.
+[B3053] Repaired upgrader does not activate copied product attributes properly from 6.5.
+[B2875] Repaired no check on quantity in cart.
+[B2872] Repaired HTML email formatting missing br tags.
+[B2865] Repaired API shipping module not displaying API error.
+[B2884] Repaired logo/business name missing from invoice.
+[B2885] Repaired packing slip is missing logo.
+[B2889] Repaired date available does not display and is still available for purchase.
+[B2862] Repaired product tax does not show up in subtotal.
+[B2890] Repaired order totals tab display issue.
+[B2891] Repaired missed error checking on checkout payment page.
+[B2896] Repaired upgrader possible options listing issue after upgrade.
+[B2915] Repaired paypal standard it should show paypal as the payment method.
+[B2916] Repaired admin coupon defaults back to dolllar off on save.
+[B2934] Repaired set shipping weight to ounces still shows as pounds on the catalog side for USPS.
+[B2943] Repaired core update issue.
+[B2963] Repaired closing browser does not kill session on catalog side.
+[B2964] Repaired catalog template mobile text not positioned correctly.
+[B3002] Repaired add currencies to upgrader routine.
+[B2843] Repaired Paypal recurring payments pro billing period year option is blocked by the information icon in the setup modal.
+[B2913] Repaired upgrader script not working correctly for order attributes.
+[B3041] Repaired service module coupon issue.
+[B3057] Repaired mobile issue horizontal bar should not be displayed.
+[B3127] Repaired category description brakes products listing layout.

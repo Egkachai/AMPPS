@@ -1,0 +1,11 @@
+  
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:dbname=[[softdb]];host=[[softdbhost]]'
+      username: [[softdbuser]]
+      password: "<?php echo urlencode('[[softdbpass]]') ; ?>"
+      attributes:
+        quote_identifier: true  
+  

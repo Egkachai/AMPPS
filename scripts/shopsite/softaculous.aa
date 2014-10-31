@@ -1,0 +1,26 @@
+datadir: [[softdatadir]]
+bo_dir: [[softpath]]/ss
+sb_secure_url: https://
+sb_prompt_orderinst: checked
+bo_use_security: 
+from_addr: [[admin_email]]
+bo_reg_url: [[softurl]]/ss
+mystore: [[wwwurl]]/index.html
+customcgi: 
+bo_secure_url: https://
+image_url: [[wwwurl]]/shopsite-images
+image_dir: [[wwwdir]]/shopsite-images
+image_url_secure: https://
+MerchantLocale: en-US|latin1|.|,|lbs|%a %b %d %Y|%a %b %d %Y %I:%M:%S %p|%I:%M:%S %p
+sb_use_security: 
+AdvancedUser: No
+sb_dir: [[softpath]]/sc
+ccprocessor: offline
+sb_prompt_comments: checked
+sb_image_secure_url: https://
+sb_reg_url: [[softurl]]/sc
+outputurl: [[wwwurl]]
+outputdir: [[wwwdir]]
+currency: USD|$|-$#,###.##|
+BuyerLocale: en-US|latin1|.|,|lbs|%a %b %d %Y|%a %b %d %Y %I:%M:%S %p|%I:%M:%S %p
+sendmail_loc: /usr/lib/sendmail

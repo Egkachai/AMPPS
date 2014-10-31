@@ -1,0 +1,1 @@
+1. Keep Short name: and Email label: as it is while manual installation.

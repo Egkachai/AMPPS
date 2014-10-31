@@ -1,0 +1,5 @@
+1) Please dont change $ZConfig['System']['system.chmod_dir'] = 0777; in config file as it is same i.e. 0777 when installed manually on cPanel also.
+2) We dont provide upgrade from version less than v1.3.5 because database changes is not done and it pops error when we visit /{path}/upgrade.php. Please check for upgrade process in next version.
+3) We copy the mod_upgrade.php for auto upgrade and then after auto upgrade we revert the original file orig_upgrade.php
+Added the below changes twice (this has to be added before the other condition in if statement) :
+empty($_POST['softlogin']) && 

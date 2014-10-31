@@ -1,0 +1,1 @@
+1. We are restarting node.js twice during upgrade because it does not work first time. Try to remove this in the next version of Ghost(This is removed from version 0.5.1)

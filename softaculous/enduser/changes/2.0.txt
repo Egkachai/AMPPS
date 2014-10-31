@@ -1,0 +1,36 @@
+1) software_lang.php - $l['randpass'] = 'Generate a Random Password';
+
+2) software_lang.php - $l['ratesoft'] = 'Rate this Script';
+
+3) software_lang.php - $l['reviews'] = 'Reviews';
+
+
+4) software_lang.php - $l['reviewsoft'] = 'Write a Review';
+
+
+5) software_lang.php - $l['readreviews'] = 'Read Reviews';
+
+
+6) software_lang.php - $l['reviews_exp'] = 'Read Reviews written by other users and';
+
+7) installations_lang.php - $l['upd_to'] = 'Upgrade to Version';
+
+8) admin/adminindex_lang.php - $l['become_premium'] = 'Buy Premium License';
+
+
+9) admin/settings_lang.php - $l['chmod_files'] = 'CHMOD Files';
+
+
+10) admin/settings_lang.php - $l['chmod_files_exp'] = 'This is useful if you have suPHP installed and Softaculous is unable to detect it. Leave blank if unsure.';
+
+
+11) admin/settings_lang.php - $l['chmod_dir'] = 'CHMOD Directories';
+
+
+12) admin/settings_lang.php - $l['chmod_dir_exp'] = 'This is useful if you have suPHP installed and Softaculous is unable to detect it. Leave blank if unsure.';
+
+
+13) admin/settings_lang.php - $l['is_vps'] = 'Is VPS';
+
+
+14) admin/settings_lang.php - $l['is_vps_exp'] = 'If this server is a VPS then please check this box.';

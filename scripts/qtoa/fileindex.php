@@ -1,0 +1,14 @@
+.htaccess
+CHANGELOG.html
+LICENSE.html
+README.html
+VERSION.txt
+index.php
+qa-config-example.php
+qa-content
+qa-external-example
+qa-include
+qa-lang
+qa-plugin
+qa-theme
+qa-config.php

@@ -1,0 +1,21 @@
+Version 2.2.68 (2014-09-01)
+
+This version adds a Skins: InterMap prefix pointing to the Skins section on PmWiki.org, a "signature" markup in the edit quick reference, new WikiStyles clear, min-width and max-width.
+
+Version 2.2.67 (2014-08-02)
+
+This version fixes an inconsistency with input forms when values are taken from PageTextVariables.
+
+Version 2.2.66 (2014-07-02) 
+
+This version fixes a minor longstanding bug in the default Notification format when a page is deleted. In custom patterns, the "_" character will no longer be considered a function name.
+
+Version 2.2.65 (2014-06-07)
+
+This version fixes Pagelist handling of {$$PseudoVars} when they contain page variables. File permissions handling was improved when the current directory is owned by "root". 
+
+Version 2.2.64 (2014-05-08)
+
+This version adds the "{(mod)}" markup expression for modulo/reminder calculations, and the "tel:" and "geo:" URI schemes which, on compatible devices like smartphones, allow the creation of links to dial telephone numbers and open map/location applications.
+
+The $SysMergePassthru switch was added, if enabled, it allows the "Simultaneous Edits" conflict resolution to use the passthru() function instead of popen().

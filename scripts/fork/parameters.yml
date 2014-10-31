@@ -1,0 +1,25 @@
+parameters:
+    database.driver:        mysql
+    database.host:          [[softdbhost]]
+    database.port:          3306
+    database.name:          [[softdb]]
+    database.user:          [[softdbuser]]
+    database.password:      [[softdbpass]]
+
+    kernel.charset:         'utf-8'
+    kernel.secret:          [[kernel_secret]]
+
+    fork.debug_email:       [[admin_email]]
+    fork.debug_message:     'Internal error.'
+    fork.version:           '3.8.1'
+
+    site.protocol:          http
+    site.domain:            [[domhost]]
+    site.default_title:     Fork CMS
+    site.multilanguage:     false
+    site.default_language:  en
+    site.path_www:          %kernel.root_dir%/..
+    site.path_library:      %site.path_www%/library
+
+    action.group_tag:       \@actiongroup
+    action.rights_level:    7

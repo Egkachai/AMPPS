@@ -1,0 +1,140 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Sitemagic_CMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Sitemagic_CMS
+	</ratings>
+	<space>
+		6444820
+	</space>
+	<support>
+		http://sitemagic.org/
+	</support>
+	<version>
+		20131030
+	</version>
+	<mod>1</mod>
+	<mod_files>1</mod_files>
+	<admin>index.php?SMExt=SMLogin</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.2.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Sitemagic CMS</font> is an amazing Content Management System that helps you build and maintain professional websites.
+		<br /><br />
+Sitemagic CMS is a lightweight yet very capable Content Management System.
+		<br /><br />
+Sitemagic CMS is super user friendly. Installation is easy as no database is required (but MySQL is supported for big websites). The administration menu provides easy access to all the built in functionality.
+		<br /><br />
+Sitemagic CMS is super fast, super reliable, and super flexible, as you would expect from a professional Content Management System. Easily customize one of the 9 great looking design templates included using the built in CSS Designer.
+		<br /><br />
+		Sitemagic CMS is released under their custom <a href="http://sitemagic.org/license.txt" target="_blank">license</a>.
+		</english-overview>	
+		<english-features>
+	Here is a list of core features that comes with a standard installation of Sitemagic CMS. More features can be added using extensions, page extensions, and external modules.
+	<br />
+	<ul>
+		<li>Announcements / Notification center</li>
+		<li>Settings manager
+			<ul>
+			<li>Set username and password</li>
+			<li>Change design and icon package</li>
+			<li>Change language</li>
+			<li>Enable or disable extensions</li>
+			<li>Configure MySQL database (optional)</li>
+			By default Sitemagic CMS uses XML files for data storage
+			</ul>
+		</li>
+		<li>Pages manager
+			<ul>
+			<li>Create and edit pages</li>
+			<li>TinyMCE page editor (WYSIWYG - What You See Is What You Get)</li>
+			<li>Add extensions directly within pages (e.g. contact forms, external modules, galleries etc.)</li>
+			<li>Set SEO meta data (keywords and description)</li>
+			<li>Restrict access (block search engines, block all, or set password)</li>
+			<li>SEO friendly URLs</li>
+			</ul>
+		</li>
+		<li>Menu manager
+			<ul>
+			<li>Create internal and external links</li>
+			<li>Easily link to pages and extensions using link picker</li>
+			<li>Manage structure</li>
+			</ul>
+		</li>
+		<li>File manager
+			<ul>
+			<li>Manage folders and files</li>
+			<li>Upload and download files</li>
+			</ul>
+		</li>
+		<li>Contact forms
+			<ul>
+			<li>Create up to 15 e-mail contact forms</li>
+			<li>Add an infinite number of input fields (text field, textarea, checkbox, reply-to field)</li>
+			<li>Add multiple recipients</li>
+			<li>Can be added to any page using the page editor</li>
+			</ul>
+		</li>
+		<li>Image montage gallery
+			<ul>
+			<li>Beautifully lays out your photos</li>
+			<li>Shuffle function to randomize image order</li>
+			<li>Images can be set to dynamically vary in size</li>
+			<li>Let visitors browser images in fullscreen mode</li>
+			<li>Slideshow with configurable timer</li>
+			<li>Optionally display EXIF image data</li>
+			<li>Optionally display folder name as gallery title</li>
+			<li>Optionally display file name as image title</li>
+			<li>Optionally enable gallery picker</li>
+			</ul>
+		</li>
+		<li>Gallery
+			<ul>
+			<li>Old style gallery with pager</li>
+			<li>Configurable number of colums and rows</li>
+			<li>Manually control image size and padding</li>
+			<li>Images can be opened in pop up windows</li>
+			<li>Can be added to any page using the page editor</li>
+			</ul>
+		</li>
+		<li>External modules
+			<ul>
+			<li>Add extra features (modules) by specifying feature URL (e.g. YouTube og Maps)</li>
+			<li>Control size and border color</li>
+			<li>Can be added to any page using the page editor</li>
+			</ul>
+		</li>
+		<li>CSS Designer
+			<ul>
+			<li>Include templates that can easily be customized</li>
+			<li>Color picker for changing colors</li>
+			<li>File picker for changing logo, background image etc.</li>
+			<li>Control the entire look and feel using standard CSS selectors and properties</li>
+			<li>Create new design templates or edit existing onces</li>
+			<li>Rapid design process directly in the browser</li>
+			Changes are immediately applied when clicking Save
+			</ul>
+		</li>
+		<li>Comments and ratings
+			<ul>
+			<li>visitors can rate any content by clicking stars</li>
+			<li>visitors can comments any content - unwanted comments can be removed</li>
+			<li>Can be added to any page using the page editor</li>
+			</ul>
+		</li>
+		<li>Google Analytics - track and monitor visitors</li>
+		<li>Share files and monitor download count</li>
+	</ul>
+		</english-features>
+	</languages>
+</soft>

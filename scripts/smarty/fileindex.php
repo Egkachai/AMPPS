@@ -1,0 +1,10 @@
+COPYING.lib
+README
+SMARTY_2_BC_NOTES.txt
+SMARTY_3.0_BC_NOTES.txt
+SMARTY_3.1_NOTES.txt
+change_log.txt
+demo
+libs
+index.php
+smarty

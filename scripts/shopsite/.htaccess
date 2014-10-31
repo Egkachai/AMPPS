@@ -1,0 +1,9 @@
+ErrorDocument 401 "The username and/or password entered cannot be accepted. Please try again, or if you have lost this login information please contact your hosting provider or ShopSite reseller.
+AuthUserFile [[softpath]]/ss/.htpasswd
+AuthGroupFile /dev/null
+AuthName ShopSiteUser
+AuthType Basic
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>

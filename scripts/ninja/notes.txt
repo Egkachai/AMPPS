@@ -1,0 +1,4 @@
+1. Add 'debug' => false, in app.php
+2. Add RewriteBase [[relativeurl]]/public/ in _.htaccess
+3. Do not use same upgrade method when there is change in database. Ask vendor for upgrade utility.
+4. We have our .htaccess in root so we have excluded it in upgrade.xml <exclude>.htaccess</exclude>

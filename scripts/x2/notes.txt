@@ -1,0 +1,3 @@
+1. Manual Installation works on a suPHP server
+2. Always make x2.zip file on Linux by zip command. Bcoz in js/ folder there are two files with same name. i.e x2chart.js & X2Chart.js. In windows it overwrites and keeps only x2chart.js in zip. So, Create zip on linux (not required any more)
+3. Make `unique_id` in table `x2_admin` as 'none' (script vendor asked us to make it 'none').

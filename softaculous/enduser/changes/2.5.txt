@@ -1,0 +1,1 @@
+1) remove_lang.php - $l['return'] = 'Return to Overview';

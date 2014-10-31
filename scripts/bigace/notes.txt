@@ -1,0 +1,1 @@
+1. move public/cid1 & consumer/cid1 from manual installation to zip (because it does not create it)

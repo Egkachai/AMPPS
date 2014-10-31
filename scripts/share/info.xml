@@ -1,0 +1,69 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Sharetronix
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/microblogs/Sharetronix
+	</ratings>
+	<space>
+		13647942
+	</space>
+	<support>
+		http://sharetronix.com/
+	</support>
+	<version>
+		3.6.0
+	</version>
+	<mod>18</mod>
+	<admin>signin</admin>
+	<min_require>3.1.0</min_require>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.2.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Sharetronix</font> is the world's favorite opensource microblogging platform.
+		<br /><br />
+		Sharetronix enables people to exchange ideas and multimedia in real-time. 
+		<br /><br />
+		Sharetronix is released under the <a href="http://developer.sharetronix.com/pages/license" target="_blank">Sharetronix Personal License</a>.
+		</english-overview>		
+		<english-features>
+The features are as follows:<br />
+<ul class="right">
+<li>User Profiles</li>
+<li>Status Updates</li>
+<li>Real-Time Dashboard</li>
+<li>Groups</li>
+<li>Security settings</li>
+<li>Multimedia</li>
+<li>Business Card</li>
+<li>Member mentions in status update and comment</li>
+<li>Content Tagging</li>
+<li>Search Center</li>
+<li>Real-Time RSS Aggregation</li>
+<li>Twitter Feed Import</li>
+<li>Integrations</li>
+<li>Mobile Version</li>
+<li>Community Leaders (statistics)</li>
+<li>Themes &amp; customization</li>
+<li>Reshare messages</li>
+<li>API (Twitter-compatible)</li>
+<li>SEO Friendly</li>
+<li>Administration</li>
+<li>Posting from Twitter to Sharetronix</li>
+<li>Direct post from Sharetronix to Facebook and Twitter</li>
+<li>Statistics</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

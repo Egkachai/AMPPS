@@ -1,0 +1,143 @@
+XOOPS 2.5.x Changelog (Language changes: see: /docs/lang_diff.txt)
+
+===============================
+2014/06/14: Version 2.5.7 Final
+===============================
+- updated XoopsMediaUploader to use system memory values from php.ini, and to offer random file names (mamba/luciorota/zyspec)
+- added .tpl to XoopsList's getHtmlListAsArray (wizanda)
+- updating xBootstrap (voltan, Angelo Rocha)
+- moved all images, CSS, and JS files to /assets in modules Profile and PM (mamba)
+- renamed .html Smarty templates to .tpl in modules Profile and PM (mamba)
+- corrected English typos (cesag)
+- added missing .php file extension (AngeloRocha/Zyspec/rgriffith)
+- deprecated destoryVars($var) in object.php (cesag/rgriffith)
+- update phpmailer translation array to include all keys, and remove reassignment of $PHPMAILER_LANG as array() (cesag/rgriffith)
+- added XoopsRequest class (rgriffith)
+- removed hard-coded text from installation (mamba)
+
+Updated:
+ - TinyMCE to 3.5.11 (mamba)
+
+
+
+
+
+
+
+
+
+
+
+===============================
+2014/04/06: Version 2.5.7 RC 1
+===============================
+
+Bugfixes:
+- fixed System Module image manager html/js bugs (luciorota)
+- replaced "array_diff_assoc" with "array_diff_key" in /class/theme_blocks.php (masel/mamba)
+- icons for active module sections in System module not shown correctly (Slider84/mamba)  
+- added two new language definitions (see lang_diff.txt)
+- added Office 2007 MIME types (Voltan)
+- added xml MIME type (Goffy)
+- added new icons (mamba)
+
+Updated:
+ - jQuery to 1.11.0 (mamba)
+ - jQuery UI 1.10.4 (mamba)
+ - jQuery Lightbox to 1.2.3 (mamba)
+ - jQuery Form to 3.50.0 (mamba)
+ - jQuery Tablesorter to 2.5.11 (mamba)
+ - jGrowl to 1.2.14 (mamba)
+
+===============================
+2014/03/06: Version 2.5.7 Beta 1
+===============================
+Bugfixes:
+- ID: 1143 (old ID 430840)  class/module.errorhandler.php (uberrookie/zyspec)
+- ID: 1225 Restore user theme choice during "Remember me" processing. (rgriffith)
+- ID: 1226 Change value of clickable due to issues centering on CaricaFoto script (rgriffith)
+- ID: 1227 Sorting bug in Profile module search (Zyspec)
+- ID: 1246 Fallback to english for admin theme language files if no language specific file exists (rgriffith)
+- ID: 1261 Fix as proposed by Irmtfan (irmtfan/rgriffith)
+- ID: 1268 reduce db load if XoopsFormSelectUser is called multiple times in a page load (rgriffith)
+- ID: 1269 Block template file will not updated after update the module (irmtfan)
+- ID: 1270 template issue in email notifications (changed X_ITEM_TILE to X_ITEM_NAME) (alain01/slider84/mamba)
+- ID: 1271 install last page no css/js (tarik/rgriffith))
+- ID: 1272 delete functions always return true (rgriffith)
+- ID: 1273 template duplicate issue (irmtfan)
+- ID: 1274 prevent multiple inclusions of a module's xoops_version.php (irmtfan/rgriffith)
+- ID: 1278 _AM_SENDMTOUSERS missed (Mowaffaq/mamba)
+- ID: 1281 initialize arrays as empty arrays rather than null (rgriffith)
+- ID: 1285 check if session exists before attempting to start a new one (wishcraft)
+- ID: 1287 assigning "static" to various class methods (wishcraft/mamba)
+- ID: 1291 xoops_getModuleOption() did not respect $dirname (rgriffith)
+- ID: 1382 add cleanup of unused avatar resources to admin maintenance page (rgriffith)
+
+
+- reversing fix for potential lack of rendering css and javascript in Installer on the last screen by culex
+- removing @ in link[@rel*=style][title] in styleswitch.js (not needed in jQuery 1.83) (SMEDrieben/Mamba)
+- added missing "`" in upgrade from 2.0.18 to 2.3.0 (mamba)
+- fixing errors in upgrade from 2.4.0 to 2.4.1 (mamba,voltan)
+- added check for menu link description in ModuleAdmin
+- fixed wrong return icon in Smarty xoModuleIcons32
+- fixed issue with jGrows in xoops.css (xoobaru/tarik)
+- fix for deprecated "preg_replace/e" function in PHP 5.5 (mamba)
+- added: check if 'date.timezone' is set in php.ini, if not, set it to UTC (cesag/mamba)
+- assigned _SHORTDATESTRING to _CAL_FORMAT to have consistency in local languages (jcweb/guspel)
+- fixed bug in calendar.js (mamba)
+- added link to Module's Admin after "Update" (currently only to XOOPS Modules section) (mamba)
+- added placeholder for a link to upload test data, if available after installation (mamba)
+- solved bug into PM module readpmsg.php (escrime-info/slider84)
+- fixed missing check on variable in userinfo.php (cesag/mamba)
+- replaced extract($_POST) in /include/comment_delete.php with filters (mamba)
+- adding some missing generic default fonts (mamba)
+- removing some unreachable statements (mamba)
+- replacing deprecated HTML tags (mamba)
+- bug in commentrenderer.php (Roby73/irmtfan)
+- added missing info about new language constants in Fast Comments (irmtfan/mamba)
+- fixed Undefined index: uid in file /modules/profile/userinfo.php line 24 (cesag/mamba)
+- set minimum PHP version to 5.3.7 (mamba)
+- added missing apostrophe corrections for Date types in CleanVars in /class/model/write.php
+- added function escape to XoopsMySQLDatabase, needed for Formulize (jegelstaff)
+- added blank.gif images to ModuleAdmin icons (timgno)
+- addedd [soundcloud] BB code as supplied by (iHackCode/rgriffith)
+- fix for cancel button in javascript (currently it still entered the text, even if canceled) (mamba)
+- added "module_status" to show with module Version (mamba)
+- patch for input validation bypass issue reported by Tatane (tatane/rgriffith)
+- change default value for usercookie config to match change in 2.6.0. (rgriffith)
+- correct method used to determine the current effective language.(rgriffith)
+- fix errors "PHP Strict standards:  Redefining already defined constructor" under PHP 5.5 (rgriffith)
+- fix to correctly load the CSS file into the header in ModuleAdmin (Bleekk, Alfred)
+- added "title" to buttons in DHTML Editor (mamba)
+- updated required PHP and XOOPS versions, module versions in modules (cesag/mamba)
+- added xBootstrap theme (UI/UX Team: Angelo Rocha, Bleekk, Heyula)
+- added extra escape for "e" in YESTERDAY definition in locale.php, which was added in PHP 5.4 (madDan)
+- fixed PHP minimum version comparison in ModuleAdmin (mamba)
+- fixed System Module image manager and popup image manager save images in different directories(luciorota)
+- added PHPDoc comments for classes and functions (mamba)
+
+
+
+
+
+Security fixes
+- XSS issues reported by Mehdi Dadkhah (rgriffith)
+- Fix security issues reported by Pedro Ribeiro of Agile Information Security (rgriffith)
+- Fix XSS issue reported by Manuel Garcia Cardenas (rgriffith)
+
+Updated:
+ - jGrowl to 1.2.13 (mamba)
+ - jQuery Form to 3.42.0 (mamba)
+ - HTML Purifier to 4.6.0 (mamba)
+ - Smarty to 2.6.28 (mamba)
+ - TinyMCE to 3.5.10 (mamba)
+ - prototype.js to 1.7.1, Aug 2012 (rgriffith)
+
+===============================
+2013/04/21: Version 2.5.6 Final
+===============================
+Bugfixes:
+- updated English translations (Cesag,Mamba)
+- extra check for $noHtml in XoopsEditorHandler->get (luciorota)
+- fixing $GLOBAL typo in jquery.php (Zyspec)
+- improving protection against spam by turning off registration's 1st step saving (timgno)

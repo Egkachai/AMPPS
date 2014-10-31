@@ -1,0 +1,4 @@
+1. Comapare and move /var/themes_repository/responsive to /design/themes/responsive 
+2. move images/logos/1/gift_cert_logo.png, favicon_lthq-lc.ico, cart_l3qq-q8.png, cart.png from manual to zip
+3. Install with demo data.
+4. also provide option for NO demo data.

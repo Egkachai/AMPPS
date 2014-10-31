@@ -1,0 +1,3 @@
+1. If you get warnings only then add error_reporting(E_PARSE); in index.php in zip to avoid warnings on DirectAdmin.
+2. The language packs are available in the package /system/languages folder. Language is not available in 3.3 so we have removed it. 
+3. Cache settings "Filesystem Storage". (doesn't ask anything like this in v3.4. check in next version if it ask about it)

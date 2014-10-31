@@ -1,0 +1,12 @@
+README
+addon
+admin.php
+consumer
+index.php
+install.php
+login.php
+misc
+plugins
+public
+robots.txt
+system

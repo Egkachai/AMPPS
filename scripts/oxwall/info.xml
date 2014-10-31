@@ -1,0 +1,51 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Oxwall
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/socialnetworking/Oxwall
+	</ratings>
+	<space>
+		43099223
+	</space>
+	<support>
+		http://www.oxwall.org/
+	</support>
+	<version>
+		1.7.1
+	</version>
+	<mod>24</mod>
+	<release_date>25-08-2014</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.2.6" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Oxwall</font> is unbelievably flexible and easy to use PHP/MySQL community software platform. 
+		<br /><br />
+		Oxwall is used for a wide range of projects starting from family sites and custom social networks to collaboration tools and enterprise community solutions.
+		<br /><br />
+		Oxwall is released under the <a href="http://www.opensource.org/licenses/cpal_1.0" target="_blank">Common Public Attribution License 1.0</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Realtime activity notifications, newsfeed, instant chat</li>
+<li>Photo, Video sharing</li>
+<li>Blogs, forums, wiki</li>
+<li>Groups, events, friends</li>
+<li>Comment, tag, rate any kind of content</li>
+<li>Privacy and profile customization</li>
+<li>Collaboration, file sharing, video-conference tools</li>
+</ul>
+		</english-features>
+		<english-err_php526>The PHP version is less than the required 5.2.6 version!</english-err_php526>
+	</languages>
+</soft>

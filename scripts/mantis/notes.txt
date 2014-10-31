@@ -1,0 +1,2 @@
+1. config_inc.php has additional data so add it from the previous version.
+2. default admin : administrator pass : root

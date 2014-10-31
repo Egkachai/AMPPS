@@ -1,0 +1,57 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Jcow
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Jcow
+	</ratings>
+	<space>
+		3434757
+	</space>
+	<support>
+		http://www.jcow.net/
+	</support>
+	<version>
+		9.2
+	</version>
+	<mod>21</mod>
+	<mod_files>1</mod_files>
+	<release_date>31-01-2014</release_date>
+	<admin>index.php?p=admin</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Jcow</font> is a flexible Social Networking software written in PHP. It can help you to:
+			<ul>
+			<li>Build a social network for your interests and passions.</li>
+			<li>Build a member community for your existing website.</li>
+			<li>Build a social networking site like facebook/myspace/twitter.</li>
+			</ul>
+		<br /><br />
+		Jcow Community/Starter edition is licensed under Open Source License: <a href="http://www.jcow.net/license/" target="_blank">CPAL</a>. 
+		</english-overview>		
+		<english-features>
+		The features are as follows:<br />
+<ul>
+<li>Handle more traffic</li>
+<li>Make your site more interactive</li>
+<li>Customize and Extend your Network</li>
+<li>Make money from your Network</li>
+<li>Add questions to the Registration Form</li>
+<li>Give permissions the way you want</li>
+<li>The power of "Following"</li> <li>Multiple auth levels (read-only, user, admin)</li>
+<li>Members know what's happening to </li>
+<li>Every profile could be Unique</li>
+<li>Easily share stuff</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

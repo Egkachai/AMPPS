@@ -1,0 +1,13 @@
+cache
+cron.php
+design
+doc
+extension
+ezcomponents
+index.php
+lib
+modules
+pos
+settings
+translations
+var

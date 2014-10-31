@@ -1,0 +1,3 @@
+1. Add following code in global.inc.php file
+$glob['install_source'] = 'softaculous';
+2. Default Currency : GBP -British Pound

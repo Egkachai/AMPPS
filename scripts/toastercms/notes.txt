@@ -1,0 +1,1 @@
+1. Make sure that you do not use [[site_name]] since it is already in use by the script. Instead of that [[sn]] is used to restrict special characters and spaces for Site name during installation.

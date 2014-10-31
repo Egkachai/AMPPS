@@ -1,0 +1,51 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Pligg
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Pligg
+	</ratings>
+	<space>
+		6583574
+	</space>
+	<support>
+		http://www.pligg.com/
+	</support>
+	<version>
+		2.0.2
+	</version>
+	<mod>26</mod>
+	<mod_files>1</mod_files>
+	<release_date>15-08-2014</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Pligg</font> is an open source Content Management System. Pligg CMS provides social networking software that encourages visitors to register on your website so that they can submit content and connect with other users. Our software creates websites where stories are created and voted on by members, not website editors. Use Pligg content management system to start your own social networking community in minutes.
+		<br /><br />
+		Pligg is released under the <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported Copyright</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Groups</li>
+<li>Private Messaging</li>
+<li>Advanced Comment System</li>
+<li>User Profiles</li>
+<li>Module System</li>
+<li>Smarty Templates</li>
+<li>Easy Upgrades</li>
+<li>RSS Feeds</li>
+<li>SEO Enhanced</li>
+<li>Future Support for Multiple Languages</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

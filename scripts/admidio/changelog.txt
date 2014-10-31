@@ -1,0 +1,84 @@
+Changelog
+
+01.09.2014 - Version: 2.4.7
+-----------------------------------------
+Fixed errors:
+
+    [profile] #775 Dezimal 0 was cut in profile field of type numeric
+    [events] #782 Event registrations were removed if event was edited
+    [events] #776 Description of previous date was shown in rss feed
+    [system] #779 Version check error was shown when saving organization preferences
+    [system] #774 Wrong serverpath when admidio was installed in folder with name adm_
+    [system] #781 DES-based hashes were not properly compared
+    [downloads] #421 Long filenames disarranged the html layout
+
+28.06.2014 - Version: 2.4.6
+-----------------------------------------
+New features:
+
+[Lists] Export role members to vCard (Developed by Stefan Weiß)
+
+Fixed errors:
+
+[backup] #773 Database tables were deleted through Backup
+[lists] #771 PDF: When printing multiline columns than some rows were missing in output
+[user_management] #770 Users and role memberships were counted as edit by csv import also if they were not changed
+[system] #772 HtmLawed: Modifier /​e in preg_replace() deprecated in PHP 5.5
+
+05.04.2014 - Version: 2.4.5
+-----------------------------------------
+New features:
+
+[Lists] Export lists to PDF (Developed by Stefan Weiß)
+[Events] New parameter to show only events where user participate
+[Mail] Update phpmailer from version 5.2.2 to 5.2.7
+
+Fixed errors:
+
+[mail] #769 If you send a copy of mail than the list of all role Members was shown if user had no rights to view members
+[mail] #760 Problems with special chars in email subject resolved
+[mail] #764 Logged in user got same mail multiple times if BCC packages were small
+[system] #766 Organization of session had not be updated after login to different organization
+[system] #765 Undefined constant ROLE_LEADER_MEMBERS_ASSIGN after login was shown
+[system] #761 Maximal password length will not be set anymore
+(Please also update the login_form plugin)
+[registration] #763 Text in notification email of new registration was repeated
+[registration] #762 Error on sending email when you had delete a registration with no email address
+[events] #758 Wrong title was shown when editing calendars
+[user_management] #768 Error on page profile change history was shown in some cases
+
+11.01.2014 - Version: 2.4.4
+-----------------------------------------
+New features:
+
+[Photos] Allow optional upload of original photo file on webspace
+[Photos] Allow optional download of photos and albums as zip file
+
+Fixed errors:
+
+[events] #757 Ical export of specific calendar was not possible
+[events] #758 Wrong title when editing calendars
+[lists] #756 No results in my list if you had selected an entry of a dropdown field that consist of 2 words
+[lists] #380 Wrong sorting of a numeric profile field in lists
+[photos] #754 Photo Upload fails if image resize needs more than 50mb memory
+[profile] #755 No values of dropdown and radio button fields in field history
+[profile] #718 Problems with custom date format and the age calculation in profile
+[roles] #748 Several role dependencies of one role had assigned one member several times to that role
+[system] #750 Modifier /​p in preg_replace() was deprecated in PHP 5.5
+[system] #759 Check of valid database version failed
+
+20.10.2013 - Version: 2.4.3
+-----------------------------------------
+Fixed errors
+
+[roles] #752 Leaders had not edited there role members if preference was set
+[roles] #748 Several role dependencies of one role had assigned one member several times to that role
+[roles] #749 Role dependencies could not be assigned with PostgreSql
+[events] #747 Wrong Description of new/​edit link in mode old
+[events] #746 Missing edit link for dates in compact view
+[events] #743 Error in printview of dates if no participant was assigned
+[events] #742 Wrong sorting of old dates if calendar selection was changed
+[events] #731 Missing link for printview if user wasn't logged in
+[profile] #753 Only show role assignement dialog if user had the right to assign roles
+[mail] #745 Set copy flag in email could be misused as spam
+[plugins] #751 View problem in plugin sidebar_dates using compact view in settings

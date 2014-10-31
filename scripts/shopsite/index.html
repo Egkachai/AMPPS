@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>A New ShopSite Store Initial Page</title>
+</head>
+<body bgcolor="#ffffff">
+<center>
+<h1>Welcome to a ShopSite Store!</h1>
+<br>
+<br>
+<form action="[[softurl]]/sc/productsearch.cgi" method=post>
+Search for a product 
+<input type=text name="search_field" size=40>
+<input type=hidden name="storeid" value="[[store_id]]">
+<input type=hidden name="cspid" value="5096">
+<input type=submit value="Search">
+</form>
+<br>
+Click to <a href="[[softurl]]/sc/order.cgi?storeid=[[store_id]]&function=show">[View your Shopping Cart]</a>
+<br>
+<br>
+If you have comments or questions e-mail [[admin_email]]
+<br>
+<br>
+<hr>
+<br>
+<A HREF = "http://www.shopsite.com">
+<IMG SRC = "[[wwwurl]]/shopsite-images/en-US/media/poweredbySS.gif" ALT="ShopSite" BORDER=0></A></center>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Tine_2.0
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/Tine_2.0
+	</ratings>
+	<space>
+		93829615
+	</space>
+	<support>
+		http://www.tine20.com/
+	</support>
+	<version>
+		2014.09.1
+	</version>
+	<mod>11</mod>
+	<release_date>11-09-2014</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="date" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="iconv" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="mcrypt" />
+	<requirement check="php" type="extension" name="mysql" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="SPL" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="hash" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Tine 2.0</font> is an open source project which combines groupware and CRM in one consistent interface. Tine is web-based and optimises collaboration and organisation of groups in a lasting manner. 
+		<br /><br />
+		Tine 2.0 unites all the advantages of open source software with an extraordinarily high level of usability and an equally high standard of professional software development. This is what makes the difference between Tine 2.0 and many other existing groupware solutions.
+		<br /><br />
+		Tine 2.0 is released under the <a href="http://www.gnu.org/licenses/agpl.html" target="_blank">AGPL license</a>.
+		</english-overview>		
+		<english-features>
+Tine 2.0 facilitates collaboration and increases productivity in your company: accelerate internal communication, simplify your customer and contact management and manage your data in a flexible, easy to follow manner with one single application:<br /><br />
+<font size="2" color="#182e7a">Address book</font>
+<ul>
+<li>You can manage your contacts beyond your company’s server boundaries and involve external workers without problems.</li>
+</ul>
+<font size="2" color="#182e7a">Task manager</font>
+<ul>
+<li>Arrange your tasks according to status and priority and work more efficiently with joint task lists.</li>
+</ul>
+<font size="2" color="#182e7a">Email</font>
+<ul>
+<li>Access your email from anywhere and use the direct link with address book and task functions.</li>
+</ul>
+<font size="2" color="#182e7a">Calendar</font>
+<ul>
+<li>The highly capable calendar makes it easy for you to manage dates and coordinate mutual dates easily.</li>
+</ul>
+<font size="2" color="#182e7a">Time tracking</font>
+<ul>
+<li>Your employees keep time accounts, which you can assess in a flexible manner. This makes it easier to perform controlling and invoicing.</li>
+</ul>
+<font size="2" color="#182e7a">CRM</font>
+<ul>
+<li>Manage the projects of employees, partners and customers in a easy to follow, effective manner.</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

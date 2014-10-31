@@ -1,0 +1,27 @@
+### v2.4.0 2014-07-24
+- update pako to 0.2.5 (see [#156](https://github.com/Stuk/jszip/issues/156)).
+- make JSZip work in a Firefox addon context (see [#151](https://github.com/Stuk/jszip/issues/151)).
+- add an option (`createFolders`) to control the subfolder generation (see [#154](https://github.com/Stuk/jszip/issues/154)).
+- allow `Buffer` polyfill in the browser (see [#139](https://github.com/Stuk/jszip/issues/139)).
+
+### v2.3.0 2014-06-18
+- don't generate subfolders (see [#130](https://github.com/Stuk/jszip/issues/130)).
+- add comment support (see [#134](https://github.com/Stuk/jszip/issues/134)).
+- on `ZipObject#options`, the attributes `date` and `dir` have been deprecated and are now on `ZipObject` (see [the upgrade guide](http://stuk.github.io/jszip/documentation/upgrade_guide.html)).
+- on `ZipObject#options`, the attributes `base64` and `binary` have been deprecated (see [the upgrade guide](http://stuk.github.io/jszip/documentation/upgrade_guide.html)).
+- deprecate internal functions exposed in the public API (see [#123](https://github.com/Stuk/jszip/issues/123)).
+- improve UTF-8 support (see [#142](https://github.com/Stuk/jszip/issues/142)).
+
+### v2.2.2, 2014-05-01
+ - update pako to v0.2.1, fix an error when decompressing some files (see [#126](https://github.com/Stuk/jszip/issues/126)).
+
+### v2.2.1, 2014-04-23
+ - fix unreadable generated file on Windows 8 (see [#112](https://github.com/Stuk/jszip/issues/112)).
+ - replace zlibjs with pako.
+
+### v2.2.0, 2014-02-25
+ - make the `new` operator optional before the `JSZip` constructor (see [#93](https://github.com/Stuk/jszip/pull/93)).
+ - update zlibjs to v0.2.0
+
+### v2.1.1, 2014-02-13
+ - use the npm package for zlib.js instead of the github url.

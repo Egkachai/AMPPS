@@ -1,0 +1,1 @@
+Take fileindex from installing on cpanel. After installing composer.phar it creates some files. Which should be there in fileindex

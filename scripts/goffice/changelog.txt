@@ -1,0 +1,33 @@
+- Calendar month print will now show events between before 08:00 and after 17:59
+- Fixed summer- / wintertime issue in the calendar's month print
+
+07-10-2014 5.0.83
+- Signed GOTA jar file unit 2016.
+
+06-10-2014 5.0.82
+- Email: Fixed problem with saving attachments of linked emails.
+- Check if fopen succeeded to prevent infinite loop
+- Calendar: recurring event dialog now also works in List Grid.
+- Workflow: Fixed: When disapproved: email and reminder for workflow starter and for workflow owner.
+- Ajax timeout increased to 3 minutes for all of Group-Office.
+- Calendar: Now possible to copy events from a read-only calendar to a writable calendar using right-click menu.
+- Fixed problem with opening document templates in the addressbook
+- Calendar: list view now also respects the read_only property of the event
+- the value in the go_settings table can save more data (LONGTEXT)
+- Proper "File not found" message when a temporary file can no longer be found.
+
+22-09-2014 5.0.81
+- Calendar & Tasks: Fixed updating of Tab "Visible tasklists" when loading, showing, creating CalendarDialog.
+- Remove focus from windows/dialogs that are closed (hide)
+- Special strings "GROUP_EVERYONE", "GROUP_ADMIN" and "GROUP_INTERNAL" for $config['register_user_groups'] and $config['register_visible_user_groups']
+- Document Templates: It is now possible to use custom field tags in Document Templates for Contacts. (e.g., {contact:col_25} and {contact:col_84})
+
+17-09-2014 5.0.80
+- Build error
+
+17-09-2014 5.0.79
+- Calendar: Disable context menu item "Create email for participants" when it's a private event and it's not yours.
+- Added a little bit more height to the password dialog.
+- Changed email toplevel domain name validation so new toplevel domains are also accepted
+- Calendar: Month view: no need to left-click an event before right-clicking it anymore.
+- Fixed max length problem in customfields.

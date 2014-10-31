@@ -1,0 +1,2 @@
+Before manual installation. Download english language zip and paste it in manual. So we can install it in English language
+Default time zone: America/Newyork

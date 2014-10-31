@@ -1,0 +1,157 @@
+<?php
+
+/**
+ * This is a HOOK POINT in the Softaculous Installation process.
+ * NOTE : You must rename this file to pre_install_cagefs.php
+ */
+ 
+//////////////////////////////////////////////////////////////
+//===========================================================
+// pre_install_cagefs.php
+//===========================================================
+// SOFTACULOUS 
+// Version : 1.1
+// Inspired by the DESIRE to be the BEST OF ALL
+// ----------------------------------------------------------
+// Started by: Alons
+// Date:       10th Jan 2009
+// Time:       21:00 hrs
+// Site:       http://www.softaculous.com/ (SOFTACULOUS)
+// ----------------------------------------------------------
+// Please Read the Terms of use at http://www.softaculous.com
+// ----------------------------------------------------------
+//===========================================================
+// (c)Softaculous Inc.
+//===========================================================
+//////////////////////////////////////////////////////////////
+
+if(!defined('SOFTACULOUS')){
+
+	die('Hacking Attempt');
+
+}
+
+/**
+ * This function will be called whenever a script is installed.
+ * $software will have details of the script being installed.
+ *
+ * @package      CageFS hooks 
+ * @author       Pulkit Gupta
+ * @return       bool
+ * @since     	 4.3.0
+ */
+function __pre_install_cagefs(){	
+
+	global $soft, $software, $globals, $scripts, $softpanel, $error, $__hooks;
+	
+	// Is CageFS enabled ?
+	if(file_exists('/usr/bin/cl-selector') && !defined('php_version')){
+		
+		/*// Lets check if the user is in the disabled list of CageFS
+		// This is allowed only for root
+		@exec("/usr/sbin/cagefsctl --list-disabled | grep ".$softpanel->user['name'], $dout, $dret);
+		if(preg_match('/'.$softpanel->user['name'].'/is', implode('', $dout))){
+			return true;
+		}*/
+		
+		// Lets check if CageFS is enabled for this user
+		@exec("/usr/bin/cl-selector --current=php --user=".$softpanel->user['name'], $cout, $cret);
+		
+		if(preg_match('/ERROR/is', implode('', $cout))){
+			return true;
+		}
+			
+		// If it is native than we will find the verison using sphpversion()
+		if(preg_match('/native/is', implode('', $cout))){
+			$native = sphpversion();
+		}
+		
+		// Get the list of enabled extensions for this user
+		$command = '/usr/bin/cl-selector --user='.$softpanel->user['name'].' --list-extensions=php';
+		@exec($command, $extout, $extret);
+		
+		if(!empty($__hooks['loaded_extension'])){	
+			$__hooks['loaded_extension'] += $extout;
+		}else{
+			$__hooks['loaded_extension'] = $extout;		
+		}
+		
+		if(!empty($scripts[$soft]['php_min'])){
+			
+			$short_ver = substr($scripts[$soft]['php_min'], 0, 3);
+			
+			// What is the user's PHP version ?
+			@exec("/usr/bin/cl-selector --current=php --user=".$softpanel->user['name']." | awk '{print $2}'", $out, $ret);
+			
+			if(!empty($native)){
+				$tmp_out = $native;
+			}else{
+				$tmp_out = current($out);
+			}
+			
+			// Is it lower than the required version ?
+			if(sversion_compare($tmp_out, $scripts[$soft]['php_min'], '<')){
+				
+				// Can the required version be enabled ?
+				@exec("/usr/bin/cl-selector --list=php --user=".$softpanel->user['name']." | grep ".$short_ver." | awk '{print $2}'", $eout, $eret);
+				
+				if(!empty($eout) && sversion_compare(current($eout), $scripts[$soft]['php_min'], '>=')){
+					
+					// Ask for a confirmation
+					if(!checkbox('php_version_select')){
+						$error[] = 'PHP version is less than the required '.$scripts[$soft]['php_min'].'<br />
+									<input type="checkbox" name="php_version_select" '.POSTChecked('php_version_select').' /> 
+									Do you wish to enable PHP '.current($eout).' ? (Might cause issues with your existing installations).';
+					// Lets enable the version for the user
+					}else{
+						@exec("/usr/bin/cl-selector --select=php --version=".$short_ver." --user=".$softpanel->user['name'], $sout, $sret);
+						@exec("/usr/bin/cl-selector --current=php --user=".$softpanel->user['name']." | awk '{print $2}'", $nout, $nret);
+						define('php_version', current($nout));
+					}
+				}
+			}else{
+				define('php_version', $tmp_out);
+			}
+		}
+		
+		if(!empty($scripts[$soft]['php_max'])){
+			
+			$short_ver = substr($scripts[$soft]['php_max'], 0, 3) - (0.1);
+			
+			// What is the user's PHP version ?
+			@exec("/usr/bin/cl-selector --current=php --user=".$softpanel->user['name']." | awk '{print $2}'", $out, $ret);
+			
+			if(!empty($native)){
+				$tmp_out = $native;
+			}else{
+				$tmp_out = current($out);
+			}
+			
+			// Is it lower than the required version ?
+			if(sversion_compare($tmp_out, $scripts[$soft]['php_max'], '>')){
+				
+				// Can the required version be enabled ?
+				@exec("/usr/bin/cl-selector --list=php --user=".$softpanel->user['name']." | grep ".$short_ver." | awk '{print $2}'", $eout, $eret);
+				
+				if(!empty($eout) && sversion_compare(current($eout), $scripts[$soft]['php_max'], '<')){
+					
+					// Ask for a confirmation
+					if(!checkbox('php_max_version_select')){
+						$error[] = 'This script is not compatible with PHP version : '.$scripts[$soft]['php_max'].'+<br />
+									<input type="checkbox" name="php_max_version_select" '.POSTChecked('php_max_version_select').' /> 
+									Do you wish to enable PHP '.current($eout).' ? (Might cause issues with your existing installations).';
+					// Lets enable the version for the user
+					}else{
+						@exec("/usr/bin/cl-selector --select=php --version=".$short_ver." --user=".$softpanel->user['name'], $sout, $sret);
+						@exec("/usr/bin/cl-selector --current=php --user=".$softpanel->user['name']." | awk '{print $2}'", $nout, $nret);
+						define('php_version', current($nout));
+					}
+				}
+			}else{
+				define('php_version', $tmp_out);
+			}
+		}
+	}
+}
+
+?>

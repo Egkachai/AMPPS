@@ -1,0 +1,14 @@
+1. Remove the 'sitedown' file from /tmp/cache/
+2. Install with sample data
+3. select Timezone America/New_York
+4. We need to set the default mail option to "mail" instead of "smtp"
+To do that change the following line in cmssimple.sql:
+('CMSMailer_mapi_pref_mailer', 'smtp', NULL, NULL)
+to 
+('CMSMailer_mapi_pref_mailer', 'mail', NULL, NULL)
+
+and add the following inserts in siteprefs table and also increase the auto increament:
+('mail_is_set', '1', NULL, NULL),
+('CMSMailer_mapi_pref_charset', 'utf-8', NULL, NULL)
+
+5. Select "MySQLi" for database.

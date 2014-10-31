@@ -1,0 +1,16 @@
+# Solve 401 rewrite and auth conflict on some machines
+ErrorDocument 401 "Access Forbidden"
+
+# Denied content
+<FilesMatch "\.(htaccess|htpasswd|inc.php)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Basic authentication
+<IfModule mod_auth_basic.c>
+  AuthType Basic
+  AuthName "Restricted Area"
+  AuthUserFile "[[softpath]]/[[admin_folder]]/.htpasswd"
+  Require valid-user
+</IfModule>

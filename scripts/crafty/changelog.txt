@@ -1,0 +1,63 @@
+
+   Version 3.4.7:  (Released: August 15, 2013   ) 
+================================================================== 
+ + Added the CRM features for gathering customer data 
+  from visitors to website even when offline.
+ 
+ 
+   Version 3.4.6:  (Released: April 23, 2013   ) 
+================================================================== 
+ + UNBRANDED RELEASE OF 3.4.4
+ 
+  
+   Version 3.4.5:  (Released: April 23, 2013   ) 
+================================================================== 
+ + MOBILE RELEASE OF 3.4.4
+
+
+   Version 3.4.4:  (Released: April 23, 2013   ) 
+================================================================== 
+ SECURITY RELEASE UPDATE:
+ Two very minor security issues were discovered in Crafty Syntax Live
+ Help. The Patch for both of these is detailed below. Both of these 
+ security issues are VERY MINOR. The admin.php can 
+ not be accessed by the public so the remote file vulnerabiy can
+ only be exploited by operators which makes it very hard to exploit.
+ Additonally it is not executed code so not remote code can be run on 
+ the server. 
+ The full path disclosure allows hackers to see the full path
+ to your installation but nothing more. This has been fixed as well. 
+   
+ + Crafty Syntax Live Help <= (2.*.* & 3.*.*) RFI + Path Disclosure
+ 
+ 1) Remote File Include :   admin.php
+    if(!(isset($UNTRUSTED['page']))){ $UNTRUSTED['page'] = "scratch.php"; }
+    http://localhost/path/admin.php?page=[RFI]
+ 2) Full Path Disclosure:  xmlhttp.php 
+    Dork: inurl:"/xmlhttp.php" Notice: Undefined index: whattodo in
+ 
+ 
+PATCH FOR ABOVE:
+
+ 1) Open up admin.php and update line #45 to be:
+     <frame src="<?php echo $page; ?>?help=<?php echo $UNTRUSTED['help'] . $alttab; ?>" name="contents" scrolling="AUTO" border="0" marginheight="0" marginwidth="0" NORESIZE>
+    add these lines after line #38:
+    $page = "scratch.php";
+if($UNTRUSTED['page']=="scratch.php"){ $page = "scratch.php"; }
+if($UNTRUSTED['page']=="mastersettings.php"){ $page = "mastersettings.php"; }
+if($UNTRUSTED['page']=="help.php"){ $page = "help.php"; }
+if($UNTRUSTED['page']=="edit_layer.php"){ $page = "edit_layer.php"; }
+if($UNTRUSTED['page']=="edit_smile.php"){ $page = "edit_smile.php"; }
+if($UNTRUSTED['page']=="operators.php"){ $page = "operators.php"; }
+if($UNTRUSTED['page']=="departments.php"){ $page = "departments.php"; }
+if($UNTRUSTED['page']=="data.php"){ $page = "data.php"; }
+if($UNTRUSTED['page']=="modules.php"){ $page = "modules.php"; }
+
+2) Open up xmlhttp.php and change line #52:
+    if(empty($UNTRUSTED['whattodo'])){   $UNTRUSTED['whattodo'] = ""; } 
+   remove line #53:
+     $whattodo = "";
+ 
+FILES CHANGED: 
+------------------------------------------------------------------
+   setup.php, xmlhttp.php, admin.php, navigation.php,

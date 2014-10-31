@@ -1,0 +1,1 @@
+1. In manual installation do not use "a@a.com" for admin email as script itself uses it.

@@ -1,0 +1,9 @@
+1) admin/index_lang.php - $l['sub_custom_scripts'] = 'Custom Scripts';
+
+2) admin/index_lang.php - $l['tab_tools'] = 'Tools';
+
+3) admin/index_lang.php - $l['sub_general_scripts'] = 'General Scripts';
+
+4) admin/customscripts_lang.php - The whole file
+
+5) upgrade_lang.php - $l['note_backup'] = 'Its recommended that you take a <a href="'.$globals['index'].'act=backup&insid=&soft-1;">backup</a> of the installation before upgrading.';

@@ -1,0 +1,56 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px" width="250" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/OpenDocMan
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/OpenDocMan
+	</ratings>
+	<space>
+		7375392
+	</space>
+	<support>
+		http://www.opendocman.com/
+	</support>
+	<version>
+		1.2.8.1
+	</version>
+	<mod>25</mod>
+	<release_date>29-08-2014</release_date>
+	<admin>admin.php</admin>
+	<min_require>1.2.6.3</min_require>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">OpenDocMan</font> is an opensource document management for the masses.
+		<br /><br />
+		OpenDocMan is a free document management system (DMS) designed to comply with ISO 17025 and OIE standard for document management. It features web based access, fine grained control of access to files, and automated install and upgrades. 
+		<br /><br />
+		OpenDocMan was developed under the open source <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GPL license</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Check-in and Check-out files</li>
+<li>Search Engine</li>
+<li>Multiple Users, Departments, and Categories</li>
+<li>File Moderation</li>
+<li>Email Notification</li>
+<li>Fine Grained Access</li>
+<li>File History</li>
+<li>Admin and Root users</li>
+<li>Multiple Document Versions</li>
+<li>Archiving function for deleted files</li>
+<li>Bookmarkable URL's </li>
+<li>Breakcrumb Navigation</li>
+<li>File Expiration</li>
+</ul>	
+		</english-features>
+	</languages>
+</soft>

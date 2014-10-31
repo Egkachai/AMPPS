@@ -1,0 +1,1 @@
+1) We dont change "jrElastic_css_version" and "jrElastic_javascript_version" in sql, as its same for all installation.

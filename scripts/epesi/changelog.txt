@@ -1,0 +1,125 @@
+EPESI CHANGELOG
+===============
+
+RELEASE 1.6.1-20140913
+-------
+
+- Fix dashboard applets removal
+- Add field to select from multiple recordsets in RecordBrowser
+- Fix attachments PHP 5.3 code issue
+- Fix RoundCube addressbook contacts search
+- Set Contacts/Access Manager as read-only
+- Fix translation functions in Attachments
+- Allow negative integer numbers in RecordBrowser
+- Set "Company Name" and "Tax ID" fields as unique
+- Fix mobile RB edit bug
+- Fix Base/Theme get_icon function
+- Add Cron Management to Administrator Panel
+- Add Custom Recordsets tool to RecordBrowser
+- Fix cron CLI detection
+- Add who made last edit in attachments display
+- Fix Email applet issue with password encoding
+- Fix unique email rule
+- Add time and timestamp fields to RB GUI admin
+- Add datepicker placeholder text
+- Fix phonecalls template
+- Add ability to sort RB fields with drag n drop
+- Update ckeditor version to the most recent
+- Add button to switch full toolbar in ckeditor
+- Improve patches util error reporting in admin tools
+- Maintain QFfields callbacks order during position change
+- Configurable edited_on field format in Attachments
+- Allow to disable expandable rows in user settings
+- Search improvements - optimization, set defaults, disable certain recordsets
+- Attachments - do not show password in decrypt form
+- RecordBrowser - save filters per user
+- RecordBrowser - do not show filter for blocked field
+- RecordBrowser - add ability to print any record
+- Improve Translation panel
+- Fix watchdog notification for notes
+- Update translations
+- Fix bbcodes in attachments
+- RecordBrowser - allow multiple additional actions methods
+
+RELEASE 1.6.0-20140710
+-------
+
+- New attachments based on RecordBrowser
+- Add exception handling
+- Fix Base/Print uninstall method
+- Fix attachments when mcrypt module is not loaded
+- Do not show files in attachments when note is not decrypted
+- Add DEBUG_JS option for better js errors handling
+- Add option to forbid autologin
+- Add another admin access level to control ban and autologin
+- Do not generate watchdog notification when user doesn't have view access to modified field
+- Fix Roundcube rc_contactgroups reference
+- Fix RecordBrowser's field tooltip for select and multiselect fields
+- Fix Month View applet issue related to the daylight saving shift
+- Fix new langpack rule issue.
+- Remove duplicated codes from countries list and calling codes
+- Move jump to id setting to database (remove function Utils_RecordBrowser::disable_jump_to_record)
+- Add option to run update procedure from commandline interface
+- Add maintenance mode
+- Add Utils_CurrencyFieldCommon::parse_currency method
+- Improve RB uninstall method to remove processing callbacks and others
+- Add option to create mailto: links even when RoundCube accounts are set
+- Time management for patches
+- Allow patches to save some state and run from that place
+- Update process reinvented to match new patches with restart
+
+RELEASE 1.5.6-20140305
+-------
+
+- Fix Base/Print filename suffix
+- Fix not working RoundCube due to not loaded DBSession class
+
+RELEASE 1.5.6-20140303
+----------------------
+
+- Crypted notes
+- New module to generate printouts
+- Change cron mechanism
+- Trigger error, when patch has failed during update
+- Fix HomePage template installation
+- Add mod_alias rules to show 404 on .svn and .git directories
+- Set read-only attribute in commondata
+- Fix access restrictions and use proper data directory in check.php script
+- Fix logo file in Utils/FrontPage
+- Properly sanitize language variable in setup.php script
+- Fix get_access method to respect temporary user_id changes
+- Fix icon in RecordBrowser for different template
+- Extend session_id length
+- Allow filtering of custom status in task applet
+- Fix commondata edit form - do not allow to override values
+- Remove unused code that caused performance issues in CRM/Filters
+- Do not validate form in RB during soft submit
+- Fix Related Notes company addon
+- Fix module_manager to generate proper list of module requirements
+- Fix some issues in reset pass script
+- Fix TCPDF top margin when logo is set but it's hidden
+- Update translations
+
+RELEASE 1.5.5-20140113
+----------------------
+- Fix recurrent meeting issue in Activities tab - [Forum thread](http://forum.epesibim.com/viewtopic.php?f=6&t=2023)
+- Fix "Paste company data" button - [Forum thread](http://forum.epesibim.com/viewtopic.php?f=6&t=2026)
+- Add option to use "Reply-to" header in SMTP settings
+- Fix BBCode url matching
+- Remove ckeditor's internal save button, that wasn't used
+- Fix moving notes - some rare issue with directories
+- Fix deleting files upon note removal
+- Update RoundCube version to 0.9.5
+- Fix dashboard's tab management
+- Fix RecordBrowserReports column summary to not show last row doubled
+- Fix wrong time and date in mobile view - [Forum thread](http://forum.epesibim.com/viewtopic.php?f=6&t=1925)
+- Add new possible Home Page - company of current user
+- Check access when copying company data into contact
+- Clean up include path
+- Fix creating new contact - [Forum thread](http://forum.epesibim.com/viewtopic.php?f=6&t=2082)
+- Fix calendar event with duration less than 1h
+- Several fixes for PostgreSQL engine
+- Fix broken Contact's template (#2)
+- Fix printing all records from RecordBrowser
+- Fix watchdog email notifications (#3)
+- Update translations

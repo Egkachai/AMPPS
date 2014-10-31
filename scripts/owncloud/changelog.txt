@@ -1,0 +1,132 @@
+Version 7.0.2 August 28th 2014
+
+	App upgrading stability improvements
+	Make default share folder configurable
+	Improve readability of error messages
+	Log failed authentication
+	S3 key fixes
+	Fix range requests with encryption
+	Several LDAP fixes
+	Remove obsolete 'Download preparing' message for zip downloads
+	Remove not working checks from code checker
+	No error if we try to delete a file which no longer exists
+	Fix detection of system wide mount points
+	Simplify App navigation
+	Add group management to public api
+	Remove confusing 'automatic logon rejected' message
+	Implement a txt preview fallback for the case that ttf is not support
+	Fix tiny thumbnail bug
+	Don't display share permission if resharing was disabled by the admin
+	Close session right before the download starts
+	Fix date display in filepicker
+	Don't touch non-oc tables when doing the InnoDB repair step
+	Several Documents fixes
+	Correctly handle public uploads activities
+	Add better 4 image previews to gallery
+	
+Download: https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2
+MD5: https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2.md5
+
+Version 7.0.1 August 4th 2014
+
+	Set maximum width for notification so they don't overlap the whole header
+	Don't preload videos on public sharing
+	Fix preview size calculation under certain conditions
+	Fix to always show all available versions in the versions dropdown
+	Support WebDAV copy operation and make encryption aware of it
+	Make sure to set the expire date if a date is set as default
+	Improved link icon for better UX
+	Fix rendering of blank template
+	Only call exec if is is enabled by PHP
+	Limit app menu icon size
+	Show a warning in the personal settings and admin settins if the encyption keys are not yet initialized
+	Always remove share permission if user is excluded from sharing
+	Add OCS api call to set expire date for link shares
+	Improved db schema migration for sqlite
+	Don't try to execute background jobs that no longer exist
+	Improve look of search on mobile, save space in top bar
+	Set core version after a successful update to make upgrade more robust of app upgrades fail
+	Verify whether download URLs are valid
+	Fix preview animation on uploading
+	Prevent cron.php to trigger apps updating
+	Fix remote share when remote server is installed at the root
+	Fix files sorting
+	Fix calendar import
+	Fix gallery pause icon
+	Several contacts fixes specifically for PHP 5.3
+	Make updater more robust
+	
+Download: https://download.owncloud.org/community/owncloud-7.0.1.tar.bz2
+MD5: https://download.owncloud.org/community/owncloud-7.0.1.tar.bz2.md5
+
+
+Version 7.0.0 June 23rd 2014
+
+	New files view including sorting and endless scrolling
+	Server to Server sharing
+	Sharing overview
+	Improved sharing admin control
+	No more mandatory Shared folder
+	Improved ownCloud Documents features
+	Hugely improved Activity app including email notifications
+	Mobile optimized webinterface
+	Password strength indicator
+	Significant speed improvements
+	New user-management
+	Support for Swift object stores
+	Email configuration wizard
+	Email template editor
+	Improved upgrade process
+	
+Download: https://download.owncloud.org/community/owncloud-7.0.0.tar.bz2
+MD5: https://download.owncloud.org/community/owncloud-7.0.0.tar.bz2.md5
+
+Version 6.0.4 June 23rd 2014
+
+    Fixed a security issue (Will be disclosed two weeks after this release)
+    Several LDAP fixes and improvements
+    Add deprecated warning to load function
+    File scanner fixes
+    Heart beat fixes
+    Encryption fixes for some corner cases
+    Fix conflict dialog translations
+    Fix button text overflow
+    Fix search with Oracle
+    Php upload errors are written to log
+    OCS status code fixes
+    Add PostgreSQL version warning 
+
+Download: http://download.owncloud.org/community/owncloud-6.0.4.tar.bz2
+MD5: http://download.owncloud.org/community/owncloud-6.0.4.tar.bz2.md5
+
+Version 6.0.3 April 29th 2014
+
+    Several security fixes. (Will be disclosed 2 weeks after the release)
+    Appframework extensions to improve the compatibility with 3rdparty apps
+    LDAP performance improvements
+    Fix updating of email adresses from LDAP
+    Fix WebDAV timestamp format handling
+    Disable internet connection check if a proxy is configured
+    Fix a potential file chunking problem on a server that is running out of storage
+    Do not expire file chunks while checking their existence
+    Fix loading of authentication apps in any case
+    Performance improvements by reducing the number of chmod operations.
+    Make the trusted domain upgrade feature more robust.
+    Don´t allow creating a “Shared” folder.
+    Fixed “select all” + download on public page
+    Fix share as link with email multiple users
+    Reset time of last update feed polling to fix the updater
+    Share API fixes
+    Admin option for public upload with encryption enabled
+    Fix CIFS with home shares
+    Detect a missing “data” directory mount
+    Fix the filesize calculation of encrypted files
+    Fixes in the OpenStack support
+    Fixes in the SWIFT support
+    Don´t block PHP sessions during download
+    Fix sharing oc addressbooks
+    Several ownCloud Documents improvements and fixes
+    Several smaller bugfixes
+
+Download: http://download.owncloud.org/community/owncloud-6.0.3.tar.bz2
+MD5: http://download.owncloud.org/community/owncloud-6.0.3.tar.bz2.md5

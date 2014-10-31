@@ -1,0 +1,34 @@
+SuiteCRM 7.1.4
+----------------------------
+Bug Fixes
+
+FIXED Number separators causing incorrect tax calculations
+FIXED Line items not automatically calculating on list price change
+FIXED Function name conflict between AOS and Opportunities
+FIXED Permission issues in AOS Quotes Actions e.g convert to invoice
+FIXED Various import issue in AOS
+FIXED Missing AOS Language entries
+FIXED Filtering on Multi-select fields in dashlets not working correctly with blank values
+FIXED Missing silent upgrade files
+
+SuiteCRM 7.1.3
+----------------------------
+Bug Fixes
+
+Fixed "main menu (Tab All) not with 2 column layout" (Courtesy of pcaesar)
+Fixed Russian language file in Security Suite
+Fix bug in AOD which could cause errors when trying to load certain modules.
+Prevent AOD creating multiple indexes caused by security suite preventing access to the index.
+Shortcut return when attemping to index on the save of AOD_Index
+AOD now respects security groups when displaying results
+Fix undefined index in AOD.
+Add Print PDF option to contracts
+Set quote/invoice numbers when records are created with an existing id.
+Ensure that the contact in a contract is populated when converting.
+Fix Workflow not sending emails on initial save.
+Use UTC dates in Workflow to prevent incorrect date calculations
+Fixed parsing relationships for email templates in workflow
+Fixed "one of" not working with multiselect fields in workflow.
+Prevent duplicate sugar feed entries being created by the portal
+Fixed checks in FP_Events which would cause code to unnecessarily run.
+Fix bug where using the select this page button for delegates would only appear to do so.

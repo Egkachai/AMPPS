@@ -1,0 +1,12 @@
+.coveralls.yml
+CHANGELOG.md
+CONTRIBUTING.md
+INSTALL.md
+LICENSE.txt
+README-GIT.md
+README.md
+bin
+composer.json
+library
+resources
+index.php

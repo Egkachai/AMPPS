@@ -1,0 +1,37 @@
+Changes in Traq v3.5.1:
+---------------------------
+    Added ability to link to wiki pages with [[page-slug]] and [[page-slug|Some text]]
+    Ticket ID is displayed with the other ticket properties
+    Disabled the loading of the latest news in the AdminCP when using HTTPS (this is temporary)
+    Fixed issue with custom fields being displayed for certain ticket types when they shouldn't have
+
+
+Changes in v3.5:
+---------------------------
+    Wiki page history
+    New permission: view ticket
+    Fixed issue with converting timestamps to unix style
+    Fixed issue with filtering tickets by owner
+    Fixed issue with multiple select custom fields
+
+Changes in Traq v3.4.3:
+---------------------------
+    Fixed custom field values not being displayed on the ticket listing page
+
+Changes in Traq v3.4.2:
+---------------------------
+    Fixed issue with custom fields not being saved
+    Fixed issue with ticket relationships causing related tickets "swapping" ticket descriptions
+    Fixed ticket linking with "#1234" and "project-slug#1234"
+    Fixed issues with WebKit browsers and clicking ticket filter optgroups to select all options
+
+Changes in Traq v3.4.1:
+---------------------------
+    Models no longer used during upgrade
+    Fixed an issue with ticket pages
+
+Changes in Traq v3.4:
+---------------------------
+    Custom fields for specific ticket types
+    Ticket Relationships
+    Traq news in AdminCP

@@ -1,0 +1,53 @@
+egroupware-epl (14.1.20140714-1) hardy; urgency=low
+
+  * Backup: backup could contain rows multiple times (which caused restore to fail)
+  * API: fixed broken configuration, causing eg. ActiveDirectory or LDAP authentication to fail (you need to run Setup >> Clear cache!)
+  * Preferences: non-admins were allowed to changed default, forced or group preferences
+  * Preferences: do NOT use deny configuration for admins
+  * SiteMgr: fixed sliteshow (was loaded before jQuery)
+  * Mail: unlock tree again after copy/move actions
+  * ProjectManager: fix broken duration units causing times to display as undefined
+  * eTemplate2: several fixes in widgets
+
+ -- Ralf Becker   Mon, 14 Jul 2014 18:40:34 +0200
+
+egroupware-epl (14.1.20140710-1) hardy; urgency=low
+
+  * final 14.1 release
+  * Admin/all apps: fix refresh of admin after calling site configuration, categories, etc from apps
+  * Admin: custom-fields were not loaded, account was edited from admin not addressbook
+  * EMailAdmin: fixed migration of Sieve to use SSL/TLS for port 5190 and StartTLS for all other ports
+  * EMailAdmin: fixed mail accounts valid for groups or multiple users and switching regular accounts to or from that
+  * Addressbook: fixed sorting of category tree
+  * Added context menu to download all linked files in one zip file
+
+ -- Ralf Becker   Wed, 09 Jul 2014 20:50:54 +0200
+
+egroupware-epl (14.1.20140708-1) hardy; urgency=low
+
+  * Debian: aptitude install egroupware-epl now removes 1.8 community packages or updates all EPL 11.1 packages
+  * Calendar/API: allow not serialized data in async jobs, only run automatic purge if we have a real number > 0
+  * Admin: fixed user statistic submit to work in 14.1
+  * Admin/API: remove old database based error-log
+  * Mail/Infolog/Tracker: fix problem with converting mail to infolog/tracker entries, when forwarded messages are attached (message/rfc822 attachments)
+  * Setup: fixed fatal error "Cannot redeclare auth_type()", when there is a validation error on saving configuration
+  * Setup: config changed in setup did not update instance cache and was therefore not immediatly available
+  * Infolog: Edit adds an implicit user preference in order to remember the last chosen of infolog's type
+  * Addressbook,Calendar,InfoLog,Timesheet: switch on history / delete preventions, if there is not already a config
+
+ -- Ralf Becker   Tue, 08 Jul 2014 14:07:30 +0200
+
+egroupware-epl (14.1.20140630-1) hardy; urgency=low
+
+  * 14.1 release candidate: you need to visit setup for manual (non-package) installations!
+  * many bugfixes in all applications
+  * all apps: custom-fields are now stored in own egw_customfields table (no more limit on number), site configurations get now JSON serialized
+  * all apps: categories and async jobs extra data is now stored JSON serialized
+  * ProjectManager: only query projects visible in tree, autoload others on opening, to improve performance with huge number of projects
+  * Admin: admin view did no refresh if it shows something else then accounts list
+  * PostgreSQL: fixed not working installation (access to not yet existing table stalls transaction)
+  * PostgreSQL: fixed not working update from 1.8, as not existing FMail tables stalled update
+  * PostgreSQL/Addressbook: fixed not displayed pictures
+  * Notification/Mail: make sure acc_smtp_username is used (if available), to cope with strict mailserver settings to prevent faking sender information
+
+ -- Ralf Becker   Mon, 30 Jun 2014 12:03:54 +0200

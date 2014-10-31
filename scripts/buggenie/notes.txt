@@ -1,0 +1,3 @@
+1. Add an index.php in the package from the old package. It is just a file to redirect to the /buggenie folder.
+2. Make script where Database ENGINE is InnoDB
+3. We have tested since 3.2.4 (lowest version of 3.2.x) and there is no upgrade necessary and updates is available only for versions 3.2+, so when there is database change in future please make changes in upgrade and check auto upgrade properly

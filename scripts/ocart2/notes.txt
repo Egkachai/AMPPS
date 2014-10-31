@@ -1,0 +1,1 @@
+1. Change the value of config_error_display to "0" in ocart.sql

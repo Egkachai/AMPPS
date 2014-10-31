@@ -1,0 +1,26 @@
+****************************
+Changelog for eXtplorer
+Version $Id: CHANGELOG.txt 231 2013-09-04 18:12:47Z soeren $
+****************************
+--- version 2.1.5 ---
+- fixed doubled subdirectories in directory tree
+- fixed wrong Joomla path detection (security issue on some systems)
+
+--- version 2.1.4 ---
+- fixed security issues found by Trustwave SpiderLabs, Vikas Singhal
+- update to the latest version of Archive_Tar
+- fixed version check link, now points to extplorer.net
+
+--- version 2.1.3 ---
+- fixed serious login vulnerability reported by Brendan Coles of itsecuritysolutions.org (the only changed file is /include/users.php)
+
+--- version 2.1.2 ---
+- hide the top and bottom bar in J! 3.0
+- fixed installer for J! 2.5
+
+--- version 2.1.1 ---
+- Joomla! 3.0 compatibility
+
+--- version 2.1.0 ---
+
+- fixed an XSS-vulnerability (impact: medium, users needs to be logged in)

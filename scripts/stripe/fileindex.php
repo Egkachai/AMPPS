@@ -1,0 +1,15 @@
+.htaccess
+CONTRIBUTING.md
+Makefile
+README.md
+assets
+cms
+favicon.ico
+framework
+index.php
+install-frameworkmissing.html
+install.php
+mysite
+themes
+vendor
+web.config

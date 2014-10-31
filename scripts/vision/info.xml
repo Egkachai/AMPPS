@@ -1,0 +1,62 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px" width="250" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Vision_Helpdesk
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/customersupport/Vision_Helpdesk
+	</ratings>
+	<space>
+		13733513
+	</space>
+	<support>
+		http://support.visionhelpdesk.com/
+	</support>
+	<version>
+		3.9.10
+	</version>
+	<mod>20</mod>
+	<release_date>17-09-2014</release_date>
+	<admin>manage/</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="php" type="version" operator="lt" value="5.4.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Vision Helpdesk</font> is a Web-Based True Satellite Helpdesk Software that allows you to manage support for Multiple Companies at one place.
+		<br /><br />
+		With single front-end and each company having its own client portal makes it true satellite helpdesk.
+		<br /><br />
+		You will need a Valid License key to install and run Vision Helpdesk.
+		<br /><br />
+		Vision Helpdesk is licensed under their <a href="http://www.thevisionworld.com/company/termsandconditions" target="_blank">Software License Agreement</a>.
+		</english-overview>		
+		<english-features>
+<font size="2" color="#6F8128"><b>Multi Domain / Satellite Helpdesk</b></font><br />
+Vision Helpdesk is the only web-based helpdesk software that allows you to manage support for multiple companies at one place. With single front-end and each company having its own client portal makes it true satellite helpdesk.<br /><br />
+<font size="2" color="#6F8128"><b>Multi Channel Helpdesk</b></font><br />
+The ALL IN ONE customer support helpdesk allows you to manage various channels like E-MAIL, WEB-FORMS, TWITTER, FACEBOOK, CALLS everything under single roof.<br /><br />
+<font size="2" color="#6F8128"><b>Online Issue Tracker</b></font><br />
+Track issues online, Ticket creation using web interface and Email Parsing. Fetch emails using email piping, POP3, IMAP, POP3 SSL, IMAP SSL. Advance features like Two Way Email Parsing | Catch All Rules | Pre and Post Email parsing | manage Break-Lines<br /><br />
+<font size="2" color="#6F8128"><b>Ticket Billing</b></font><br />
+Prepaid and Postpaid Billing | Manage Credit | Create Invoice |  Taxation |  Bill Tickets Per Minute | Per Hour| Per Ticket | Per Post, Track Bill Time, Multi-Currency | Automation and much more..<br /><br />
+<font size="2" color="#6F8128"><b>Self Help</b></font><br />
+Predefined Replies for Staff, Manage Knowledgebase for Clients and Staff, Create Forums, Question and Answer, Bug Submission, Feature Requests, Manage Downloads  and more..<br /><br />
+<font size="2" color="#6F8128"><b>Automation</b></font><br />
+Work Flow | SLA and Escalations — Automate your tickets work using rule based criteria and decide what action system should take on matching specific criteria conditions. Setup SLA’s and offer timely response to tickets.<br /><br />
+<font size="2" color="#6F8128"><b>Blabby</b></font><br />
+Private Social Hub for your staff members to communicate, share knowledge | files | presentations | collaborate on ticket issues.<br /><br />
+<font size="2" color="#6F8128"><b>Custom Reports</b></font><br />
+Build instant custom reports (charts, figures and tables) get insights of your helpdesk, measure and analyze the metrics that are important for your organization.
+		</english-features>
+		<english-exp_license>You can get free trial license <a href="http://www.visionhelpdesk.com/free-trial" target="_blank">here.</a></english-exp_license>
+	</languages>
+</soft>

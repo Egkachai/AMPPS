@@ -1,0 +1,1 @@
+1) Make script where Database ENGINE is InnoDB

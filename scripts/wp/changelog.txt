@@ -1,0 +1,548 @@
+Version 3.9
+
+Highlights
+
+    A smoother media editing experience
+        Improved visual editing - speed, accessibility, and mobile support
+        Edit images easily - quicker access to crop and rotation tools, scale images directly in the editor
+        Drag and drop your images right onto the editor
+        Image gallery previews right in the editor
+        Showcase music and clips with simple audio and video playlists
+        Live widget and header image previews in the Customizer
+        Stunning new theme browser 
+
+    For Developers
+        Themes can now use HTML5 markup for captions and galleries
+        Inline code documentation for action and filter hooks, and media manager and customizer APIs
+        External libraries have been updated
+        Improved database layer
+        New utility functions 
+
+What's New
+General
+
+    The "update" message has been restored to the dashboard 
+
+Posts
+
+    Add "Return to post editor" link from Revisions screen
+    A "View Post" link will now show for any post an author can read
+    Distraction Free Writing mode is now responsive to any size device 
+
+Media
+
+    Edit images from the Add Media modal
+    Improvements to the "Attach Media" pop-up interface
+    Better support for auto-playing videos
+    Drag and Drop files into the editor
+    Full-screen Drag and Drop zone in Distraction Free Writing
+    oEmbed support added for imgur and meetup.com 
+
+Comments
+
+    Small improvements to comment administration screens, link colors, language tweaks 
+
+Appearance
+
+    Widget Customizer management
+    Upload header images with cropping in the Customizer
+    Improved theme install workflow 
+
+Users
+
+    Admin auto-complete improvements
+    Make sure the "Send this password to the new user by email" toggle option value is remembered 
+
+Accessibility
+
+    Improved focus styles for form elements throughout the admin
+    Keyboard accessibility added for theme install screen and theme action buttons 
+
+Install Process
+
+    Make it easier to customize the install process
+    Passwords with apostrophes are no longer allowed on installation 
+
+Multisite
+
+    Add autocomplete for the admin email account to the "new site" form 
+
+Under The Hood
+General
+
+    Add ability to output galleries as HTML5
+    Introduce doing_filter() and doing_action() to identify hooks in progress
+    Introduce .dashicons-before class to make it easier to use a Dashicon before an element
+    Add ability to symlink plugins
+    The core colors.css file was merged into wp-admin.css, resulting in 1,065 fewer lines of admin CSS
+    Dashicons updated to latest. Adds line break, paragraph, code, and bbPress.
+    Add a TTL to core update checks to allow narrowing of the 12-hour update window
+    The 'role' attribute is now allowed in kses for all elements
+    Rewrite endpoints can now specify a query variable name 
+
+JavaScript
+
+    Autosave JS has been refactored to use the Heartbeat API
+    Heartbeat: Hooks will now always receive unslashed data
+    Options passed to Backbone.View's constructor are no longer attached automatically. wp.Backbone.View now handles this
+    Big improvements to documentation of Backbone media-views
+    Updated media-views and wp.Backbone.View for Backbone 1.1
+    Masonry has a new script handle, 'masonry', and no longer depends on jQuery 
+
+Bug Fixes
+
+    wp_auth_check now runs properly on every Heartbeat tick
+    Post/page items are now removed from nav menus when the post/page is deleted
+    Ensure the $path is trailing-slashed in domain_exists()
+    Fix bulk activation of network-only plugins
+    Texturize: Massive performance improvements (~600% faster); better handling of braces, nbsp, double, and weird spaces 
+
+Multisite
+
+    Introduce get_network_by_path()
+    Introduce wp_get_network()
+    Introduce Function_Reference/get_site_by_path|get_site_by_path() 
+
+    Incremental improvements and bug fixes with the multisite load process
+    Introduce an ms_site_not_found filter to replace NOBLOGREDIRECT 
+
+Classes
+What's New
+
+    Introduce WP_Customize_Widgets
+    Introduce WP_Customize_Manager->$widgets 
+
+    Introduce WP_Upgrader_Skin::decrement_update_count()
+    Introduce Bulk_Upgrader_Skin::decrement_update_count() 
+
+    Introduce wpdb::$reconnect_retries
+    Introduce wpdb::$incompatible_modes
+    Introduce wpdb::$use_mysqli
+    Introduce wpdb::set_sql_mode()
+    Introduce wpdb::check_connection() 
+
+Functions
+What's New
+
+    Introduce wp_normalize_path|wp_normalize_path()
+    Introduce has_image_size()
+    Introduce remove_image_size()
+    Introduce wp_get_playlist()
+    Introduce wp_playlist_shortcode()
+    Introduce wp_video_playlist_shortcode()
+    Introduce wp_maybe_generate_attachment_metadata()
+    Introduce post_supports_thumbnails()
+    Introduce theme_supports_thumbnails()
+    Introduce _count_posts_cache_key()
+    Introduce get_the_permalink()
+    Introduce wp_validate_logged_in_cookie() 
+
+Deprecated
+
+    _relocate_children()
+    default_topic_count_text()
+    get_current_site_name()
+    format_to_post()
+    wpmu_current_site() 
+
+Actions & Filters
+New Actions
+
+    Introduce resetpass_form
+    Introduce wp_install
+    Introduce wp_upgrade
+    Introduce wp_playlist_scripts
+    Introduce dynamic_sidebar_before
+    Introduce dynamic_sidebar_after 
+
+New Filters
+
+    Introduce get_adjacent_post_query_args
+    Introduce post_playlist
+    Introduce wp_insert_attachment_data
+    Introduce incompatible_sql_modes
+    Introduce theme_page_templates
+    Introduce pre_get_network_by_path
+    Introduce network_by_path_segments_count
+    Introduce site_by_path_segments_count
+    Introduce pre_get_site_by_path
+    Introduce pre_wp_nav_menu
+    Introduce pre_set_theme_mod_$name
+    Introduce determine_current_user
+    Introduce playlist_styles
+    Introduce dynamic_sidebar_has_widgets
+    Introduce is_active_sidebar
+    Introduce ms_site_not_found
+    Introduce pre_update_option 
+
+Deprecated
+
+    format_to_post 
+
+External Libraries
+
+    Update to TinyMCE 4.0
+    Update to Masonry 3.0
+    Update to Backbone 1.1.2
+    Update to Underscore 1.6
+    Update to PHPMailer 5.2.7
+    Update to Plupload 2.1.1
+    Update to jQuery 1.11.0
+    Update to jQuery UI 1.10.4
+    Update to MediaElement 2.14 
+	
+Version 3.8
+
+Highlights
+
+    Introduces a new, modern admin design
+        A fresh, uncluttered design
+        Clean typography with Open Sans
+        Superior contrast and large, comfortable type
+        Responsive interfaces throughout
+        Refined, theme management
+        Smoother, click-to-add widget management 
+
+    New Default Theme - Twenty Fourteen
+        Easily create a responsive magazine website with a sleek, modern design.
+        Feature your favorite homepage content in either a grid or a slider.
+        Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. 
+
+    For Developers
+        External Libraries have been updated.
+        Better RTL support 
+
+What's New
+General
+
+    Replace PNG-based plugins ratings stars with Dashicons for performance gains
+    Improved help tab text in various screens
+    Clicking "Check Again" on the Updates screen now provides more immediate feedback 
+
+Dashboard
+
+    Consolidate several Dashboard widgets to improve readability
+    Replace the 'Right Now' widget with the new and improved 'At a Glance' widget 
+
+Appearance
+
+    Introduce 8 new admin color schemes
+    Improved readability throughout using Open Sans typeface (where supported)
+    Responsive Toolbar for smaller-screen devices
+    Leverage Dashicons instead of icon sprites for crisper experience on all resolutions
+    Big RTL improvements throughout
+    Make the dashboard more usable on any size device with responsive all the things
+    Improve the login screen experience for Internet Explorer 8 users
+    Improve Quick Edit experience for non-English users
+    Improve the Menus experience for mobile users 
+
+Themes
+
+    New Default Theme -- Twenty Fourteen
+    Make it possible to check for any post format assigned to a post with has_post_format()
+    Better custom background theme support defaults, can now specify 'default-repeat', 'default-position-x', and 'default-attachment' arguments for background images.
+    Tags for width changed to layout: responsive-layout, fluid-layout, and fixed-layout
+    New tag: accessibility-ready to denote a theme is aware of accessibility best practices such as color contrast, keyboard navigation, and form/link focus. See WP theme accessibility guidelines.
+    Theme screenshots' size have increased from 600 × 450 to 880 × 660. 
+
+Widgets
+
+    New click-to-add interface for adding widgets to sidebars
+    Improved interface for devices of all resolutions
+    Better drag-and-drop experience 
+
+Accessibility
+
+    Make list table row actions keyboard accessible
+    Improve color contrast throughout the admin 
+
+Multisite
+
+    Improved performance when deleting users in Multisite 
+
+Under The Hood
+General
+
+    Heartbeat performance and API improvements
+    A $taxonomy argument was added to each of the adjacent post functions.
+    Define $is_nginx in vars.php
+    Apply capital_P_dangit() to the wp_title filter
+    Make sure ajaxurl is defined in the Customizer
+    validate_active_plugins() now checks the manage_network_plugins capability instead of is_super_admin()
+    Add a show_metabox parameter to register_taxonomy()
+    Make it easier to target video shortcodes by adding a wp-video class to the parent container
+    Add CSSMin, SASS, CSSJanus, and jsHint to build tools for core development 
+
+Bug Fixes
+
+    Fix bug where top-level categories were only redirecting if they had no children
+    Fix bug in wp_get_object_terms() where returned were strings not integers
+    Fix a bug where passing a null value to meta_query resulted in wonkiness with the comparison operator
+    Fix "'wp_signups' already exists for query" error after updating a Multisite network
+    Fix bug in get_bookmarks() caused by missing parentheses
+    Fix comment_notification_recipients filter behavior so that it is still respected even on comments left by the post author
+    Fix a date comparison error in dashboard_relative_date()
+    Fix keyboard accessibility for row actions in list tables.
+    Fix no-js and accessibility modes in in the Widgets screen
+    Fix a bug where menus could still be assigned to a non-existent theme location
+    Silence jQuery Migrate errors in the General settings page 
+
+Multisite
+Classes
+
+    Introduce WP_Screen::remove_option()
+    Introduce WP_Screen::remove_options()
+    Introduce WP_Screen::get_options() 
+
+Functions
+
+    Introduce wp_dashboard_quick_press()
+    Introduce wp_dashboard_site_activity()
+    Introduce wp_dashboard_recent_posts()
+    Introduce wp_dashboard_recent_comments()
+    Introduce wp_dashboard_primary_output()
+    Introduce wp_heartbeat_set_suspension()
+    Introduce wp_star_rating()
+    Introduce get_theme_update_available()
+    Introduce wp_prepare_themes_for_js() 
+
+
+Actions & Filters
+Actions
+
+    Introduce automatic_updates_complete 
+
+Filters
+
+    Introduce automatic_updates_debug_email
+    Introduce wp_prepare_themes_for_js 
+
+External Libraries
+
+    Add a copyright notice to zxcvbn (password strength meter) script 
+
+Deprecated
+
+    screen_icon()
+    get_screen_icon()
+    wp_dashboard_incoming_links_output()
+    wp_dashboard_secondary_output()
+    wp_dashboard_incoming_links()
+    wp_dashboard_incoming_links_control()
+    wp_dashboard_plugins()
+    wp_dashboard_primary_control()
+    wp_dashboard_recent_comments_control()
+    wp_dashboard_secondary()
+    wp_dashboard_secondary_control()
+    no_update_actions() 
+
+Miscellaneous
+
+    Many unused images were removed from core.
+	
+	
+WordPress 3.7.1 Maintenance Release. This maintenance release addresses 11 bugs in WordPress 3.7, including:
+
+    Images with captions no longer appear broken in the visual editor.
+    Allow some sites running on old or poorly configured servers to continue to check for updates from WordPress.org.
+    Avoid fatal errors with certain plugins that were incorrectly calling some WordPress functions too early.
+    Fix hierarchical sorting in get_pages(), exclusions in wp_list_categories(), and in_category() when called with empty values.
+    Fix a warning that may occur in certain setups while performing a search, and a few other notices.
+
+
+WordPress Version 3.7 changelog
+ Highlights
+
+You might not notice a thing, and we're okay with that.
+
+    Background Updates
+        Automatic updates for maintenance and security updates.
+        Daily updates for developers using nightly builds. 
+    Stronger Password Meter
+        New password meter to encourage users to choose stronger passwords. 
+    Improved Search
+        More relevant search results. 
+    Better Global Support
+        Localized versions will receive faster and more complete translations.
+        Background updates will include translations 
+
+Under The Hood
+General
+
+    Optional filters for background updates, to allow for fine-grained control
+    Advanced Date Queries for posts now includes date ranges, older/newer than options, and more
+    Multisite now has wp_get_sites() to list all sites on the network 
+
+Dashboard
+
+    Make shift + click selection of checkboxes work in both directions
+    Add RTL body classes to iFrames in the back-end
+    Actually limit password-protected post passwords to the 20-character limit
+    Display an error message when logging in with cookies disabled
+    Fix issue with failed searches reverting to previous search criteria
+    Fix bad styling when bulk actions are disabled for custom post types 
+
+Media
+
+    Add the image file size information in the attachment editing screen
+    Fix issue with orderby attribute getting removed from updated [gallery] shortcodes
+    Stop linking to non-public post types from media screens 
+
+Comments
+
+    Add commenter IP address on the Edit Comment screen
+    Remove generated avatars from comment moderation screens
+    Make email recipients filterable in wp_notify_moderator()
+    Add ability to filter comment screen by post type 
+
+Appearance
+
+    Only show a custom header image preview when an image is actually set
+    Display Customizer control descriptions
+    Enable the Customizer to load the home URL 
+
+Plugins
+
+    Fix plugin search errors related to PHP 5.4 
+
+Users
+
+    Ensure that the user_activation_key is hashed in the database
+    Trim leading and trailing spaces from passwords when saving
+    Streamline the behavior of the default password nag after login 
+
+Accessibility
+
+    Make list table row actions keyboard accessible
+    Fix issue with a broken "Close" button on refresh in the Customizer
+    Improve default color contrast ratios in the default themes
+    After a post is updated, only focus the "Title" field if it's empty 
+
+Bug Fixes
+
+    Fix terms with a post count of 0 returning if 'hide_empty' is true.
+    Fix allowing https URL enclosures
+    Fixed bug with is_day by checking bad dates and redirect, instead of 404ing.
+    Avoid using the *_exists() functionality on ncFTPd servers
+    Allow a WP_Error return from register_new_user()
+    Hide the custom header image preview unless an image is set
+    Add signup_id primary key to $wpdb->signups
+    Fix issue with deleting terms shared across taxonomies from deleting associated nav menus
+    Cast $labels to array in get_taxonomy_labels() and _get_custom_object_labels() to avoid failure
+    Correct rewrite tag for hierarchical post types without a query_var. 
+
+Multisite
+
+    Introduce wp_get_sites() [25445]
+    Introduce wp_maybe_update_network_site_counts() [25621]
+    Introduce wp_maybe_update_network_user_counts() [25621]
+    Introduce wp_update_network_site_counts() [25621]
+    Introduce wp_update_network_user_counts() [25621] 
+
+Classes
+
+    Introduce WP_Automatic_Upgrader class [25421]
+    Introduce Automatic_Upgrader_Skin class [25421]
+    Introduce Headerless_Upgrader_Skin class [25566] 
+
+    Introduce WP_Date_Query class [25139]
+    Introduce WP_Comment_Query::date_query property [25139]
+    Introduce WP_Query::date_query property [25139] 
+
+    Introduce WP_Query::stopwords property [25632]
+    Introduce WP_Query::parse_search() method [25632]
+    Introduce WP_Query::parse_search_terms() method [25632]
+    Introduce WP_Query::get_search_stopwords() method [25632] 
+
+    Introduce WP_Query::reset_postdata() method [25601]
+    Introduce author__in and author__not_in for WP_Query [25248] 
+
+    Introduce WP_Http_Streams class [25224]
+    Introduce WP_Http::handle_redirects() method [24843]
+    Introduce WP_Http::is_ip_address() method [25224]
+    Introduce WP_Meta_Query::get_cast_for_type() method [25269] 
+
+Functions
+What's New
+
+    Introduce unregister_taxonomy_for_object_type() [25596]
+    Introduce got_url_rewrite() [25456]
+    Introduce get_previous_post_link() [25327]
+    Introduce get_next_post_link() [25327]
+    Introduce get_adjacent_post_link() [25327]
+    Introduce wp_using_ext_object_cache() [25289]
+    Introduce is_main_network() template tag [25147]
+    Introduce verify_file_md5() [25541]
+    Introduce wp_clean_plugins_cache() [25272]
+    Introduce find_core_auto_update() [25421]
+    Introduce get_core_checksums() [25540]
+    Introduce wp_get_translation_updates() [25566]
+    Introduce wp_extract_urls() [25313]
+    Introduce __return_empty_string() [25037]
+    Introduce mbstring_binary_safe_encoding() [25346]
+    Introduce reset_mbstring_encoding() [25346]
+    Introduce wp_get_installed_translations() [25536]
+    Introduce wp_get_pomo_file_data() [25520]
+    Introduce get_post_type_archive_template() [25291]
+    Introduce wp_auto_updates_maybe_update() [25421]
+    Introduce wp_authenticate_spam_check() [24848]
+    Introduce wp_get_user_contact_methods() [25606] 
+
+Changes
+
+    meta_box_cb callback for register_taxonomy() [25572]
+    description__like for get_terms() [25241]
+    show_in_menu for register_taxonomy() [25133]
+    Convert all get_category() calls to use get_terms() 
+
+Actions & Filters
+Actions
+
+    save_post_{$post_type} [25050]
+    user_new_form [25629] 
+
+Filters
+
+    Introduce wp_count_attachments [25579]
+    Introduce bulk_post_updated_messages [25577]
+    Introduce got_url_rewrite [25456]
+    Introduce post_password_expires [25450]
+    Introduce img_caption_shortcode_width [25444]
+    Introduce ajax_query_attachments_args [25279]
+    Introduce months_dropdown_results [25556]
+    Introduce install_plugins_table_api_args_{$tab} [25070]
+    Introduce upgrader_pre_download [25427]
+    Introduce enable_auto_upgrade_email [25542]
+    Introduce populate_network_meta [25414]
+    Introduce wp_link_query_args [25393]
+    Introduce wp_link_query [25393]
+    Introduce wp_audio_shortcode_override [25484]
+    Introduce wp_video_shortcode_override [25484]
+    Introduce enable_live_network_counts [25621]
+    Introduce enable_live_network_counts [25621]
+    Introduce wp_count_posts [25578]
+    Introduce wp_search_stopwords [25632]
+    Introduce posts_search_orderby [25632]
+    Introduce flush_rewrite_rules_hard [25328]
+    Introduce plugins_update_check_locales [25634]
+    Introduce themes_update_check_locales [25634] 
+
+External Libraries
+
+    zxcvbn (password strength meter) 
+
+Deprecated
+Miscellaneous
+
+    EP_ALL_ARCHIVES [24812] 
+	
+WordPress 3.6.1 is a maintenance release which addresses 13 bugs with version 3.6.
+
+1) Additionally: Version 3.6.1 fixes three security issues:
+
+- Remote Code Execution: Block unsafe PHP de-serialization that could occur in limited situations and setups, which can lead to remote code execution. Reported by Tom Van Goethem. CVE-2013-4338.
+- Link Injection / Open Redirect: Fix insufficient input validation that could result in redirecting or leading a user to another website. Reported by Dave Cummo, a Northrup Grumman subcontractor for the U.S. Centers for Disease Control and Prevention. CVE-2013-4339.
+- Privilege Escalation: Prevent a user with an Author role, using a specially crafted request, from being able to create a post "written by" another user. Reported by Anakorn Kyavatanakij. CVE-2013-4340. 
+
+2) Additional security hardening:
+- Updated security restrictions around file uploads to mitigate the potential for cross-site scripting. The extensions .swf and .exe are no longer allowed by default, and .htm and .html are only allowed if the user has the ability to use unfiltered HTML.

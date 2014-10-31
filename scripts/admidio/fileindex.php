@@ -1,0 +1,12 @@
+.DS_Store
+adm_install
+adm_my_files
+adm_plugins
+adm_program
+adm_themes
+config_example.php
+gpl-de.html
+gpl-en.txt
+index.php
+readme.txt
+config.php

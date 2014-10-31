@@ -1,0 +1,2 @@
+1. Change the location of USING BTREE in the feng.sql file (It should be to the left and not to the end of line).
+Default database engine InnoDB.

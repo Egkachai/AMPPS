@@ -1,0 +1,5 @@
+1. Install with and without sample data. In Both installtion make config file and folder writable on DA
+2. In 2nd installtion make blogs directory -R witable to generate .htaccess on DA.
+2. In Sql use nextday to generate the next day in the cron__task table
+3. While manual installation change the DBprefix in the _basic_config.template.php before installing the database
+4. uncheck This is a local / test / intranet. field

@@ -1,0 +1,74 @@
+CHANGELOG
+---------
+
+Version 2.11
+* little fix to Polish translation
+* instapaper spout: use HTTPS
+* A new spout to get full text for entries in the Teltarif RSS feed
+* fix pgsql VACUUM ANALYZE syntax error
+* A new spout to get full text for entries in the Lightreading RSS feed
+* Multi-language support of search and error fix.
+* Make it possible to disable auto stream more, add handy "Mark these read" button
+* Use PHP to set the fore color of all tags
+* itemsPerPage value is set from INI file.
+* API header returns application/json
+* added estonian translation
+* allow sub and sup elements
+* entry CSS tweaks
+* REST API : Get only items updated since given time #532
+* Bugfix: API REST : /login should return true if auth is disable
+* Bugfix: Heise feed pull kills Update process #499
+* Bugfix: https for openshift #488
+* Bugfix: heise spout error handling #517
+
+Version 2.10
+* fix error 500 on icon fetching
+* add heise hardware-hacks
+* reddit2 spout: fix link to return http
+* reddit2 spout: add empty validation on username and password
+* setting to lazy load images on mobile devices
+* update fat free php framework version 3.2.0
+* improve heise spout
+* fix duplicate items with MySQL
+* fix auto language detection
+* save OPML export file with xml extension
+* sqlite's "optimize()" was implemented
+* sources: show sources with error first
+* fix bug on base url determining using https
+* support search terms with quotes to find exact phrase like "Windows 8"
+* github spout fix (set user agent)
+* more opml export logging
+
+Version 2.9
+* new configuration parameter for share buttons
+* new Ukrainian translation
+* fix Italian translation
+* new error message bar
+* fix php 5.5 bug for some spouts
+* fix 'Undefined Index' error in item tpl when no shares available
+* add multi reddit support
+* avoid duplicate sources while importing OPML
+* prevent reflected XSS vulnerability in search form
+* add support for fullscreen Webapp on iPhone 5
+* added new config parameter (unread_order) to be able to read unread items from oldest to newest
+* update twitter api
+* the processing of the parameter of the session cookie is updated
+* prevent stored XSS vulnerability in the source add form
+* sort spouts by name
+* allow dd-element and style definition list elements
+* new GitHub spout to list commits on a repository
+* performance improvement on feed update
+
+Version 2.8
+* new Polish translation
+* improved Expires section and Compression in .htaccess
+* make api item listing, tags and sources stats accessible for non loggedin users in public mode
+* update fat free php framework version 3.0.8
+* new configuration parameter for default readability api key
+* new configuration parameter for allowing unauthorized access for the update job
+* new delicious support
+* support ssl proxy
+* new readability support
+* pass original url to external sites except for opening the anonymized url
+* new finnish translation
+* new spanish translation

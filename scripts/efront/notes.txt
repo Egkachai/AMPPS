@@ -1,0 +1,2 @@
+1. Copy the lessons folder from /www/content/lessons/* and add it to the zip package because these are the default lesson files and hence we need to add them.
+2. We have added ob_start(); www/install/install.php Because of headers error. Only for the version 3.6.13 If the same problem occurs then continue with it.

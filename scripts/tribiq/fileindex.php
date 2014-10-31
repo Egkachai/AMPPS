@@ -1,0 +1,16 @@
+README_FIRST.txt
+README_INSTALL.txt
+README_SYSTEM_REQUIREMENTS.txt
+README_UPGRADE.txt
+admin
+cache
+favicon.ico
+htaccess.txt
+index.php
+license.txt
+my_tribiq_modules
+my_tribiq_templates
+robots.txt
+tribiq
+tribiq_siteconfig.php
+tribiq_siteconfig.sample.php

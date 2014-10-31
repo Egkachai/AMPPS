@@ -1,0 +1,114 @@
+Version 1.11.11 - San Cristobal
+-------------------------------
+Core - General
+  - Minor improvements to module loading
+  - Minor fix to error console
+  - xajax now cleans buffers before outputting anything
+  - Improvements to behavior of the 'label' parameter on content_module blocks
+  - Enable adodb transactions
+  - Fix minor security issue with changegroupperms
+  - Minor bug fixes wrt static routes
+  - Now update dependencies when a module is upgraded
+  - Fixes #10135
+
+Core - Installer
+  - Minor change to timezone handling
+
+Core - Module Manager
+  - Fixes problem with displaying help and about
+
+Core - News
+  - Fixed sorting by category
+
+Core - MicroTiny
+  - Updated to tinymce 3.5.11 to fix IE11 issues
+  - Now use "forced_root_block: 'p'" to ensure that newlines generate paragraphs, and ctrl+enter generates <br/> tags.
+
+
+Version 1.11.10 - Pinzon
+------------------------
+Core - General
+  - New versions of jquery, jquery-ui, blueimp-uploader
+  - Makes security key 16 characters long
+  - Smarty template engine upgraded to version 3.1.16
+  - Fixes to function signatures, and fix a notice in cms_module_smarty_plugin_manager
+
+Core - MicroTiny
+  - Minor fix to MicroTiny
+
+Core - FileManager
+  - Fix and cleanup filemanager templates
+
+Core - News
+ - Fix potential SQL injection vulnerability wrt the sortby parameter
+
+Core - FileManager
+ - Fix issue with thumbnail generation on upload.
+
+Version 1.11.9 - Bartolome
+-----------------------------
+Core - General
+  - Fixes version.php to represent new schema
+  - Users with 'Modify Any Page' and 'Remove Content' can delete almost any page
+  - Fixes minor issue with event handlers
+  - Removes a debug limit on caching in contentoperations
+  - Robots don't index Error Console pages
+  - Only show technical details on the Error Console page to logged in administrators
+  - Entropy improvement in the cookie used to stay loggedin
+
+Core - Search
+  - Fixes PHP 5.3 dependency
+
+Core - Bug Reports
+  - #9549 CMSMS 1.11.8 performance regression
+
+Core - CMSMailer
+  - No longer send SMTP password in plain text
+
+
+Version 1.11.8 - Fioreana
+-----------------------------
+Core - General
+  - Updated config reference
+  - Fixes to module loading order stuff
+  - Fixes so that a modules create_url method is called from module_support CreateLink function
+  - Adds the TemplatePrefetch event
+  - Minor fixes to module XML export
+  - Adds the LoadAllContent method and optimizes loading of content list dropdowns and Listcontent
+  - Performance optimizations for static and dynamic URL handling
+  - Improve the help for content_image
+  - Performance improvements for listcontent and add/editcontent
+  - Improved and better documented sample htaccess.txt file
+  - No longer allow upgrading inactive modules.
+  - Smarty template engine upgraded to version 3.1.14
+  - Optimization to Menumanager to load all pages when no parameters limit the amount of pages to display.
+  - Adds a check to the installer and systeminfo page to test whether the filesystem has a significant time difference from the php process
+  - The bbcode compatible system info report is now forced to English for posting in the forum
+
+Core - Bug Reports
+  - #8272 Sitename in Russian becomes unreadable
+  - #8807 Section headers are accessible through changing URL
+  - #9324 Title is now available when editing a section header
+  - #9391 Bug in get_template_vars
+  - #9415 Function get_upload_size on class.cms_config.php doesn't handle upload_max_filesize correct when it is 1G
+
+Core - News
+  - Adds a dropdown field type to News
+
+Core - Search
+  - No longer index templates and GCB's
+  - Now can stop individual content blocks from being indexed
+  - #7538 Search Module removes valid words when indexing
+  - #8169 Search Module indexing partial smarty tags and failing to index words with dash
+
+Core - Printing
+  - minor fixes.
+
+
+Version 1.11.7 - Genovesa
+-----------------------------
+Core - General
+  - Added set_db_timezone config option which will execute the mysql command SET timezone attempting to solve the problem with date calculates wrt
+    server timezone vs. user timezone.  Config option defaults to FALSE until CMSMS 2.0
+  - Fixes BR#9269. Now it actually validates if output of get_real_ip() is actual IP address. Added another validation to login.php
+     Thanks to LeakFree.nl for reporting this!

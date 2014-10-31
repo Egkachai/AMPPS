@@ -1,0 +1,210 @@
+osTicket v1.9.3
+===============
+### Enhancements
+  * Redactor link dialog has a few common links selectable (#1135)
+
+### Improvements
+  * Fix missing `%{recipient}` variable used in canned reply (filters) (#1047)
+  * Fix `%{ticket.close_date}` variable in email message templates (#1090)
+  * Fix timezone offset used in time drop down (#1103)
+  * Fix premature session expiration (#1111)
+  * Correctly tag emails with source `email` (#1104)
+  * Correctly handle custom data for help topics (#1105)
+  * Fix validation and display issues for email mailboxes with system default priority and department (#1114)
+  * Fix crash when rendering custom list drop-downs with retired list items (#1113)
+  * Avoid system alert notices bouncing and creating tickets (#1115)
+  * Redactor no longer shortens URLs (#1135)
+
+### Performance and Security
+  * Fix XSS vulnerability in user name (#1108, #1131)
+
+osTicket v1.9.2
+===============
+### Enhancements
+  * Help topics have super powers (#974)
+    * They can be arbitrarily nested
+    * They can be manually sorted
+    * Admins can select a system default help topic
+    * They can inherit the form from a parent
+  * Form data entered to custom forms is preserved when switching help topics
+  * Update to Redactor 9.2.4 (http://imperavi.com/redactor/log/)
+  * Using canned responses no longer requires [Append] click (#973)
+  * Guests can sign out (#1000)
+  * Filter by custom list item properties (#1024)
+  * Time selection is based on admin configured time format (#1036)
+  * (Optionally) clients can access tickets without clicking email link (#999)
+  * Introduction of signals for mail filter plugins (#952)
+
+### Improvements
+  * Fix a few glitches on site page management (#986)
+  * Fix saving department alert recipients (#985)
+  * Fix assignment to account manager regardless of setting (#1013)
+  * Fix dialog boxes on some PJAX navigations (#1034)
+  * Help topics are properly sorted in FAQ management (#1035)
+  * Fix MySQL commands out-of-sync triggered by the ORM (#1012)
+  * Clients can follow email links from multiple tickets (#1001)
+  * Workaround for PHP variable corruption issue (#917, #969)
+  * All other improvements cited in v1.8.3
+
+### Performance and Security
+  * Fix XSS vulnerability in phone number widget (#1025)
+  * Fix several XSS vulnerabilities in client and staff interfaces (#1024, #1025)
+
+osTicket v1.8.4
+===============
+### Improvements
+  * Fix misleading and incorrect custom form management pages (#919)
+  * Fix linked external image tag corruption (#936)
+  * Fix multiple [Show Images] button for external images in client interface (e4b721c)
+  * Properly handle email address personal names with commas (#940)
+  * Organizations can define a website now (13312dd)
+  * Correctly handle email headers with leading tabs (RFC 2047) (#895, #953)
+  * Implement `%{ticket.user.x}` for email templates and canned responses (#966)
+  * Handle shameful `X-AMAZON-MAIL-RELAY-TYPE` invented by Amazon
+  * Issue summary field type must have associated data (#987)
+  * Fix `%{recipient.ticket_link}` for new message auto response (#989)
+  * Fix corruption of `%{company.name}` on new ticket notice (#1002)
+  * Fix signal data byref (#1037)
+  * Correctly handle email priority headers (#491)
+  * Fix mail header newline corruption with the Suhosin extension (#442)
+
+### Performance and Security
+  * Fix XSS vulnerability in the phone number widget (#1025)
+  * Fix several XSS vulnerabilities (#1025)
+
+osTicket v1.9.1
+===============
+### Enhancements
+  * [Draft Saved] box does not show if nothing entered yet (be38e8b)
+  * `Your Information` is now translatable (b189b86)
+  * Canceling new ticket also deletes drafts (2695dce)
+  * A users organization can be updated (#955)
+  * Users can be removed from an organization (#957)
+
+### Bugs
+  * Fix confusing form view after adding a new form (#923)
+  * Fix whitespace munging in emails if HTML ticket thread is disabled (#924)
+  * Fix [loading] popup on form save (#925)
+  * Fix URLs in emails linking through l.php (#929)
+  * Fix crash on custom list view if there no properties defined (#935)
+  * Fix handling of encoded email mailboxes with commas (#940)
+  * Fix display of link, external images in the ticket thread (99e719d)
+  * Fix crash submitting a new ticket with organization collaborators (7335525)
+  * Fix handling of custom date and time fields (#944)
+  * Fix PJAX detection of new deployment (a18bf0c)
+  * Fix continual release of ticket locks after navigation (30a3d2)
+  * Fix logout if following link from client email (bda2e42)
+  * Fix un-editable organization website (13312dd)
+  * Fix incorrect constant usage in User object (#958)
+
+osTicket v1.9
+=============
+### Client Login and Registration
+Setup flexible user registration policy for your help desk to match your
+needs. Users can register for accounts via the client portal and can now
+login with a username and password instead of email and ticket number. We
+also have a forgot-my-password link and several other new minor adjustments
+to the user profile.
+
+### External Authentication Support
+Use third-party SSO to authenticate your users and staff. Initial support
+include OAuth2 and LDAP (v0.5 of the LDAP plugin is required)
+
+### User Directory
+Search, view, and manage, even delete! contact information from the users
+from whom you receive tickets. Staff can also manually register users and
+even set an initial password. Users can also be imported and exported via
+CSV data.
+
+### Organizations
+Organize your users together into organizations. Organizations can have
+internal owners ("Account Manager") and external owners ("Primary Contact").
+The Account Manager can receive new ticket and new message alerts.
+Organization Primary Contacts and members can be automatically added to
+tickets as collaborators.
+
+### User and Organization Notes
+Quickly view, edit, add and remove pertinent notes on your users and
+organizations
+
+### Form Management
+Staff members can now add, delete, and sort forms attached to tickets, users
+and organizations as well as remove stale data where fields have been
+retired from active forms.
+
+### Custom Properties for Lists
+Add properties to your list items and use it in your email templates and
+pages. For example create an address property to a list of locations. List
+items can also be disabled now, which causes them to be hidden from
+selection.
+
+### PJAX page loading
+For browsers supporting PJAX, navigating around the system will see a
+performance improvement as javascript and css files are not re-parsed for
+each page load.
+
+### Redactor 9.2
+Several new features including a floating editor bar as well better support
+for non-US keyboards
+
+### Minor Enhancements
+  * Agent selection for assignment can be limited to the current department
+  * Complete help tip documentation for the Admin panel
+  * Email addresses can have an associated Help Topic
+  * Alerts and Notices can be disabled per Department
+  * Agent portal can have a login banner
+  * Inline images are not displayed with the attachments in the ticket view
+  * Original thread content format is saved (html or text)
+  * Alerts and Notices support quoted response removal
+
+osTicket v1.8.3
+=================
+### Enhancements
+  * Support filtering based on help topic (#728)
+  * Embedded images ([rfc2397](http://www.ietf.org/rfc/rfc2397.txt)) are correctly supported (#740)
+  * Allow regular staff members to show assigned open tickets on open queue (#751)
+  * Support [rfc1892](http://www.ietf.org/rfc/rfc1892.txt) style bounce notices (#871)
+  * Disable autocomplete on CAPTCHA fields (#821)
+  * Show `closed` date on the closed ticket queue (#865)
+  * Departments support assignment to members only (#862)
+  * Department email selection is optional (#862)
+
+### Bugs
+  * Fix error output on some systems if the `i18n` folder is not readable (#714)
+  * Fix possible crash if an email has no body (#707)
+  * Fix errors in download hash generation (#743)
+  * Support two-character file extensions (#719)
+  * Fix inline images with an invalid content id (#708)
+  * Remove confusing false-positive banner and admin email for client login (#763, #765)
+  * Fix detection of inline images without a `cid:` URL scheme (#779)
+  * Fix crash sending fatal alert email (bdfb2f1)
+  * Fix partial corruption of HTML @style attributes (#784)
+  * Fix several CSS styles for the staff interface (#785)
+  * Properly clear department selection from other settings on deletion (#792)
+  * Users with ticket-edit rights can see the "Change Owner" option in the more drop-down (#799)
+  * Links to new osTicket site are now correct (#808)
+  * Fix incorrect ticket count on simple ticket search (#809)
+  * Fix attachment size detection on systems with `mbstring.func_overload` set (#811)
+  * Fix horribly incorrect TNEF stream parsing (#825)
+  * Fix incorrect SQL query searching staff directory (91d65d9)
+  * Properly trim user input for ban list entries (#837)
+  * Ticket assignment alert can be disabled (#839)
+  * Preserve newlines in long answer form fields (with HTML disabled) (a04c5e7)
+  * Fix javascript error on form submission with empty date picker field (0013b40)
+  * Fix images in message portion of the new ticket notice to end user (#842)
+  * Send new internal note alert to assigned team members (#858)
+  * Properly strip leading and trailing whitespace from text/plain emails (fa7a025)
+  * Fix incorrect default template for ticket auto responses (97d6e25)
+  * Canned responses can be disabled (120d90b)
+  * Don't corrupt filters with selected, disabled teams, SLAs (120d90b)
+  * Fix crash sending some alert emails (efa7311)
+  * Fix HTML scrubbing with some content-ids (efa7311, eb5861f)
+  * Squelch E_WARN from ContentAjaxAPI::getSignature (ed33d06)
+  * `@localhost` is *not* a valid email address (f40c018)
+  * Fix `web.config` for newly patched IIS setups (78a47c2)
+  * Honor disabled assignment alerts for teams (#894)
+  * Send out internal note alerts to assigned staff (and Team) if Agent closes the ticket with the note (#903)
+
+### Performance and Security
+  * Fix cross site scripting (XSS) vulnerability in thread entry widget (9916214)
+  * Mail parsing uses significantly less memory (#861)

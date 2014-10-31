@@ -1,0 +1,1 @@
+1. Copy images from manually installed HTML folder media to our package zip ( Files are add_to_cart.gif, bargain-tag-red.gif, poweredbySS.gif etc)

@@ -1,0 +1,49 @@
+HESK CHANGELOG
+
+Changes in 2.5.5
+- fix: correct TinyMCE update to 3.5.11 from version 2.5.4
+
+Changes in 2.5.4
+- fix: MySQL test ignoring new database name when verifying tables
+- fix: adjust time if MySQL and PHP use different time zone setting
+- fix: single quotes not escaped properly in Javascript
+- updated TinyMCE to 3.5.11
+
+Changes in 2.5.3
+- Firefox built-in spell check is now enabled when creating/editing knowledgebase articles
+- rephrased few commands in the interface for better understanding and consistency
+- fix: some Javascript not working if translated command contains a single quote
+- fix: line separator chars causing Javascript syntax errors in canned responses
+- fix: Hotmail breaks ticket tracking ID in email reply subject by adding spaces
+- fix: define dt and lastchange variables for emails when adding a ticket note
+- fix: email date should be in RFC2822 format (no manual time adjustment)
+- fix: allow upgrading from 2.5.x series without patch files
+- updated pop3.php to avoid a strict standards warning
+- improved and simplified installation/update script
+- added .header a:visited to hesk_style.css
+- user password length is no longer limited
+- updated TinyMCE to 3.5.10
+
+Changes in 2.5.2
+- reports now include "Time worked" summary
+- modified sorting by "Last Replier" field. Staff will be sorted first (by ID), then customers by name
+- fix: toggling limit of categories and features for users should be controlled by selected admin value
+- fix: checking if temporary file exists may cause problems with open_basedir in effect
+- fix: disabled attachments in version 2.5.x don't load all required functions
+- fix: knowledgebase categories have problems with % char in their name
+- fix: anti-SPAM question doesn't accept 0 as a valid answer
+- updated TinyMCE to 3.5.9
+
+Changes in 2.5.1
+- added "Updated" value to the export of tickets to Excel
+- added support for exporting tickets in Zip without Zip library enabled
+- added two new email template tags: %%CREATED%% and %%UPDATED%%
+- reduced memory usage in knowledgebase article suggestion, search and display
+- set last replier name to the email sender name with email piping/POP3 fetching
+- show "Open" and "Resolved" ticket count in reports by user and by category
+- fixed HTML quoted printable chars causing problems in non UTF-8 emails
+- fixed Javascript encoding of UTF-8 URL query parts
+- fixed behavior of hesk_isEmailLoop() function
+- remove invalid UTF-8 bytes from submitted text
+- improved parsing of incoming email messages
+- delete temporary email files on errors

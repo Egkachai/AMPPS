@@ -1,0 +1,29 @@
+1) admin/import_lang.php - The Whole File.
+
+2) software_lang.php - $l['overwrite'] = 'Overwrite Files';
+
+3) software_lang.php - $l['overwrite_exist'] = '<b>OR</b> <br />Select the checkbox to overwrite all files and continue';
+
+4) admin/settings_lang.php - $l['off_sync_link'] = 'Turn Off Sync Link';
+
+5) admin/settings_lang.php - $l['off_sync_link_exp'] = 'This will turn off the Synchronize Link for the endusers.';
+
+6) admin/settings_lang.php - $l['off_panel_link'] = 'Turn Off Control Panel Link';
+
+7) admin/settings_lang.php - $l['off_panel_link_exp'] = 'This will turn off the Control Panel Link in the Dock for the endusers.';
+
+8) admin/settings_lang.php - $l['chmod_conf_file'] = 'Turn Off Control Panel Link';
+
+9) admin/settings_lang.php - $l['chmod_conf_file_exp'] = 'This will turn off the Control Panel Link in the Dock for the endusers.';
+
+10) software_lang.php - $l['mail_admin'] = 'Admin Username';
+
+11) software_lang.php - $l['mail_pass'] = 'Admin Pass';
+
+12) software_lang.php - $l['ins_emailto'] = 'Email installation details to';
+
+13) admin/settings_lang.php - $l['suphp_detected'] = 'suPHP Detected';
+
+14) admin/index_lang.php - $l['sub_gen_set'] = 'General';
+
+15) admin/index_lang.php - $l['tab_import'] = 'Import';

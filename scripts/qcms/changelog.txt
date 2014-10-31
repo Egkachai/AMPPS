@@ -1,0 +1,82 @@
+------------------------------
+Quick.Cms by OpenSolution.org
+www.opensolution.org
+------------------------------
+
+ChangeLog
+------------------------------
+5.5 - 2014-09-16
+  + improved protection of uploaded files
+  + hiding login in settings
+  + forcing login and password change
+  + simplified developer mode
+  + tinyMCE editor, jQuery and other plugins updated to the latest version 
+  + adapting the HTML and CSS code to the more restrictive requirements WCAG 2.0
+  + better protections against attempts to change data by sending crafted links or forms to the website's administrator
+  + bug fixes (more info: http://opensolution.org/download/Quick.Cms/bugFixes.html ): 
+    + quote marks not allowed in neither login nor admin
+    + protection against uploading files with .pht extension
+  + some other less relevant changes
+
+5.4 - 2014-03-27
+  + WAI improvements (tabindex, legends in forms) 
+  + ability to restrict logging in to specified IP - significantly improving admin panel's security 
+  + new button "save and add another", that will make adding new contents easier 
+  + ability to set custom characters (change2Latin function) array while generating URL addresses in database/config/lang_xx.php 
+  + new link leading to page's preview during its edition 
+  + set of improvements making managing the admin panel faster 
+    + adding tabindexes to forms 
+    + auto focus in froms on the first field to be filled 
+  + tinyMCE editor updated to the latest version 
+  + libraries updated to the latest version 
+  + HTML code optimization, making a website load faster in a browser 
+  + bug fixes (more info: http://opensolution.org/download/Quick.Cms/bugFixes.html ): 
+    + saving language variables containing new lines bug 
+    + automatic change of admin language improved 
+  + some other less relevant changes
+
+5.3 - 2013-12-18
+  + ability to turn off some options, which are available for a customer in the admin panel, but changing which may cause problems for a webmaster for example:
+    + disabling the option to change page themes 
+    + blocking the option to change a skin 
+    + disabling the option to remove translations 
+    + disabling the option to assign pages with special functions in the "Pages" tab, for example, "Start page" 
+    + and many more
+  + some improvements to make working in the admin panel even easier
+    + auto focus on a search engine in lists 
+    + links in the admin panel to the website as seen by customers 
+    + highlighting selected sections in their main menus 
+    + an information whether the currently edited page is a new page or a previously existing one
+  + new subpages list type "List (name)". Useful when generating additional subpages lists, for example, in a menu
+  + deactivating link to a current page in a navigation path on that page
+  + tinyMCE editor updated to the latest version
+  + new bug fixes (more info: http://opensolution.org/download/Quick.Cms/bugFixes.html ):
+    + protection against uploading files with .pl extension
+  + some other less relevant changes
+
+5.2 - 2013-09-10
+  + new messages (notifications) in admin panel's dashboard informing about upgrading script's security, updates, login and password change, etc
+  + new functionalities to facilitate webdesigning process:
+    + new functions getPageName, getPageShortDescription, getPageDefaultImage. A "how to" for these functions is available at: http://opensolution.org/Quick.Cms/docs/?id=pl-tips#23
+    + page id (id="page2") put in the <body> tag. It allows individual styles to be defined for each page.
+    + new $config['date_format_admin_default'] variable in database/config/general.php can be modified to adjust date and time display format
+  + including page name in messages requesting confirmation of page deletion
+  + displaying an "image is too large" message when uploading an image that is too large to create a thumbnail
+  + "forgot your password" link displayed if there are problems when logging in to admin panel
+  + new subpages display type - "no display"
+  + tinyMCE editor updated to the latest version
+  + new bug fixes (more info: http://opensolution.org/download/Quick.Cms/bugFixes.html ):
+    + normalization of uploaded file names
+    + removing source file when "Change file names to page or product name" option is on
+  + some other less relevant changes
+
+5.1 - 2013-04-04
+  + deleted some code from older versions and not used now variables and definitions in PHP
+  + added "noindex, nofollow, noarchive" rule for robots and crawlers in HTML code in admin panel login form
+  + optimized JavaScript code in the file core/common-admin.js
+  + little changes in admin panel layout: menu and dashboard
+  + few bugs were fixed, for example (more info: http://opensolution.org/download/Quick.Cms/bugFixes.html):
+    + in some situations pagination in admin panel was not working correctly
+    + there was problem with saving character " in logo field in settings
+  + php function checkCorrectFile() in libraries/file-jobs.php was updated
+  + other small changes not mentioned here

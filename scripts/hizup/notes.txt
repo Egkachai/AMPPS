@@ -1,0 +1,2 @@
+1. For Enduser redirect Add our .htaccess
+2. Remove Windows condition once module installation starts working.

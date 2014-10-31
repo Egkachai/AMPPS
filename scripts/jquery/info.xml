@@ -1,0 +1,61 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:8px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://docs.jquery.com/Tutorials:Live_Examples_of_jQuery
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/javascripts/libraries/jQuery
+	</ratings>
+	<space>
+		282766  
+	</space>
+	<support>
+		http://jquery.com/
+	</support>
+	<version>
+		1.11.1
+	</version>
+	<mod>25</mod>
+	<release_date>01-05-2014</release_date>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">jQuery</font>is a new kind of JavaScript Library.
+		<br /><br />jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.
+		<br /><br />
+		jQuery is licensed under the <a href="http://docs.jquery.com/License" target="_blank">MIT or GPL Version 2 Licenses</a>.
+		</english-overview>		
+		<english-features>
+		jQuery has the following features:
+<ul>
+<li> <a href="http://docs.jquery.com/Selectors" title="Selectors">Selectors</a>
+</li><li> <a href="http://docs.jquery.com/Attributes" title="Attributes">Attributes</a>
+</li><li> <a href="http://docs.jquery.com/Traversing" title="Traversing">Traversing</a>
+</li><li> <a href="http://docs.jquery.com/Manipulation" title="Manipulation">Manipulation</a>
+</li><li> <a href="http://docs.jquery.com/CSS" title="CSS">CSS</a>
+
+</li><li> <a href="http://docs.jquery.com/Events" title="Events">Events</a>
+</li><li> <a href="http://docs.jquery.com/Effects" title="Effects">Effects</a>
+</li><li> <a href="http://docs.jquery.com/Ajax" title="Ajax">Ajax</a>
+</li><li> <a href="http://docs.jquery.com/Utilities" title="Utilities">Utilities</a>
+</li><li> <a href="http://docs.jquery.com/Internals" title="Internals">Internals</a>
+</li></ul>
+
+<font size="4" color="78ba91"><b>Browser Compatibility</b></font>
+<ul><li> <a href="http://www.mozilla.com/en-US/firefox/" title="http://www.mozilla.com/en-US/firefox/">Firefox</a> 2.0+
+</li><li> <a href="http://www.microsoft.com/windows/products/winfamily/ie/" title="http://www.microsoft.com/windows/products/winfamily/ie/">Internet Explorer</a> 6+
+</li><li> <a href="http://www.apple.com/safari/" title="http://www.apple.com/safari/">Safari</a> 3+
+
+</li><li> <a href="http://www.opera.com/browser/" title="http://www.opera.com/browser/">Opera</a> 9+
+</li><li> <a href="http://www.google.com/chrome/" title="http://www.google.com/chrome/">Chrome</a> 1+
+</li></ul>
+		</english-features>
+	</languages>
+</soft>

@@ -1,0 +1,8 @@
+1. We take the data files from the manual and make the epesidata.zip and extract it after installation(remove contents of cache folder).
+2. Remove the following code from .htaccess
+ 
+#if your server is running php as apache module:
+php_value memory_limit "64M"
+php_flag magic_quotes_gpc off
+
+3. Remove the INSERTS from following tables from DB tools_whoisonline_users, session_client, session, history

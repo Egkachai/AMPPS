@@ -1,0 +1,11 @@
+HELP_US.txt
+PH7.COPYRIGHT.txt
+PH7.LICENSE.txt
+README.md
+README2.txt
+_protected
+_test
+_tools
+installation_instructions.txt
+public
+.htaccess

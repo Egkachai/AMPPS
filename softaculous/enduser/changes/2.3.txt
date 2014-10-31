@@ -1,0 +1,9 @@
+1) software_lang.php - $l['db_alpha_num'] = 'Only alpha numeric characters are allowed for the Database name.';
+
+2) admin/adminindex_lang.php - $l['refreshlicense'] = 'Refresh License';
+
+3) admin/softwares_lang.php - $l['scripts_are_ins'] = 'scripts are installed';
+
+4) software_lang.php - $l['some_files_exist'] = 'Installation cannot proceed because the following files already exist in the target folder : ';
+
+5) software_lang.php - $l['delete_files'] = 'Please delete these files or choose another folder.';

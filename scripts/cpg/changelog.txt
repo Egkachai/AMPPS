@@ -1,0 +1,123 @@
+************************
+Coppermine Photo Gallery
+************************
+Copyright (c) 2003-2014 Coppermine Dev Team
+v1.0 originally written by Gregory Demar
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 3
+as published by the Free Software Foundation.
+********************************************
+Coppermine version: 1.5.32
+$HeadURL: https://svn.code.sf.net/p/coppermine/code/trunk/cpg1.5.x/CHANGELOG.txt $
+$Revision: 8745 $
+*********************************************
+Changelog
+=========
+[A] = Added new feature
+[B] = Bugfix (fix something that wasn't working as expected)
+[C] = Cosmetical fix (layout, typo etc.)
+[D] = Documentation improvements
+[M] = Maintenance works
+[O] = Optimization of code
+[S] = Security fix (issues that are related to security)
+*********************************************
+
+2014-10-07 [M] Release of cpg1.5.32 {eenemeenemuu}
+2014-10-07 [S] Fixed XSS issue (thread ID 77831) {eenemeenemuu}
+2014-10-07 [B] Fixed comment form submit for Android browser {eenemeenemuu}
+2014-10-07 [A] Added hidden feature to display only empty albums on batch-add (thread ID 77824) {eenemeenemuu}
+2014-10-06 [B] Fixed several issues with file path names on batch-add (thread ID 77820 & 77823) {eenemeenemuu}
+2014-10-06 [B] Fixed pre-selection of files for Windows driven systems on batch-add interface (thread ID 77834) {eenemeenemuu}
+2014-10-06 [A] Added hidden feature to hide already existing files on batch-add interface (thread ID 77671) {eenemeenemuu}
+2014-09-12 [B] Fixed issue with user gallery pagination (thread ID 77790) {eenemeenemuu}
+2014-08-18 [B] Fixed displaying wrong image issue (thread ID 77705) {eenemeenemuu}
+2014-07-28 [O] Updated Czech language file (user contribution) {eenemeenemuu}
+2014-07-08 [M] Counted version count up in SVN repository from cpg1.5.30 to cpg1.5.31 {eenemeenemuu}
+2014-07-08 [M] Release of cpg1.5.30 {eenemeenemuu}
+2014-07-04 [B] Fixed default value for columns that use the MySQL datatype "datetime" (thread ID 77646) {eenemeenemuu}
+2014-07-01 [B] Fixed display of not allowed file types that already exist in the gallery (thread ID 77381) {eenemeenemuu}
+2014-07-01 [D] Fixed misleading "URL of the bridge app" help box regarding trailing slash (thread ID 76286) {eenemeenemuu}
+2014-07-01 [A] When bridged to phpBB3, use admin group IDs from database, if available (thread ID 77383) {eenemeenemuu}
+2014-07-01 [B] Fixed batch add interface issue when selecting folder (thread ID 77442) {eenemeenemuu}
+2014-06-19 [C] Fixed pagination after deleting all hit stats (thread ID 77606) {eenemeenemuu}
+2014-05-07 [B] Allow access to update.php if gallery is in offline mode (thread ID 77485) {eenemeenemuu}
+2014-04-29 [B] Fixed wrong display of albums in not displayed sub categories (thread ID 77464 & 77470) {eenemeenemuu}
+2014-04-04 [C] Removed some PHP notices during installation {eenemeenemuu}
+2014-04-02 [M] Counted version count up in SVN repository from cpg1.5.28 to cpg1.5.29 {eenemeenemuu}
+2014-04-02 [M] Release of cpg1.5.28 {eenemeenemuu}
+2014-04-02 [D] Updated packaging docs {eenemeenemuu}
+2014-03-27 [B] Fixed utilization of CSS class 'middlethumb' on film strip (thread ID 77353) {eenemeenemuu}
+2014-03-11 [S] Fixed XSS issue {eenemeenemuu}
+2014-03-11 [B] Fixed several issues with keywords manager {eenemeenemuu}
+2014-03-11 [A] Added function 'theme_album_info' to make information which is displayed next to each album themeable {eenemeenemuu}
+2014-03-05 [A] Increased character limit to allow recently released top level domains (thread ID 77183) {eenemeenemuu}
+2014-03-05 [A] Added plugin hooks 'comment_update', 'comment_add' and 'comment_approve' (thread ID 60896) {eenemeenemuu}
+2014-03-05 [A] Added plugin hook 'theme_thumbnails_header' {eenemeenemuu}
+2014-02-27 [O] Updated Catalan language file (user contribution) {eenemeenemuu}
+2014-02-04 [O] Replaced some jQuery code with plain JavaScript code to make admin tools compatible with later jQuery versions, in case users want to upgrade (thread ID 76858) {eenemeenemuu}
+2014-01-29 [B] Fixed function 'starttable' in theme 'curve' to make fully compatible with plugin hook 'search_form' {eenemeenemuu}
+2014-01-29 [A] Added possibility to use pictures linked to albums via album keyword as category thumbnail (thread ID 77008) {eenemeenemuu}
+2014-01-28 [B] Don't redirect to registration form after login (thread ID 77140) {eenemeenemuu}
+2014-01-23 [C] Moved config options "Horizontal/vertical padding for full-size pop-up", "Albums can be private" and "Show private album icon to unlogged user" to other groups {eenemeenemuu}
+2014-01-23 [B] Fixed album and file count if category contains currently not displayed sub-categories (thread ID 60827 & 76914) {eenemeenemuu}
+2014-01-23 [D] Updated known issues page {eenemeenemuu}
+2014-01-23 [B] Fixed album and file count if category contains private albums {eenemeenemuu}
+2014-01-22 [O] Optimized main page code to reduce database query count {eenemeenemuu}
+2014-01-21 [D] Fixed various documentation glitches {eenemeenemuu}
+2014-01-21 [B] Fixed reference to documentation in config {eenemeenemuu}
+2014-01-21 [A] Added hidden feature to regard upload time of linked files in album info (thread ID 77021) {eenemeenemuu}
+2014-01-20 [C] Removed duplicate page header if error occurs when deleting an album {eenemeenemuu}
+2014-01-17 [C] Fixed display of keywords with special characters (thread ID 76830) {eenemeenemuu}
+2014-01-09 [B] Fixed misleading template error message {eenemeenemuu}
+2014-01-09 [M] Counted version count up in SVN repository from cpg1.5.26 to cpg1.5.27 {eenemeenemuu}
+2014-01-07 [M] Release of cpg1.5.26 {eenemeenemuu}
+2014-01-03 [S] Fixed permission check if users aren't allowed to upload to public albums (thread ID 76979) {eenemeenemuu}
+2014-01-02 [M] Updated header information to reflect new year {eenemeenemuu}
+2013-12-27 [O] Updated Czech language file (user contribution) {eenemeenemuu}
+2013-12-18 [S] Updated SWFUpload to fix several XSS issues (thread ID 76930) {eenemeenemuu}
+2013-12-17 [S] Fixed XSS issue (thread ID 76930) {eenemeenemuu}
+2013-12-12 [A] Added constant THEME_HAS_COMMENT_GRAPHICS to use theme-depended images for approve/disapprove/delete/edit/report comments (thread ID 76746) {eenemeenemuu}
+2013-12-12 [B] Fixed smiley detection in theme directory (thread ID 76746) {eenemeenemuu}
+2013-12-12 [A] Added CSS classes "thumb_title_title", "thumb_title_views", "thumb_title_owner", "thumb_caption_caption", "thumb_caption_msg_date", "thumb_caption_author", "thumb_caption_ctime", "thumb_caption_rating", "thumb_caption_mtime" to thumbnail meta data on thumbnails.php pages (thread ID 76902) {eenemeenemuu}
+2013-11-28 [S] Fixed XSS issue (thread ID 76830) {eenemeenemuu}
+2013-11-06 [B] Removed references to constants THEME_HAS_VANITY_GRAPHICS and THEME_IS_XHTML10_TRANSITIONAL, as they didn't worked as intended {eenemeenemuu}
+2013-11-06 [B] Fixed clickable keyword list content (thread ID 76793) {eenemeenemuu}
+2013-11-06 [A] Added CSS class "thumbnail" to album thumbnails (thread ID 76662) {eenemeenemuu}
+2013-11-05 [A] Added CSS class "thumbnail" to thumbnail images on thumbnails.php pages (thread ID 76662) {eenemeenemuu}
+2013-11-05 [D] Fixed docs regarding user quota (thread ID 76773) {eenemeenemuu}
+2013-11-01 [C] Shuffled thumbnails for meta album "random" instead of sorting them by pid (thread ID 76742) {eenemeenemuu}
+2013-10-31 [B] Fixed regex check for "The content of the main page" in config (thread ID 76317) {eenemeenemuu}
+2013-10-14 [D] Updated template plugin to match fixed typo in the docs (thread ID 76720) {eenemeenemuu}
+2013-10-14 [D] Fixed typo in plugin writing docs (thread ID 76720) {eenemeenemuu}
+2013-10-10 [O] Optimized album thumbnails code to reduce database query count (thread ID 76466) {eenemeenemuu}
+2013-10-09 [B] Extended captcha_plugin_enabled function to distinguish various forms {eenemeenemuu}
+2013-10-04 [B] Added PHP4-replacement of function htmlspecialchars_decode to fix email issues (thread ID 76665) {eenemeenemuu}
+2013-09-06 [B] Fixed strict standards warning messages (thread ID 76493) {eenemeenemuu}
+2013-09-06 [C] Fixed display of additional groups on profile page if user doesn't belong to more than one group {eenemeenemuu}
+2013-09-05 [C] Fixed display of quota on profile page if user belongs to more than one group {eenemeenemuu}
+2013-09-02 [A] Added possibility to choose category thumbnail for user galleries category (thread ID 76604) {eenemeenemuu}
+2013-09-02 [O] Optimized code if 'Show first level album thumbnails in categories' is disabled (thread ID 76466) {eenemeenemuu}
+2013-08-28 [O] Optimized admin tools "Update thumbs and/or resized photos" and "Delete original image backup for watermarked images" (thread ID 75189) {eenemeenemuu}
+2013-08-26 [B] Fixed possible issue when searching for image titles (thread ID 76393) {eenemeenemuu}
+2013-08-26 [B] Fixed error message when removing favorite pictures (thread ID 76549) {eenemeenemuu}
+2013-08-21 [B] Fixed custom menu link icon (thread ID 76418) {eenemeenemuu}
+2013-05-23 [M] Counted version count up in SVN repository from cpg1.5.24 to cpg1.5.25 {eenemeenemuu}
+2013-05-22 [M] Release of cpg1.5.24 {eenemeenemuu}
+2013-05-22 [B] Added missing plugin hooks to theme 'curve' (thread ID 75613) {eenemeenemuu}
+2013-05-16 [A] Added IP address to security log (thread ID 75085) {eenemeenemuu}
+2013-05-15 [B] Fixed accent issues on keyword manager (thread ID 76226) {eenemeenemuu}
+2013-05-06 [A] Added support for Internet Explorer 9 & 10 to statistic details page (thread ID 76221) {eenemeenemuu}
+2013-05-03 [A] Added Windows 8 support to statistic details page (thread ID 76221) {eenemeenemuu}
+2013-05-02 [O] Merged missing code changes of error message support for the batch add process {eenemeenemuu}
+2013-05-02 [A] Don't check unsupported/disallowed file types at the batch-add upload form (thread ID 76084) {eenemeenemuu}
+2013-04-26 [C] Fixed PHP notices during install (thread ID 64257) {eenemeenemuu}
+2013-04-10 [B] Fixed possible missing parameter error during registration process (thread ID 76112) {eenemeenemuu}
+2013-04-09 [A] Added Persian language file (user contribution) {eenemeenemuu}
+2013-03-20 [B] Fixed registration process if "personal_album_on_registration" is enabled (related to thread ID 74187) {eenemeenemuu}
+2013-02-28 [B] Fixed edit files button next to public albums if user isn't allowed to create albums, but can upload files (thread ID 75545) {eenemeenemuu}
+2013-02-01 [D] Updated packaging docs {eenemeenemuu}
+2013-01-30 [A] Display maximum allowed file size when using the Flash-driven uploader {eenemeenemuu}
+2013-01-25 [B] Fixed album drop-down box options for guests (thread ID 75905) {eenemeenemuu}
+2013-01-24 [A] More precise database query times in debug output (thread ID 75864) {eenemeenemuu}
+2013-01-17 [M] Counted version count up in SVN repository from cpg1.5.22 to cpg1.5.23 {eenemeenemuu}

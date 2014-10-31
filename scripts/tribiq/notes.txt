@@ -1,0 +1,11 @@
+1. Dump the database afer logging in and enabling the English US language.
+2. Change in database table site_settings ('site_enabled', '0') to ('site_enabled', '1')
+3. Also in [[dbprefix]]_content make home page pulish i.e chage [[dbprefix]]_content html_1 status first_draft to published and visitor_version from '0' to '1'.
+
+(1, 'html', 'html_1', 1, 'en-us', 'home', '[[regtime]]', 0, 1, 'first_draft', 0, NULL),
+
+to 
+
+(1, 'html', 'html_1', 1, 'en-us', 'home', '[[regtime]]', 1, 1, 'published', 0, NULL),
+
+4. Upgrade is working we just need to check the fix in Softaculous.

@@ -1,0 +1,50 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/others/TCExam
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/TCExam
+	</ratings>
+	<space>
+		 40568181
+	</space>
+	<support>
+		http://www.tcexam.org/
+	</support>
+	<version>
+		12.1.024
+	</version>
+	<mod>93</mod>
+	<release_date>11-06-2014</release_date>
+	<admin>admin/code/index.php</admin>
+	<min_require>11.0.000</min_require>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">TCExam</font> is a FLOSS system for electronic exams (also know as CBA - Computer-Based Assessment, CBT - Computer-Based Testing or e-exam) that enables educators and trainers to author, schedule, deliver, and report on quizzes, tests and exams.
+		<br /><br />
+		TCExam is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU AFFERO GENERAL PUBLIC LICENSE  Version 3</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Free and Open Source Software</li>
+<li>Community support</li>
+<li>Platform Independent</li>
+<li>No expensive hardware requirements</li>
+<li>Internationalization (I18N)</li>
+<li>Accessibility and Usability</li>
+<li>Data Import and Export</li>
+<li>Rich Content</li>
+<li>Unique test</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

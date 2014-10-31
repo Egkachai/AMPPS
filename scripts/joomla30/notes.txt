@@ -1,0 +1,2 @@
+1. Do not install multiple times for sample data. Take sample data sql from joomla package and change dbprefix
+2. Choose Database Type "MySQLi" 

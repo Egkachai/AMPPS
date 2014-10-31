@@ -1,0 +1,17 @@
+CHANGELOG.txt
+COPYING.txt
+IMG
+INSTALL.txt
+config
+ecrire
+htaccess.txt
+index.php
+local
+plugins-dist
+prive
+rien.gif
+spip.php
+spip.png
+squelettes-dist
+svn.revision
+tmp

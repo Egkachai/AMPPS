@@ -1,0 +1,7 @@
+1) index_lang.php - $l['cat_php_socialnetworking'] = 'Social Networking';
+
+2) index_lang.php - $l['cat_php_microblogs'] = 'Micro Blogs';
+
+3) index_lang.php - $l['back_to_top'] = 'Back to Top';
+
+4) admin/import_lang.php - $l['no_users'] = 'No users found on the server';

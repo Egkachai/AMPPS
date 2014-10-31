@@ -1,0 +1,15 @@
+admin
+doc
+favicon_cms.ico
+fileloc.php
+include.php
+index.php
+install
+lib
+moduleinterface.php
+modules
+plugins
+tmp
+uploads
+version.php
+config.php

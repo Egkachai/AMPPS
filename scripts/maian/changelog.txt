@@ -1,0 +1,66 @@
+Maian Support Changelog (www.maiansupport.com)
+
+[+] Added   [*] Updated  [-]  Bug Fix
+
+Version 3.0: ([28/05/2014])
+----------------------------------------------------
+  [+] (API) Accounts can now be opened via the api. Useful if you want to open a support account with the same login credentials after another operation. ie, a product sale.
+  [+] (API) Added api debug log. Useful to debug responses when using API method.
+  [+] (API) Now supports JSON as well as XML. Both methods can be enabled or disabled.
+  [+] (Admin) Added mail test options under smtp settings. Easily test emails are working OK. Supports multiple addresses.
+  [+] (Admin) Added new option on ticket search screen to export ticket overview stats for selected tickets
+  [+] (Admin) Added new option to tools page. Global Password Reset. Enables global password update. Note that this is ONLY available to the global administrator for security reasons.
+  [+] (Admin) Added new visitor accounts section to admin. Accounts can be managed or added via new section.
+  [+] (Admin) Added option not to send email notifications if visitor closes ticket with reply
+  [+] (Admin) Added option to specify alternative attachments base path.
+  [+] (Admin) Added option to specify how many entry logs to keep. Can help with database overheads.
+  [+] (Admin) Added reCaptcha theme and language settings to control panel
+  [+] (Admin) Backend notes can now be added for support team members
+  [+] (Admin) Brand new internal messaging system for admin users. Inbox, outbox and folder creation. Can be enabled/disabled per user.
+  [+] (Admin) If you add additional pages to the admin area (custom programmed), you can determine which staff members can access page via additional page rules.
+  [+] (Admin) New feature: Ticket History - Overview in admin of all ticket actions. Optional and can be enabled/disabled per support team user.
+  [+] (Admin) Tickets can now be added via the admin interface. Useful for phone queries.
+  [+] (Frontend) Added Print Friendly support for articles (www.printfriendly.com)
+  [+] (Frontend) Added better multi language support for visitors. You can now set a template set to load per language.
+  [+] (Frontend) Added option to require visitors to be signed in to open tickets. This is optional.
+  [+] (Frontend) Added options to set max login attempts and ban time for visitor accounts
+  [+] (Frontend) Added visitor account entry logs. Can be enabled/disabled per account.
+  [+] (Global) Added custom PHP error handler. Can be disabled if required.
+  [+] (Global) Brand new interface with html5 responsive layout for tablets/mobile devices. Uses twitter bootstrap.
+  [+] (Imap) Added skip filters. Any skip flags found permanently delete and ignore message. Useful for filtering out mailer-daemon messages.
+  [+] (Imap) Implemented Tobias Leupold`s b8 spam filtering system (http://nasauber.de/opensource/b8/). Can be enabled per account. Helps to filter incoming spam to imap mailboxes. Messages can be deleted immediately or put on hold for later acceptance.
+  [+] (Imap) Improvements to imap functions. Added timeout and memory override options and also debug log.
+  [*] (Admin) Added option to most admin pages to set how many entries to load per page. This supercedes any set restrictions.
+  [*] (Admin) Added order by and filter by options to many admin pages.
+  [*] (Admin) Additional emails can now be set for admin users, so notifications can go to multiple addresses
+  [*] (Admin) All admin ticket lists (open, closed etc) now show last reply name, date and time.
+  [*] (Admin) Database backup email addresses are now remembered and auto filled next time.
+  [*] (Admin) Entry log can now be filtered by date range
+  [*] (Admin) Improvements to ticket assigning. Ticket ID and subject are now included in notification emails.
+  [*] (Admin) POP3 option removed from imap settings to avoid confusion. All imap accounts must now be set to read imap mailboxes.
+  [*] (Admin) Standard responses and FAQ questions can now be added to selected categories instead of single or all
+  [*] (Admin) Standard responses, priority levels, F.A.Q, departments, imap acccount, custom fields and users are now fully searchable
+  [*] (Admin) The ability to merge tickets is now optional and can be enabled/disabled per support team member.
+  [*] (Admin) Ticket search updated to search ticket subject and ticket notes
+  [*] (Admin) Updated admin ticket search to also search reply comments. This is optional.
+  [*] (Cron) Improvements to auto close routine. Tickets now grouped for visitors, resulting in single emails instead of multiple.
+  [*] (Cron) Improvements to email digest. Disputes only included if enabled. Ticket assign information only included if enabled. Digest can be enabled/disabled per support staff.
+  [*] (Frontend) Better search routine for visitor accounts with optional filters.
+  [*] (Frontend) Dispute system can now be enabled or disabled depending on preference. Disabled by default.
+  [*] (Frontend) Entry log now logs IP address
+  [*] (Frontend) F.A.Q attachments can now be in any location within the support system
+  [*] (Frontend) Standard responses can now be ordered for display order preference.
+  [*] (Frontend) Ticket attachments can now be enabled or disabled and also ordered on FAQ screens.
+  [*] (Frontend) Ticket/F.A.Q attachment paths are now masked and instead referenced by query string parameter.
+  [*] (Frontend) Visitors can now NOT add additional replies if tickets are waiting to be assigned to support staff.
+  [*] (Global) BBcode is now enabled by default for admin users. Optional for visitor accounts.
+  [*] (Global) Emails are now sent in html and plain text format by default for a nicer presentation.
+  [*] (Global) Javascript libraries updated to latest stable releases. jQuery to version 1.11.0
+  [*] (Global) PHP4 support dropped. Now only supports PHP5 or higher.
+  [*] (Global) Standard PHP mail option dropped. SMTP must now be used for all mail operations.
+  [*] (Global) Updated mailer to latest stable release. Added security options (tls or ssl) and debug mode to admin settings.
+  [*] (Imap) Added code to attempt to clean up quoted text better when reading emails. Not 100% accurate, but a step forward.
+  [-] (Admin) Fixed bug relating to admin reply ticket times and specific timezone settings.
+  [-] (Admin) Fixed bug with imap priority settings not saving
+  [-] (Cron) Fixed fatal error encoding issue preventing close tickets and email digest crons from executing.
+  [-] (Global) Fixed all pagination issues not including certain get parameters.

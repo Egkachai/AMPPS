@@ -1,0 +1,200 @@
+5.1.3
+* System/Admin
+    (#1520) - Submit prompts (singled-input popups) by clicking on the Enter key. (AP)
+    (#1523) - Fixed issue with support tickets not loading on admin side. (MG)
+
+* Billing
+    (#1515) - Fixed bug with line breaks in invoice entries in the PDF Invoice. (MG)
+
+* Plugins
+    (#1509) - Changed Plesk10 server plugin to use version 1.6.3.2 of their API. (MG)
+    (#1521) - Fixed PHPSysInfo snapin. (AP)
+
+================================================================================================================
+================================================================================================================
+
+5.1.2
+* Support
+    (#1487) - Ability to track a ticket changes in state, priority and assignee. Show along regular log messages. (AP)
+    (#1490) - Add setting that will automatically assign a ticket to the replier. Including internal notes. (AP)
+    (#1502) - Moved the Close Ticket button to the left side of the screen on public side ticket view. (MG)
+    (#1504) - Fixed bug with tickets displaying attachments where the file had been deleted. (MG)
+    (#1508) - When looking at a ticket in admin, when the status is changed from closed to open, show the reply box without having to reload. (AP)
+
+* System/Admin
+    (#1467) - Updated text on TLD Period Editor Window. (MG)
+    (#1477) - Added ability to translate help widget and chat widget. (AP)
+    (#1472) - Fixed image displays in announcements. (MG)
+    (#1486) - Fixed imporper error message when adding a user with an invalid password. (MG)
+
+* Clients
+    (#1473) - Hide Actions column in Products list in client portal when there's nothing to show. (AP)
+    (#1491) - Fixed bug with previous / next buttons on announcements showing unpublished announcements. (MG)
+    (#1501) - Use the proper date format when showing the expiration date of domains. (MG)
+    (#1461) - Add language dropdown on public customer profile. (AP)
+    (#1499) - Fixed display bug with adding a package to a user and switching from domain to hosting type. (MG)
+    (#1507) - Allow non-custom fields in users list (nickname, phone, org, etc) to be displayable. (AP)
+    (#1510) - Continously update the 'Today at a Glance' dashboard component. (AP)
+    (#1511) - Added the ability to automatically provision SSL packages. (MG)
+    (#1519) - Add setting to allow custom logo in portal. (AP)
+
+* Plugins
+    (#1464) - Added 'Automatically Renew Domain' to the list of ResellerClub Supported Features. (MG)
+    (#1483) - Fixed bug with Transaction view not loading properly if no transactions were there. (MG)
+    (#1488) - Fixed bug with Auto Suspend Service that was unsuspending packages for non-active users. (MG)
+    (#1251) - Clarify enable unsuspension setting on auto suspend service. (MG)
+
+* Signup
+    (#1480) - Fixed bug with showing the wrong price for domain transfers on step 1 of signup. (MG)
+    (#1482) - Fixed bug with signup sometimes not properly marking a cancelled account as pending. (MG)
+    (#1506) - Fixed bug with unwanted note while removing a product from your cart. (MG)
+    (#1513) - Fixed bug with "Disable Registrations" setting for domain product groups. (MG)
+    (#1518) - Add signup setting to hide setup fees. (AP)
+
+* Billing
+    (#1514) - Fixed bug with billing types being cut off while adding/editing an invoice entry. (MG)
+    (#1517) - Invoice batch processing was being halted if there was a problem sending an email. (AP)
+
+================================================================================================================
+================================================================================================================
+
+5.1.1
+* Support
+    (#1455) - In the Events profile tab (and the dashboard), show ticket assignation events. Also improved that event description by linking to the corresponding ticket. (AP)
+    (#1459) - Only show "Latest Articles" tab on main page if there are articles to display. (MG)
+    (#1458) - Fix bug with the red asterisk on ticket custom fields showing when it shouldn't. (MG)
+    (#1368) - Fix bug that was displaying an empty drop down in a ticket if the customer had no packages. (MG)
+    (#1469) - Fixed problem with support ticket notifications when using email piping and when sending transcriptions. (AP)
+
+* Signup
+    (#1447) - Fix bug with signup breaking if no product groups are able to be shown. (MG)
+    (#1448) - Fix wording of error message when there are no products to show on signup. (MG)
+
+* System/Admin
+    (#1460) - Language dropdown in customer profile (admin-side) wasn't showing the user's language. (AP)
+    (#1462) - Whenever new language files (core-X.mo and javascript-X.mo) files are added under the language directory, the system will automatically make them available, no extra setup needed. (AP).
+
+* Plugins
+    (#1453) - CE Transactions snap-in is now unencoded. (MG)
+    (#1435) - Added currency to transaction list. (MG)
+
+* Clients
+    (#1451) - Updated Cancellation Date custom field to be Cancellation Request Date. (MG)
+    (#1438) - In the client portal dashboard, show announcements excerpts instead of contents. (AP)
+
+* Billing
+    (#1319) - Fixed bug with invoice buttons not resetting on error (MG)
+    (#1463) - Added ability for the autosuspend service to create a closed ticket (and notify user) when package is cancelled. (AP)
+
+================================================================================================================
+================================================================================================================
+
+5.1.0
+* Support
+    (#1216) - Fixed some encoding issues (in non-English languages) in support notification emails. (AP)
+    (#1222) - Fixed bug with case sensitive file uploads in admin support ticket. (MG)
+    (#1235) - Canned responses list not working under certain MySQL configs. (AP)
+    (#1256) - Added sidebar plugin for listing ticket filters. (AP)
+    (#1051) - Added png to the list of default extensions for ticket attachments. (AP)
+    (#168)  - Added Sendmail as new email sending method. We had already one labeled Sendmail but it actually was PHP's mail(). (AP)
+    (#293)  - Added TICKETURL tag to Notify Assignee For Ticket Reply Template. (AP)
+    (#855)  - Convert links in tickets to real external links. (AP)
+    (#1210) - Fixed bug that was removing the staff signature when using a canned reply. (MG)
+    (#1272) - Removed the "Allow Guests To Submit Tickets" setting.  This can be enabled or disabled in the Guest group permission. (MG)
+    (#1303) - New "Package" tab in the ticket details view, showing package information whenever the ticket is linked to a package. (AP)
+    (#1303) - Implemented advanced search abilities for tickets (search by creation dates, by customer and by assignee). (AP)
+
+* System/Admin
+    (#1217) - Fixed bug with stock control showing when adding a new TLD package. (MG)
+    (#1261) - Added a billing setting to allow set the date format of the invoice entries. (JD)
+    (#1093) - Changed subdomain box in edit product to be a multiple select box. (MG)
+    (#851)  - Improved password storing mechanism, using sha256 salted hashes. (AP)
+    (#1167) - Fixed staff permissions requiring "view own profile" to have any other admin permission. (MG)
+    (#1205) - Removed old Manage TLD extensions permission. (MG)
+    (#467)  - Set MySQL's time zone according to the "System Timezone" localization setting. (AP)
+    (#439)  - Added monthly cost and provider to server information. (MG)
+    (#1223) - Added missing translations on add/edit server view. (MG)
+    (#774)  - Migrated language framework to standard Gettext (po and mo files). (AP)
+    (#1236) - New version available text is now linked to the download page. (MG)
+    (#1245) - Updated email parsing to also check for a "delivered-to" header value, before defaulting to the TO header. (MG)
+    (#1240) - Fixed bug with install checks and MariaDB. (MG)
+    (#1248) - Fixed passphrase showing in internal logging when processing invoices. (MG)
+    (#1268) - Reduced the delay of the get vitals call (for menu cache) to 1 second. (MG)
+    (#1233) - Added "Credit Card Invoices Ready" to the "Needs Your Attention" menu. (MG)
+    (#1373) - Readded today's revenue to Today at a Glance. (MG)
+    (#1394) - The announcement's grid in admin had pagination disabled. (AP)
+    (#1403) - Add support for certain data grids to hide/show columns. (AV)
+    (#1404) - Add new settings view, grouping the settings in a more user friendly way for new timers to CE.   Preference was also introduced that allows toggling the advanced settings menu (AV)
+    (#1417) - Improve date-related fields in notifications rules. (AP)
+
+* Billing
+    (#1200) - Fixed bug with sort saving on invoice list. (MG)
+    (#1207) - Now when adding a new entry to an invoice, it is set as taxable by default when apply. Same for recurring fees. (JD)
+    (#1213) - Repair recurring fees and invoices that have a subscription id when they should not. (JD)
+    (#1249) - Added proper error message when processing invoices. (MG)
+    (#1283) - Ability to create invoice templates.  Assign default system template and then ability to override which template to use customer by customer. (AV)
+    (#1284) - Included default (clean), dickey, and harouth invoice templates. (AV)
+    (#1282) - Fixed bug with gateway created tickets not being marked internal (MG)
+    (#1221) - Fixed some issues on the invoice view on admin. Now when adding a new entry, the currency symbol is properly shown. Also the  calculations on the invoice are now fine.(JD)
+    (#1287) - Invoice transactions were added as a global view.  Listing all customer's invoice transactions. (MG)
+    (#1375) - Don't send overdue invoice reminders for invoices that were not attempted to be charged (JD)
+    (#1442) - Fixed bug that was not allowing HTML in the "additional notes" section for invoices. (MG)
+    (#1443) - Invoice templates are now properly not encoded. (MG)
+
+* Clients
+    (#1199) - Added validation to alternate accounts on public side. (MG)
+    (#115)  - In the clients list, when expanding an item show the client's outstanding balance. (AP)
+    (#488)  - Added new setting in a user's package to ignore/override auto suspend. (MG)
+    (#709)  - Added the ability to use a canned reply when opening a ticket for a user. (MG)
+    (#1224) - Added autocomplete off to user profile edit page. (MG)
+    (#1238) - Readded the ability to search for alt accounts in global search. (MG)
+    (#1247) - Clean up the passphrase popup when validating a credit card on the users list. (MG)
+    (#1250) - Added the ability to update a hosting package's server if update on server is unchecked. (MG)
+    (#1270) - Fixed bug with recurring profile tab count, not taking into account recurring fees that are not associated with a package. (MG)
+    (#1271) - Fixed bug where we were not always showing the EPP Code of a domain. (MG)
+    (#1285) - Removed "Last Login" from active customer panel if there isn't one to show. (MG)
+    (#1289) - Added the ability to directly login to a user package's control panel (MG)
+    (#1327) - Added setting 'Column in portal' for package custom fields, to show a field in a customer's package table in the client portal. (AP)
+    (#1336) - Added setting to be able to show a customer's product list in his client portal dashboard instead of under its own separate section. Triggered by new setting under the Style settings. (AP)
+    (#1365) - Fixed bug with updating credit card when edit payment method permission is disabled (MG)
+    (#1260) - Added back ability to BCC oneself when emailing customer (using the sidebar email button). (AP)
+    (#1287) - Invoice transactions were added as a new client tab. (AV)
+    (#1413) - When a customer has an organisation, show it next to his name instead of just showing the organization (when viewing his profile, in the sidebar, in grids, and in the invoice view). (AP)
+    (#1400) - Properly set the default currency when registering a guest user. (MG)
+    (#1401) - When registering a guest user, ensure they are forced to update their profile on first login. (MG)
+    (#1440) - Fixed bug showing "View Server Deta" on main page. (MG)
+
+* Plugins
+    (#463)  - Added Test Connection functionality to SolusVM. (MG)
+    (#1230) - Added permissions to service plugins to limit what can be shown on the dashboard under automation summary. (MG)
+    (#517)  - Added Late Fee service plugin. (JD)
+    (#890)  - Added renew ability to ResellerClub registrar plugin. (MG)
+    (#1263) - Fixed earlier PayPal subscriptions to not make the subscription payment look like there is a prorate. (JD)
+    (#1290) - Updated cPanel Plugin with the ability to login directly to the control panel (MG)
+    (#1291) - Updated SolusVM Plugin with the ability to login directly to the control panel (MG)
+    (#1380) - Added the ability to perform a credit with linkpoint (MG)
+    (#1382) - Added CVV checking to linkpoint (MG)
+    (#1386) - Updated CC Payments Processor service to update the value for the last time the batch was run (MG)
+    (#1419) - Fixed bug with OpenSRS and HTML entities in Organization Name. (MG)
+    (#1445) - Fixed bug causing PHPSysInfo Snapin to not show any information. (MG)
+
+* Signup
+    (#1188) - Added regex validation to subdomain field. (MG)
+    (#1229) - Readded saved percentage to default style list of packages. (MG)
+    (#1266) - Added proper domain regex validation for sub domains and self-management domain, when bundling domains. (MG)
+    (#1344) - Added new Signup Social settings, to be able to show Facebook, Google+ and Twitter sharing buttons at the end of checkout. (AP)
+    (#1379) - Fixed remove button on cart summary to ensure that the bundled product is also removed. (MG)
+    (#1381) - Fixed a bug that allowed a customer to by-pass the first package in a bundle. (MG)
+    (#1214) - Fixed bug with sub-domain options showing when there were no sub-domains. (MG)
+    (#1218) - Fixed display bug with TLD Extra Attributes on sign up. (MG)
+    (#1231) - Removed hosting password from new order notification email (MG)
+    (#1418) - Added new event log for a customer agreeing to Terms of Service. (MG)
+
+* Knowledgebase
+    (#1243) - Fixed undefined title on KB article images. (MG)
+    (#1276) - Add KB series support for categories. (AV)
+    (#1277) - Add Global Series support with KB categories. (AV)
+    (#1278) - Categories can now be ordered. (AV)
+    (#1279) - Public articles support highlight.js for pre and codeblocks (AV)
+    (#1296) - Fixed bugs with edit/delete button for kb categories. (MG)
+    (#1359) - If KB Setting 'Number of Latest Articles' is 0 then don't show the Latest Articles tab in the client portal. (AP)

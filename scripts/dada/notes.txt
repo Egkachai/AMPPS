@@ -1,0 +1,6 @@
+keep both password different (Admin password and List password both should be different)
+
+How to install : http://dadamailproject.com/support/documentation-6_2_1/manually_install_dada_mail.pod.html
+
+1) .htaccess is required so do not remove .htaccess even if it is not created by dada.
+2) In dada.zip Rename folder "/DADA/perllib/JSON-remove_to_install" to "/DADA/perllib/JSON" and file "/DADA/perllib/JSON.pm-remove_to_install" to "/DADA/perllib/JSON.pm" as it renames this folder and file in manual installation.

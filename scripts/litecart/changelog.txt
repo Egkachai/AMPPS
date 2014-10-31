@@ -1,0 +1,81 @@
+LiteCart 1.1.2.1 :
+------------------------
+! Solve issue with cache in category tree
+* Minor adjustments and improvements
++ Support for HTML 5 phone input field
+
+
+LiteCart 1.1.2 :
+------------------------
+* jQuery 1.11.1
+* Fix change product status bug
++ Search SKU and UPC
+* Adjustments to order copy and packing slip
+* Nine-eighty css to Twelve-eighty
++ CSS font subset
++ More installer checks
++ MySQL collation set by language
++ Default collation utf8_unicode_ci
++ EU cookie acceptance
+* SCEditor 1.4.5
+* Responsive listing CSS
+* Fix bug option prices
+* Fix bug add options to cart
+* Several minor adjustments
+
+LiteCart 1.1.1:
+------------------------
+! Solve issue with turning off cache
++ Currency ISO number
++ Tax class code
++ Tax rate code
++ Tax percentage in order copy
+* Fix tax total in order copy
++ Add guests e-mail addresses to newsletter list
++ New reports admin app
+* Override function files
+* Extended slide captions
++ Month form field
+- Remove uncompressed jqplot files
+* Report widget lines to bars
+* Admin sales widget
++ Listing filter
++ Catalog Only mode
+* Disable jobs pusher when fsocken disabled
+* Minor adjustments and improvements
+* Fix installer xcopy
+* Fix no auto-select shipping module
++ Order status e-mail body
+
+LiteCart 1.1.0.1:
+------------------------
++ Upgrade script
+! Fix critical issue with non-english catalog products
+* Fix decimal field not working in Chrome
+* Fix SE install path
+* Increase product image filename to max 256 chars
+* Improve some SEO link modules
+* Fix shipping price on product page
++ Function to get phone country code
+* Adjust visibility of shipping and payment
+* Allow registered customers as guests
++ Add back link to checkout
+* Remove debug from edit_product.inc.php
+* Nowrap amounts in order copy
+* Region settings screen disabled by default
+* Toggle tax fix
+* Fix cache issue with tax
+* Minor adjustments
+
+LiteCart 1.1:
+------------------------
+* New core model, example: $system->library->method() becomes library::method()
++ Backwards compatibility with old system model $system->library->method()
+* Module class name changed i.e. payment => mod_payment etc.
++ Appearance admin app
++ Template configurations
+* Many small adjustments
+* Improved Regional Settings
+* SQL Changes (See UPGRADE.md)
++ Installer now supports copying regional data
+* UI adjustments

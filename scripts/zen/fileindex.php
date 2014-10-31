@@ -1,0 +1,17 @@
+.gitattributes
+.gitignore
+CHANGELOG.md
+README.md
+albums
+index.php
+plugins
+themes
+uploaded
+zp-core
+zp-data
+.htaccess
+backup
+cache
+cache_html
+favicon.ico
+robots.txt

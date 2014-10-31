@@ -1,0 +1,228 @@
+Version 5.3.10
+
+    Release Type: MAINTENANCE
+    Release Date: 16th September 2014
+
+Maintenance
+
+Case #2624 - Correct Project Management Task links in Calendar
+Case #2625 - Prevent next due date showing in emails for One Time and Free cycles
+Case #2643 - Remove End-of-Life Google Checkout Gateway
+Case #2686 - Ensure accented chars are not encoded when editing email templates
+Case #2691 - Refresh config options pricing on cycle changes in ajax order forms
+Case #2792 - Allow users to press enter to submit forms with configurable options
+Case #2875 - Allow domain validation hooks to run using Ajax Order templates
+Case #2888 - Improve logic around session persistence
+Case #3049 - Only show default language categories in insert knowledgebase link popup
+Case #3173 - Correct pricing display on comparison template only showing Monthly
+Case #3209 - Add Domain Transfer Completed Email Template
+Case #3242 - Allow existing IDN domains to be managed through LogicBoxes modules
+Case #3244 - Require Unique Transaction ID when adding manual payment
+Case #3267 - Correct Total Recurring showing for One Time addons on Comparison Template
+Case #3548 - Fix date period shown on initial anniversary prorata invoices
+Case #4025 - Ensure setup fee cannot be less than zero
+Case #4208 - Fix intelligent search not working on Client Billable Items in Admin
+Case #4210 - Mass Pay Invoices to ignore Separate Invoices configuration
+Case #4322 - Show Success on Admin Contact Details Editing
+Case #4325 - Update Late Fees to apply on the day not the day after
+Case #4338 - Correct and Translate Credit Messages on Invoice in Admin Area
+Case #4377 - Correct affiliate not shown when referral removed on first product
+Case #4382 - Process Paid Invoice when adding Transaction from Billing menu
+Case #4441 - Implement support for addon related merge fields in Mass Mailer
+Case #4689 - Save affiliate checkbox setting when adding a new contact
+Case #4690 - Remove Reset and Send Password link when subaccount not enabled
+Case #4708 - Configurable Options Unlimited Setting Invalid with Minimum
+Case #4718 - Invoice now always respects admin choice of gateway for display
+Case #4721 - Remove pricing slabs when deleting client groups
+Case #4730 - Remove pricing data when deleting a TLD
+Case #4840 - Redirect to invoice on no payment gateway redirect
+Case #4911 - Remove hardcoded subject in view email client template
+Case #4917 - Fix bundle product links in boxes order form template
+Case #4957 - Remove superflouous div tag in password reset validation page
+Case #4966 - Remove references to chmod from installer errors
+Case #4979 - Modify default invoice sorting to status desc. then due date asc.
+Case #5058 - Add domain addons to Bulk Pricing Updater domains update criteria
+Case #5058 - Add support for relative price increases to Bulk Pricing Updater
+Case #5058 - Redesign and ajaxify Bulk Pricing Update Tool
+Case #5077 - Perform Two-Factor Auth prior to re-hash check
+Case #5079 - Handle quote characters in charts data appropriately for PHP 5.2
+Case #5083 - Notify admins upon detection of admin directory configuration issue
+Case #5096 - Update whois server for .ws TLDs
+Case #5099 - Ensure Bulk WHOIS Update passes phone number on save
+Case #5100 - Update change license key page to use new admin auth class
+Case #5128 - Fix server connection test for existing servers
+
+Modules
+
+Case #2678 - OpenSRS: Send 0 year transfer period for .ES domains
+Case #2716 - Enom: Improve error detection and handling
+Case #3094 - Project Management: Allow removal of client association
+Case #3095 - OVH: Correct legal type sent for admin contacts
+Case #3443 - DirectAdmin: Update to obtain Reseller Usage Statistics
+Case #3514 - PayPal Pro Reference Payments: Update reference after each success
+Case #3695 - MaxMind: Improve error handling
+Case #3976 - Optimal Payments: Improvements to 3D Secure logic handling
+Case #4093 - WorldPay: Update test mode URL
+Case #4321 - Enom: Improve error reporting upon invalid WHOIS contact info
+Case #4386 - Boleto: Ensure all filates use the utf-8 encoding charset
+Case #4720 - ResellerClub: Update privacy protection to use purchase-privacy parameter
+Case #5054 - ResellerClub: Auto renew ID protection with domain if enabled
+Case #5054 - ResellerClub: Update ID Protect toggle to use new purchase parameter
+Case #5180 - PayPal: Add User Agent to PayPal callback requests
+
+API
+
+Case #3369 - CreateInvoice: Log auto credit application at time of creation
+Case #4451 - SendEmail: Improve error reporting
+Case #5094 - Add toggle setting for API Authentication logging to Admin Log
+Case #5153 - UpdateClient: Prevent fatal error on clearing credit card 
+
+Version 5.3.9
+
+Release Type: SECURITY
+Release Date: 26th August 2014
+
+Security
+
+Case #2525 - Provide migration path to harden Admin & API cryptographic
+Case #4177 - Mask sensitive passwords in admin interface
+Case #4821 - Redacted
+Case #4822 - Redacted
+Case #4824 - Redacted
+Case #4829 - Redacted
+Case #4830 - Redacted
+Case #4832 - Remove access to version information within server status script
+Case #4886 - Redacted
+Case #4923 - MoipApi Gateway Module: Remove file system log function
+Case #4987 - Add Proxy Trust IP Configuration
+Case #4988 - Redacted
+Case #4989 - Redacted
+Case #4990 - Redacted
+Case #4991 - Hide license key in license error page notifications
+
+Modules
+
+Case #3144 - CentovaCast: Fix resource usage syncing logic
+Case #3178 - Nominet: Perform status sync for transferred domains
+Case #3651 - RegisterCom: Fix US contact state handling
+Case #3970 - KashFlow: Fix Currency sent on new client creation
+Case #3978 - PayFlow Pro: Always send invoice number parameter
+Case #4086 - InternetBS: Update variable names used in WHOIS update
+Case #4157 - eNom: Do not send nameserver values when Use Defaults enabled
+Case #4428 - Add e-onlinedata payment gateway module
+Case #4442 - Garantibank: Correct API end point URL
+Case #4724 - Project Management Addon: Preserve date format in tasks
+Case #4823 - Drop support for the EOL Ensim Provisioning Module
+Case #4870 - Drop support for the EOL E-Gold and PayOffline gateways
+Case #4889 - OVH Registrar: Use white label option
+Case #4969 - NameCheap: Add support for .UK domain additional fields
+Case #5002 - NetRegistry: Update API end point URL
+
+Maintenance
+
+Case #2840 - Correct Group Discount calculation with Inclusive Tax type
+Case #3233 - Update Completed Transfer Sync to update expiry date pre email
+Case #3245 - Resolve Kayako Loginshare failing when Two-Factor Auth is enabled
+Case #3330 - Fix addon invoice line item type in pro-rata invoicing
+Case #3886 - Prevent duplicate invoice generation during cron run
+Case #3961 - Add additional hooks to client summary mass actions
+Case #4118 - Fix missing parameter in add funds redirect
+Case #4578 - Reset domain reminder field after due date change or renewal
+Case #4662 - Ensure transaction rate is always a positive number
+Case #4695 - Improve rounding logic with promotion codes
+Case #4731 - Prevent placing upgrade orders when one in progress
+Case #4845 - Fix license error message improperly reading error key
+Case #4848 - Fix new customer report graph labels for current year
+Case #4851 - Resolve fatal error occuring in reCAPTCHA validation routine
+Case #4852 - Fix typo in the label tag of reports
+Case #4880 - Ensure support and updates validity is enforced correctly
+Case #4888 - Add contextual help link to System Cleanup
+Case #4931 - Correct translation in French language file
+Case #4945 - Correct incorrect links in the New Customers report
+Case #4948 - Use Casual version numbering in XML API Response
+Case #4976 - Ensure charts handle special characters appropriately 
+
+Version 5.3.8
+
+Release Type: MAINTENANCE
+Release Date: 9th July 2014
+
+Maintenance
+
+Case #2565 - Display module provisioning results on mass order accept 
+Case #2807 - Resolve illegal string offset warning notice when sending an email 
+Case #3051 - Prevented non-active gateway from being assigned to items 
+Case #3345 - Change default subject of Credit Card Payment Due email 
+Case #3403 - Add IP and Hostname logging to User Details Change notification 
+Case #3445 - Replace fatal error condition with exception in invalid input detection 
+Case #3761 - Bulk Domain Whois Update Fails when selecting a contact 
+Case #3875 - Ensure View Support Ticket permission allows manage ticket actions 
+Case #4012 - Improve handling of missing or corrupted database 
+Case #4259 - Return missing create domain entries option to WHM Import Tool 
+Case #4344 - Email headers via cron/php-cli should fall back to configured domain 
+Case #4398 - Remove HTML logging on payment method change in client area 
+Case #4430 - Ensure 3D Secure process automatically redirects to gateway 
+Case #4485 - Correct Ticket Escalations priority translation handling 
+Case #4486 - Ensure special characters are entity decoded for addon modules 
+Case #4492 - Ensure consistent validation of email addresses 
+Case #4506 - Migrate custom field values on ajax department change 
+Case #4538 - Remove date paid value when invoice is marked unpaid 
+Case #4539 - Fix typo in ticket translation for all languages 
+Case #4541 - Ensure stored mail encoding value is supported prior to use 
+Case #4542 - Arabic Language Update 
+Case #4543 - Set the character set for all mbstring functions 
+Case #4544 - Preserve security question selection after an order error occurs 
+Case #4546 - Fix token gateway module client area update routine 
+Case #4547 - PW Strength Checker Not Translating or Displaying 
+Case #4552 - Fix mouse hover info graphic in some reports 
+Case #4558 - Fix email template delete button not working 
+Case #4564 - Fix Tickets Overview Widget graph not working without Income Widget 
+Case #4572 - Delete product custom values when an order is deleted 
+Case #4576 - Ensure question mark is allowed in Email Addresses 
+Case #4594 - Select current option when changing config options with a setup fee 
+Case #4596 - Fix month/year navigation links in reports under certain conditions 
+Case #4597 - Attachment encoding lost on multiple POP email import 
+Case #4601 - Remove price from configurable option value in product details 
+Case #4606 - Add Spanish Translations for Quote Management 
+Case #4659 - Add ability to specify a contact for admin domain registration orders 
+Case #4663 - Fix blank PDF attachment in Quote Acceptance email 
+Case #4677 - Add support for all currently supported Organisation Types to .uk domains 
+Case #4706 - Add support for reports to exist and be used within modules 
+Case #4707 - Added support for stacked graph chart types and implement to PM Addon 
+Case #4736 - Disabling editing of client name and email on open ticket client select 
+Case #4784 - Implement HTTP Status Response Codes to the API 
+Case #4828 - Ensure configurable option values are valid at checkout
+
+Modules
+
+Case #4271 - Update QuantumVault to require SSLv3 for connections 
+Case #4364 - Project Managment Addon: Fix project tasks chart not displaying 
+Case #4549 - EU VAT Addon: Sequential numbers don't apply when custom numbering enabled 
+Case #4615 - PayFlow Pro: Force 3D Secure to use SSLv3 
+Case #4643 - Plesk: Add support for Plesk 12
+
+Domains
+
+Case #3169 - Enom: Add support for .fr additional attributes 
+Case #4231 - Add .uk whois server definition 
+Case #4469 - Add .ee whois server definition 
+Case #4524 - Nominet: Pass Address 2 field when creating contact if set 
+Case #4561 - Add new gTLD whois server definitions 
+Case #4581 - Update WHOIS Server Definitions for .ac, .am, .as, .au, .aero and .ae TLDs 
+Case #4618 - Enom: Send all contact types with for domain registration 
+Case #4756 - Nominet: Add support for up to 3 address lines in WHOIS Editing
+
+Hooks
+
+Case #4534 - Add Pre Cron Job Hook Point (PreCronJob) 
+Case #4534 - Add After Cron Job Hook Point (AfterCronJob) 
+Case #4580 - Fix InvoiceCreationPreEmail hook not being run 
+Case #4633 - Add PreRegistrar*/AfterRegistrar* Hook Points
+
+API
+
+Case #3400 - UpdateClientDomain: Allow toggling of addon fields 
+Case #4501 - AcceptOrder: Correct formatting of service password 
+Case #4625 - UpdateInvoice: Ensure userid is set for new items 
+Case #4673 - GetClientsDetails: Require client ID or email 
+Case #4810 - GetClients: Add ability to specify sorting

@@ -1,0 +1,16 @@
+LICENSE
+VERSION
+adminpanel
+crons
+data
+examples
+favicon.ico
+i18n
+index.php
+install
+libraries
+migration
+robots.txt
+skins
+static
+templates

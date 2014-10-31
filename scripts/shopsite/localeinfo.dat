@@ -1,0 +1,76 @@
+#
+# Locale Information File
+#
+# Format of an entry:
+#
+#  |name|descr_text|codeset|decimal|separator|weight|date_fmt|date_time_fmt|time_fmt
+#
+#   name: Locale name
+#   descr_text: The default (English) Locale description text
+#   tx_codeset: The Transact code set which is equivalent to this locale.
+#   decimal: the decimal separator character
+#   separator: the thousands separator character
+#   weight: symbol or text which represents weight
+#   date_fmt: date format
+#   date_time_fmt: date/time format
+#   time_fmt: time format
+#
+#   date fmt: %a      locale's abbreviated weekday name
+#             %A      locale's full weekday name
+#             %b      locale's abbreviated month name
+#             %B      locale's full month name
+#             %c      locale's appropriate date and time representation
+#             %Y      year (1999, 2000)
+#             %C      century number (the year divided by 100 and truncated to an
+#                     integer  as a decimal number [1,99]);
+#                     single digits are preceded by 0
+#             %d      day of month [1,31]; single digits are preceded by 0
+#             %D      date as %m/%d/%y
+#             %e      day of month [1,31]; single digits are preceded by a space
+#             %h      locale's abbreviated month name
+#             %H      hour (24-hour clock) [0,23]; single digits are preceded by 0 
+#             %I      hour (12-hour clock) [1,12]; single digits are preceded by 0
+#             %j      day number of year [1,366]; single digits are preceded by 0
+#             %k      hour (24-hour clock) [0,23]; single digits are preceded by a blank
+#             %l      hour (12-hour clock) [1,12]; single digits are preceded by a blank
+#             %m      month number [1,12]; single digits are preceded by 0
+#             %M      minute [00,59]; leading zero is permitted but not required
+#             %n      insert a newline
+#             %p      locale's equivalent of either a.m. or p.m.
+#             %r      appropriate time representation in 12-hour clock format with %p
+#             %R      time as %H:%M
+#             %S      seconds [00,61]
+#             %t      insert a tab
+#             %T      time as %H:%M:%S
+#             %u      weekday as a decimal number [1,7], with 1 representing Sunday
+#             %U      week number of year as a decimal number [00,53],
+#                     with Sunday as the first day of week 1
+#             %V      week number of the year as a decimal number [01,53],
+#                     with  Monday as the first day of the week.  If the
+#                     week containing 1 January has four or more days in
+#                     the  new  year, then it is considered week 1; otherwise,
+#                     it is week 53 of the previous  year, and the next week is week 1.
+#             %w      weekday as a decimal number [0,6], with 0 representing Sunday
+#             %W      week number of year as a decimal number [00,53],
+#                     with Monday as the first day of week 1
+#             %x      locale's appropriate date representation
+#             %X      locale's appropriate time representation
+#             %y      year within century [00,99]
+#             %Y      year, including the century (for example 1993)
+#             %Z      time zone name or abbreviation, or no bytes if no time zone
+#                     information exists  
+#
+#     Locales may be commented out by placing the '#' character at the beginning of the line.
+#     Locales will display in ShopSite in the order they are listed in this file.
+#
+
+|en-US|English, United States (en-US)|latin1|.|,|lbs|%a %b %d %Y|%a %b %d %Y %I:%M:%S %p|%I:%M:%S %p
+|en-GB|English, Great Britain (en-GB)|latin1|.|,|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S
+|en-CA|English, Canada (en-CA)|latin1|.|,|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S
+|en-AU|English, Australian (en-AU)|latin1|.|,|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S
+|en-CX|English, Caribbean (en-CX)|latin1|.|,|lbs|%a %b %d %Y|%a %b %d %Y %H:%M:%S|%H:%M:%S
+|en-IE|English, Ireland (en-IE)|latin1|.|,|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S
+|en-JA|English, Jamaica (en-JA)|latin1|.|,|lbs|%a %b %d %Y|%a %b %d %Y %H:%M:%S|%H:%M:%S
+|en-NZ|English, New Zealand (en-NZ)|latin1|.|,|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S
+|en-ZA|English, South Africa (en-ZA)|latin1|.|,|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S
+|en-EU|English, European Union (en-EU)|latin1|,|.|kg|%a %d %b %Y|%a %d %b %Y %H:%M:%S|%H:%M:%S

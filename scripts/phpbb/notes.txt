@@ -1,0 +1,14 @@
+While installing, Select Database type : MySQL 
+
+1. Add [[language]] in sql. Take reference from older sql.
+2. Apart from english, download languages and styles folder from :
+http://www.phpbb.com/languages/?from=submenu
+and unzip it to languages and styles folder.
+3. Update once manually to check if database is updated properly
+4. Add as many languages as you can.
+5. If you want to add language add its entry in install.php
+6. Update the file database_update.php (from original zip) and _database_update.php (from original zip + our changes) of the new version. This change is for auto upgrade.
+Following is the change :
+
+// Softaculous Change
+$language = 'en';

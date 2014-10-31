@@ -1,0 +1,43 @@
+Pligg 2.0.2:
+--------------------------
+    Security fix!
+    Updated to Bootstrap 3.2.0 and FontAwesome icons 4.1.0
+    Greatly improved the look of the user profile pages
+    Improved the logic for the friend/follower system, as well as the Simple Messenger module
+    Fixed the Sidebar Saved module showing new saves from other users
+    Reduced the vertical height of stories and comments
+    Applied a large number of cosmetic fixes
+
+Pligg 2.0.1:
+--------------------------
+	Improved moderator role and Admin Panel access
+	Updated to Bootstrap 3.0.2
+	Updated to FontAwesome 4.0.3
+	Fixed Status Update module display issues
+	Updated the CAPTCHA module to version 2.4
+	Removed and replaced a number of images used by Bootstrap. Some, such as the social media icon images on the profile page, have been replaced with a Fontawesome icon equivalent.
+	You can now sort category results by upvotes, downvotes, and comments
+	Removed an extra modal element that was not being called
+	Users can no longer “double downvote” an article by rapidly clicking on the downvote button.
+	Fixed group roles (#56)
+	Fixed simple messaging module delete message function
+	Fixed the user profile settings tab link
+	Changed the advanced search page date picker JavaScript 
+
+Pligg 2.0.0:
+--------------------------
+	STYLE: Updated Bootstrap to the new 3.0 release
+    STYLE: The navigation bar login link now presents a modal window login form
+    STYLE: Updated the comment section
+    STYLE: Updated the simple messaging module
+    STYLE: The login and register pages are now full width
+    FIX: Edit avatar feature
+    FIX: Your avatar now shows on the second submission step's live preview
+    FIX: Moderators can no longer generate 'moderator' or 'admin' user level accounts
+    FIX: Added domain whitelist location setting to MySQL database
+    FIX: Top users page
+    FIX: Updated MySQL database settings to fix problems related to UTF8 languages
+    FIX: The bookmark feature now works without the sidebar saved module
+    FIX: The 5 star vote method partially works. You cannot remove or change a 5 star vote at this time
+    FIX: Secured the group share function so that it won't be abused so easily
+    FIX: Restrict what categories users are able to post to

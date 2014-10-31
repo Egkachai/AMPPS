@@ -1,0 +1,93 @@
+Tine 2.0 - Change Log
+
+Tine 2.0 - Koriander (2014.09.1) (Released 2014-09-11) [ View Issues ]
+======================================================
+- 0010223: [Translations] update german translations (sstamer) - resolved.
+- 0009990: [Filemanager] User managed to destroy folder structure (sstamer) - resolved.
+ - 0010116: [Filemanager] Copying 2 Folders back and forth fails (astintzing) - resolved.
++ 0009840: [Felamimail] urls without anchor tags should be replaced with links in html mail parts (mspahn) - resolved.
+- 0010202: [Translations] update translations (sstamer) - resolved.
++ 0009994: [Tinebase JavaScript] Hard coded Stylesheet background colors for Calendar Monthview daycells (mspahn) - resolved.
++ 0008738: [CalDAV] support uuids for new calendars (lkneschke) - resolved.
+[7 issues]
+
+Tine 2.0 - Collin (2013.10.8) (Released 2014-06-17) [ View Issues ]
+===================================================
+- 0009982: [Tinebase] fix Zend_Db_Expr handling in select order clause (pschuele) - resolved.
+[1 issue]
+
+Tine 2.0 - Collin (2013.10.7) (Released 2014-05-26) [ View Issues ]
+===================================================
+- 0009922: [Tinebase] Sabre\DAV Security Release (pschuele) - resolved.
+- 0009918: [Calendar] shared (only free/busy) calendar is showing event details within the history tab. (pschuele) - resolved.
+[2 issues]
+
+Tine 2.0 - Collin (2013.10.5) (Released 2014-02-13) [ View Issues ]
+===================================================
+- 0009636: [Calendar] implicit recur exceptions should not trigger reschedule mails (cweiss) - resolved.
+- 0009666: [HumanResources] setting contract end_date fails (astintzing) - resolved.
+- 0009660: [Tinebase JavaScript] Multiple Edit Dialog - no clear button anymore (astintzing) - resolved.
+- 0009634: [Calendar] add missing rule clauses on create/update (cweiss) - resolved.
+- 0009656: [Phone] OR-Filter gets created on each call search (astintzing) - resolved.
+- 0009642: [Timetracker] remove cleared_time from timesheets (astintzing) - resolved.
+- 0009652: [Tinebase JavaScript] Own record filter duplicate entries (astintzing) - resolved.
++ 0009648: [Sales] Create more DemoData (astintzing) - resolved.
+- 0009638: [CRM] xls exports always exports only 100 leads (astintzing) - resolved.
+- 0009548: [CalDAV] iCal: default attendee missing in exdates (cweiss) - resolved.
+- 0009640: [Admin] grid toolbar is missing in Roles, Groups and Tags modules (astintzing) - resolved.
+- 0009632: [Calendar] adopt notification level for external attendee (cweiss) - resolved.
+- 0009592: [HumanResources] Adding a new cost center to a employee fails (astintzing) - resolved.
+- 0009628: [Calendar] can't remove attender from attendee filter (west panel) (pschuele) - resolved.
+- 0009606: [Tinebase] preferences: forcing current default value is not working (pschuele) - resolved.
+- 0009602: [CRM] CRM should cope with empty start of leads (pschuele) - resolved.
+- 0009598: [Calendar] imip invitation mails show js error (in Felamimail) (pschuele) - resolved.
+- 0009588: [Inventory] InventoryItem-CostCenter filter fails without rights on Sales-App (astintzing) - resolved.
+- 0009568: [Setup] add setup CLI tests (sstamer) - resolved.
+- 0009566: [Setup] allow to pass json arrays as config values via CLI (pschuele) - resolved.
+- 0009584: [Sales] Sales Contract Container Grants are not editable (astintzing) - resolved.
+- 0009574: [HumanResources] vacation or sickness days can't be booked on the last working day (astintzing) - resolved.
+- 0005418: [CalDAV] disallow event "cleanup" in the past (cweiss) - resolved.
++ 0003080: [CRM] add filters for last_modified / last_modifier / creation_time / creator (pschuele) - resolved.
+- 0009418: [Addressbook] copied contact is always added to selected container (pschuele) - resolved.
+[25 issues, 2 feature(s) added, 23 bug(s) removed]
+
+Tine 2.0 - Collin (2013.10.4) (Released 2014-01-16) [ View Issues ]
+===================================================
++ 0003730: [Felamimail] support CONDSTORE extension for quick flag sync (pschuele) - resolved.
+- 0009528: [CalDAV] fix concurrency handling in CalDAV Frontend (cweiss) - resolved.
+- 0009502: [HumanResources] New unexcused sickness days aren't bookable as vacation days (astintzing) - resolved.
+- 0009314: [Calendar] validation error is not cleared, no saving possible (pschuele) - resolved.
+- 0009348: [Tinebase JavaScript] don't show zero counts in edit dialog (pschuele) - resolved.
+- 0009520: [Translations] update transifex strings and translations (pschuele) - resolved.
+- 0009510: [CalDAV] is it allowed to have no main vevent in ics? (pschuele) - resolved.
+- 0009412: [Calendar] event loses saved relations on reload (pschuele) - resolved.
+- 0009530: [Tinebase JavaScript] Firefox does not show tags and notes count in edit dialog (astintzing) - resolved.
+- 0009480: [Felamimail] missing translation for 'Datei' (pschuele) - resolved.
+- 0009524: [CalDAV] save ack and snooze in alarm (pschuele) - resolved.
+- 0009396: [CalDAV] alarm_ack_time and alarm_snooze_time are not updated (pschuele) - resolved.
+- 0009522: [Tinebase] update htmlpurifier to 4.6.0 (pschuele) - resolved.
+- 0009440: [Tinebase] IP in logfile (lkneschke) - resolved.
+- 0009144: [ActiveSync] Different Adressbooks not synced with Outlook 2013 (pschuele) - resolved.
+- 0004169: [Felamimail] try to reduce memory consumption when sending message with big attachement(s) (pschuele) - resolved.
++ 0009512: [Packaging] preserve windowNameConnection files in package (pschuele) - resolved.
+- 0009496: [HumanResources] HR Account calculates wrong working hours (astintzing) - resolved.
+- 0009500: [Inventory] add note buttons missing in edit dialog (sstamer) - resolved.
+- 0009346: [Tinebase] Mysql-Password gets exposed (pschuele) - resolved.
+- 0008230: [ActiveSync] added alarm to event on iOS 6.1 -> description removed (pschuele) - resolved.
+- 0009498: [Calendar] improve sorting of contacts in attendee picker grid (pschuele) - resolved.
+- 0009494: [Tinebase] improve count sql query (pschuele) - resolved.
+- 0009286: [Voipmanager] fix generating xml of user settings (pschuele) - resolved.
+- 0009486: [HumanResources] Month filter "date after" fails (astintzing) - resolved.
+- 0009470: [CalDAV] Alarms from Mavericks (OSX 10.9) are not saved (cweiss) - resolved.
+- 0009476: [HumanResources] Datepicker switches to january on changing the year (astintzing) - resolved.
+- 0009472: [HumanResources] Editing vacation days from last year fails (astintzing) - resolved.
+- 0009474: [HumanResources] Extra vacation grid does not sort (astintzing) - resolved.
+- 0009462: [Tinebase] endless loop in Calendar_Controller_Event::adoptAlarmTime (cweiss) - resolved.
+- 0009458: [Tinebase] allow to configure number of alarms in each run of sendPendingAlarms (pschuele) - resolved.
+- 0009464: [Admin] user grid does not refresh after ctx menu action (pschuele) - resolved.
+- 0009450: [Admin] allow to delete container without the required grants (pschuele) - resolved.
++ 0007686: [Addressbook] show container name in contact grid (pschuele) - resolved.
+- 0009420: [Tinebase] On older PHP Versions: Can't inherit abstract function Tinebase_User_Interface::getUsersByPrimaryGroup() (pschuele) - resolved.
+- 0009424: [Addressbook] missing postalcode prevents saving of contact (pschuele) - resolved.
+- 0009400: [ActiveSync] Passwords in plaintext in tine log (pschuele) - resolved.
+[37 issues, 3 feature(s) added, 34 bug(s) removed]

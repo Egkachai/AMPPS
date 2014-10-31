@@ -1,0 +1,9 @@
+.htaccess
+apps
+index.php
+install
+static
+storage
+system
+themes
+web.config

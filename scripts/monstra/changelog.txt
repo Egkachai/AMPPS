@@ -1,0 +1,130 @@
+Monstra 3.0.1, 2014-08-10
+------------------------
+- Minimum php is 5.3 
+- Themes Plugin: Imposible to create new CSS - fixed
+- Themes Plugin: js and css counter does not recalculate - fixed
+- Error in Monstra Notifications - fixed
+- Updated plugins url from plugins.monstra.org to monstra.org/download/plugins
+
+Monstra 3.0.0, 2014-08-01
+------------------------
+- Mobile Ready! Monstra fully responsive for mobile devices, tablets, and normal computer screens.
+- Twitter Bootstrap updated to 3.1.1
+- Idiorm updated to 1.4.1
+- jQuery updated to 2.1.0
+- Admin: New Modern User Interface
+- Site: New default theme
+- Layout fixes according to World Wide Web Consortium (W3C) Standards
+- Prefetch DNS to reduce look up times
+- Files Manager: added ability to create & rename directories.
+- Files Manager: Maximum upload file size message - added.
+- Files Manager: Bootstrap fileinput.js updated to 3.0.0
+- Files Manager: File Info Popup
+- Backup: Restore Site from Backup added
+- Plugins Manager: Uploading new plugins via the admin panel added
+- Plugins Manager: Read plugin help(README.MD) ability added.
+- Responsive Chocolat Lightbox instead of TB Lightbox
+- Blog Plugin as a part of Monstra CMS 
+- CodeMirror Plugin as a part of Monstra CMS
+- Markdown Plugin as a part of Monstra CMS
+- MarkItUp Color Pallete fixes
+- Site Url without trailing slashes
+- Admin Help Section - added.
+- Pages Plugin: tags field added.
+- Pages Plugin: Meta Title added.
+- Sitemap Errors Fixes.
+- Monstra automatically renames files - fixed
+- Monstra Dashboard created and set as default Plugin for Admin Panel
+- Ink Framework for Monstra Email Templates
+- iCheck plugin for checkboxes added.
+- Emails Manager Plugin added.
+- HubSpot Messaging Library added for notifications
+- Gelato: Unzip Functionality added.
+- Gelato: Number Class new method convertToBytes() added.
+- Gelato: ErroHandler styles updates
+- Users Plugin getGravatarURL() improve
+- Plugin API - Actions - Closure support added.
+- Plugin API - Filters - Closure support added.
+- Core: Better statuses notification (error,success,warning)
+- Core: Store user_email in Session
+- Core: Javascript may be broken if there is no break line - fixed
+- Core: Added ability to avoid caching JS/CSS by the browser.
+- Core: Monstra automatically rename files Issue - fixed
+- Sandbox Plugin cleanup
+- New Flags: Japanese(JA), Indonesian(ID), Chinese(ZH-CN), Turkish(TR) added.
+- Localization: Japanese(JA), Indonesian(ID), Chinese(ZH-CN), Turkish(TR) translations added.
+- Localization: Major Fixes
+
+Monstra 2.3.1, 2013-12-25
+------------------------
+- Localization: Major Fixes
+- Gelato: Image.php Major Fixes
+- Sitemap: Errors #175 - fixes
+- New favicon added #182 - by bernte
+- Layouts: General Fixes - by bernte
+- Installer: SERVER_PORT issue - fixed by KANekT
+- Gelato: Number Class - updated bytes format (JEDEC & IEC 60027) by mbarzda
+- Email Layout: footer fixes
+
+Monstra 2.3.0, 2013-12-19
+------------------------
+- Update Twitter Bootstrap to 2.3.2
+- Security: Added limits for login attempts #104
+- Security: Obfuscate users email to prevent spam-bots from sniffing it.
+- Core: Added ability to map Monstra Engine Directory.
+- Core: Maintenance Mode Improvements
+- Core: ORM::configure - driver options added
+- Gelato: Image.php fix for PNG files
+- Gelato: Number.php: Undefined offset fix
+- XMLDB: error select for empty table fix
+- Plugin API: Stylesheet.php updates - sourcecode misses a linebreak after minified css
+- Files Manager: jasny bootstrap-fileupload - added #89 
+- Users Plugin: login page fixes
+- Users Plugin: Deleting users - fixed by Oleg Gatseluk #158
+- Pages Plugin: General method getPages() created #123
+- Pages Plugin: page expand ajax bug #115 - fixed
+- Pages Plugin: Improved available() method to show only published pages
+- Pages Plugin: Bug with pages renaming - fixed
+- Monstra Email Templates #164
+- Localization: Major Fixes
+- Localization: PL added
+- Localization: NL added
+- .htaccess SEO improvements
+
+Monstra 2.2.1, 2013-04-06
+------------------------
+- Update Gelato to 1.0.3
+- Error Handler turned off for Production environment
+- Localization: Farsi(fa) translations fixes.
+- Pages Manager: fix translates #107
+- Missing Translation on Login Page - fixed #106
+- Lithuanian flag and other languages fixes. Thanks to mbarzda
+
+Monstra 2.2.0, 2013-03-25
+------------------------
+- Mobile Ready! Monstra fully responsive for mobile devices, tablets, and normal computer screens.
+- Improved Monstra Architecture!
+- New Stand-alone Monstra Library (Gelato) was created! Totally improved old classes and added new classes!
+- Monstra Library with new useful classes - ClassLoader, ErrorHandler, Log, MinifyJS, MinifyCSS, MinifyHTML, Token, Registry.
+- Adopted PSR-0 PSR-1 PSR-2
+- Localization: Farsi(fa), Magyar(hu), Français(fr), Spanish(es), Serbian(sr-yu), Slovakian(sk) translations added. Thanks to Abdulhalim, Lez, Neri, Mapadesign, Hugomano and Nakome.
+- Idiorm Updated to 1.3.0
+- jQuery Updated to 1.9.1
+- Twitter Bootstrap Updated to 2.3.0
+- Default Theme: Social Meta Tags - added.
+- Default Theme: Hook "theme_meta" - added.
+- Admin Default Theme: Added missing meta tags.
+- Improve Installer Usability. Flags Added.
+- Default Site Email added.
+- PHPMailer added.
+- Pages Manager: added ability to quickly update page status and page access.
+- Intstaller Layout: Added missing meta tags.
+- Filesmanager plugin: added ability to view images.
+- Filesmanager Plugin: forbidden types array - updated.
+- CSRF detection text - updated.
+- Engine Uri: code improvements.
+- XMLDB: Table Class - fixed select method. Thanks to DmitriyMX
+- Bootstrap CSS: Icons url - fixed.
+- Plugins Manager: buttons confirm dialog message - fixed.
+- Pages Manager: page cloning problem - fixed.
+- Localizations: translations fixes.

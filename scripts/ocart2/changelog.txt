@@ -1,0 +1,67 @@
+2.0.0.0
+
+We're happy to announce our latest version, 2.0!
+
+New features include:
+Fully responsive design
+OCmod - virtual file modification
+Redesigned admin area and front end
+More payment gateways included in the standard download
+Event notification system
+Custom form fields
+
+Although 2.0 is now released we advise all existing store owners to check that any 3rd party modules they have installed will work with the latest version. If you already have a working store we always advise a backup is done and you test in a new environment before you update!
+
+1.5.6.4
+
+Bugs fixed
+
+Fixed issue with images containing the <? (used in xml etc) string in the source and not uploading. Now only checks long php tag
+Fixed language string for "error_file_type" in admin filemanger/upload method
+Fixed upgrade issues caused by PHP consider 0 equal to null
+Updated SQL query in getTotalEmailsByProductsOrdered and getEmailsByProductsOrdered to use the limits in the correct method
+
+Changes
+
+Updated SQL mode in install SQL file and MySQLi adapter to accommodate servers that have strict mode enabled by default
+Removed Amazon payments xls file from system folder as it can be downloaded online and has no place in the code framework
+Improved currency update method to include curl timeouts, to handle occasional timeout issues
+
+View the change log here:
+https://github.com/opencart/opencart/blob/1.5.6.4/changelog.md
+1.5.6.3
+
+Bugs fixed
+
+Image manager issue where the thumbnails failed to load
+PayPal Express totals calculation, fixed incorrect variable names
+Fixed report for coupons to search the history table instead for start/end filters
+
+Changes
+
+Allow arrays to be written to the log file
+Check uploaded files for php content, reduce the risk of image files containing php and running on insecure servers
+
+View the change log here:
+https://github.com/opencart/opencart/blob/1.5.6.3/changelog.md
+1.5.6.2
+
+Updates to the PayPal Express module to fix some issues during checkout.
+
+Changed UTF-8 helper file to new code and updated the installer to check for iconv function or mbstring extension.
+
+More info including commit links can be found in the change log: https://github.com/opencart/opencart/blob/v1.5.6.2/changelog.md
+1.5.6.1
+
+MySQLi database support available at install.
+
+Minor patches - please see GitHub commits for more info.
+1.5.6
+
+ADDED
+Paypal Pro Iframe / Payflow Pro iFrame
+PayPal Express Checkout
+
+Amazon Payments
+
+OpenBay Pro

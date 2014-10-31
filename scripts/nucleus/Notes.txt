@@ -1,0 +1,2 @@
+1) Download 'upgrades' folder and put it in zip - 'nucleus/upgrades'
+2) $CONF['alertOnSecurityRisk'] = 0; in config.php

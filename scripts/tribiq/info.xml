@@ -1,0 +1,52 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Tribiq
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Tribiq
+	</ratings>
+	<space>
+		17984260
+	</space>
+	<support>
+		http://tribiq.org/support
+	</support>
+	<version>
+		6.0.5a
+	</version>
+	<mod>3</mod>
+	<mod_files>4</mod_files>
+	<admin>admin</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Tribiq CMS</font> is a browser-based, multilingual content management system
+		<br /><br />
+		Tribiq CMS creates an intuitive and powerful interface for editing your content using any modern web browser.
+		<br /><br />
+		Tribiq CMS is available under the <a href="http://tribiq.com/licensing" target="_blank">BSD License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+<li>WYSIWYG for accurate editing</li>
+<li>Start simple, scale up with Tribiq Modules</li>
+<li>A completely localized experience for visitors</li>
+<li>Template-based for design consistency</li>
+<li>Categorization, and automatic lists</li>
+<li>Password-protected extranet sites</li>
+<li>Multiple sites</li>
+<li>Interactive, visual panels</li>
+<li>Search engine friendly</li>
+<li>Future proof, easy to update</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

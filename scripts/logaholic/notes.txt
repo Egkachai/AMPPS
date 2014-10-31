@@ -1,0 +1,4 @@
+1. Add following lines in database [[dbprefix]]logaholic_GlobalSettings (this is to enable login system)
+
+('UserAuthenticationType', '', 'logaholic'),
+('UserAuthenticationType_Var', '', '');

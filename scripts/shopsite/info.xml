@@ -1,0 +1,86 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ShopSite
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/perl/ecommerce/ShopSite
+	</ratings>
+	<space>
+		39202368
+	</space>
+	<support>
+		http://support.shopsite.com/forums/
+	</support>
+	<version>
+		11.2.3
+	</version>
+	<mod>1</mod>
+	<mod_files>2</mod_files>
+	<softversion>
+		4.0.4
+	</softversion>
+	<index>index.cgi</index>
+	<admin>ss/start.cgi</admin>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ShopSite</font> is the <b>easiest-to-use shopping cart software</b> for small to medium-sized businesses. With our e-commerce software and intuitive interface, <b>you can have a store online in 15 minutes</b>. With our <b>rich feature set</b> you won't outgrow our catalog software, and you will not need expensive add-ons in order to have a fully functioning cart.
+		<br /><br />With our rich feature set you won't outgrow our catalog software, and you will not need expensive add-ons in order to have a fully functioning cart.
+		<br /><br />
+		ShopSite is licensed under their <a href="http://www.shopsite.com/help/license.html" target="_blank">Software License Agreement</a>.
+		</english-overview>		
+		<english-features>
+		<font size="2" color="#1281B6"><b>Store Building Tools</b></font><br />
+		<ul>
+			<li>Browser-based Interface</li>
+			<li>Store Setup Wizard</li>
+			<li>Basic/Advanced Editing</li>
+			<li>Context-Sensitive Help</li>
+			<li>Full Control Over Store Look-and-Feel</li>
+			<li>Search Engine Friendly HTML Pages</li>
+			<li>Customize Store Texts</li>
+		</ul>
+		<font size="2" color="#1281B6"><b>Catalog &amp; Business Management</b></font><br />
+		<ul>
+			<li>Products &amp; Pages XML Upload/Download</li>
+			<li>Media Library Manager</li>
+			<li>Notes on Orders</li>
+			<li>Store Statistics</li>
+			<li>Dashboard</li>
+			<li>Barcode Scanner Support</li>
+			<li>Display StoreID in Back Office</li>
+		</ul>
+		<font size="2" color="#1281B6"><b>Customer Service Tools</b></font><br />
+		<ul>
+			<li>Merchant Notification of Orders</li>
+			<li>Automatic Customer Receipts</li>
+		</ul>
+		<font size="2" color="#1281B6"><b>Security, Reliability &amp; Efficiency</b></font><br />
+		<ul>
+			<li>Remote Orders Database</li>
+			<li>PABP/PCI-DSS Certification</li>
+			<li>User Accounts</li>
+			<li>User Account Roles</li>
+			<li>Page and Product Databases in SQL</li>
+			<li>Order System Tracking</li>
+			<li>Merchant Security Status Indicator</li>
+		</ul>
+		<font size="2" color="#1281B6"><b>Shopping Cart Features</b></font><br />
+		<ul>
+			<li>Order Total on First Cart Page</li>
+			<li>Secure Order Capture</li>
+			<li>Real-time credit card processing</li>
+			<li>Minimum Order Value</li>
+			<li>E-mail Address Validation</li>
+			<li>Separate Shipping and Billing Addresses</li>
+		</ul>
+		</english-features>
+		<english-store_id>Store ID</english-store_id>
+		<english-err_proto>ShopSite cannot be installed on https protocol.</english-err_proto>
+	</languages>
+</soft>

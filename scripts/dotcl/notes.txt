@@ -1,0 +1,2 @@
+1) Installer is at admin/install/wizard.php
+2) Select "MySQLi" for Database type in manual installation

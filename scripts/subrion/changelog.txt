@@ -1,0 +1,100 @@
+- Subrion CMS Changelog -
+
+>> From 3.1.3 to 3.1.4 <<
+
+	- Bug #1197: Add versioning to CSS/js files
+	- Bug #1314: Can't upload files with the same name using system fields
+	- Bug #1420: Admin Panel: can not change status of member on add/edit page
+	- Bug #1422: Problem with home page
+	- Bug #1430: Dependent fields are not being saved properly
+	- Bug #1431: Install module is inaccessible.
+	- Bug #1432: Incorrect working of 'First' and 'Last' buttons in Members Pagination
+	- Bug #1438: Make sure two date fields operate correctly
+	- Bug #1442: 404 error if change the home page and revert it back
+	- Bug #1445: Numeric strings in text fields are processed incorrectly
+	- Bug #1457: Unable to clear date field value
+	+ Feature #1208: Add 'Resolve issue' button for notifications where possible
+	+ Feature #1434: Style 404 page
+	+ Feature #1444: Add the "store-load" listener to IntelliGrid
+	+ Feature #1459: Display title field in all-items-page.tpl
+
+>> From 3.1.4 to 3.1.5 <<
+
+	- Bug #1465: Mysql version field is empty
+	- Bug #1466: Admin Panel: configuration link is displayed in Extensions section when package is deactivated
+	- Bug #1468: If image doesn't exist in uploads folder it can not be removed
+	- Bug #1469: Parent & children pages don't work again
+	- Bug #1473: Blank page if no mysqli extension installed
+	- Bug #1491: Account balance does not update when adding transaction
+	- Bug #1494: Member Balance page shows incorrect funds
+	+ Feature #86: Improve Hooks List in debug mode
+	+ Feature #1364: Easy backup creation before upgrade process
+	+ Feature #1425: Move xml extension to constant
+	+ Feature #1443: Debug in HTML comments mode
+	+ Feature #1484: Improve sitemap
+	+ Feature #1497: Link to subrion.org instead of subrion.com
+
+>> From 3.1.5 to 3.1.6 <<
+
+	- Bug #1482: Incorrect working of Remote Plugins installation if I have not the latest version of the core
+	- Bug #1498: Unable to set a title for uploaded image
+	- Bug #1532: Error in debugger
+	- Bug #1533: Incorrect iaDb::convertIds() function behavior
+	- Bug #1548: Default value for fields is set to 0
+	- Bug #1549: New blocks are not added during a package upgrade
+	- Bug #1550: Frontend: intelli.notifFloatBox shows all of notifications in red (as error)
+	- Bug #1556: Titles are empty for multiple images upload field
+	- Bug #1561: When package is disabled - statistics block is visible on dashboard
+	- Bug #1562: Fields order is reversed after any package reinstallation
+	+ Feature #301: Reinstall template button
+	+ Feature #1505: Return mysql error in debugger instead of php error
+	+ Feature #1516: Disable pages with <changeset>
+	+ Feature #1522: Change dev.subrion.com to .org
+	+ Feature #1524: Admin Panel: improved graphical presentation of added items/listings
+	+ Feature #1526: Implement some easy way to add custom tabs
+	+ Feature #1528: Improve debug hooks section
+	+ Feature #1530: Backend: URL preview field isn't completely visible
+	+ Feature #1543: Open page in a new window
+	+ Feature #1552: phpListingRemoved should be called in package's abstract classes
+	+ Feature #1555: Add GPLv3 license to the core files
+	+ Feature #1575: Hooks from template install
+
+>> From 3.1.6 to 3.1.7 <<
+
+	- Bug #1330: Administrator is not notified when a new member is registered
+	- Bug #1512: Admin Panel: editable fields in grid can't be edited
+	- Bug #1579: Incorrect breadcrumb and page title for Edit Member
+	- Bug #1580: admin_payment_notification email template is missing
+	- Bug #1591: Allow to open pages in new window
+	- Bug #1592: Images are processed but not saved if error appears on submission
+	- Bug #1593: Pages are not deleted from menus
+	- Bug #1599: Admin login screen
+	- Bug #1610: Parsing of templates install.xml file
+	+ Feature #1596: Provide a hook to catch the change of configuration options
+	+ Feature #1597: Sanitize HTML on debug outputs
+	+ Feature #1600: Update packages icons
+	+ Feature #1609: Upgrade PHPMailer to the latest version
+
+>> From 3.1.7 to 3.1.8 <<
+
+	- Bug #1616: Collapsed state for fieldgroups
+	- Bug #1618: Review all existing templates
+	- Bug #1621: HTML output is not properly sanitized
+	- Bug #1626: Resolve some W3C errors
+	- Bug #1636: Admin Panel: wrong template configuration link
+	- Bug #1637: Stay on the same page when switching language
+	- Bug #1638: DropDown field type
+	- Bug #1645: Thumbnail default size option doesn't work
+	- Bug #1664: Improve debug functions
+	- Bug #1676: There is no way to look through the view entry page of any plugin if plugin's index page is set as Home page
+	- Bug #1680: Account balance increased twice
+	- Bug #1687: Getting error after set 'Searchable' field's value to ON for any company field
+	- Bug #1715: Inconsistent values for IA_SELF
+	- Bug #1718: There is now way to show 401 error (UNAUTHORIZED) with error message
+	+ Feature #80: Default collapsed state
+	+ Feature #1622: Add preview icon for templates in PNG format
+	+ Feature #1633: Allow adding classnames for menu blocks
+	+ Feature #1634: Add new hooks
+	+ Feature #1641: Add styles for CKEditor
+	+ Feature #1642: New skin for CKEditor
+	+ Feature #1668: Add max length attribute to field-type-content-manage.tpl

@@ -1,0 +1,2 @@
+1) Move USING BTREE to work on strict MySQL environments.
+2) Remove DEFINER=`root`@`localhost` from SQL file
